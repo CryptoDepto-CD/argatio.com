@@ -11,3 +11,6 @@ npm install
 - Declarar las variables de entorno (.env)
 
 ## Stack
+- NextJS
+- TailwindCSS
+- Lucide
