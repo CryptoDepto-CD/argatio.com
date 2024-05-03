@@ -2,7 +2,7 @@ import Image from "next/image";
 
 
 import BgHero from "@/../public/bg_hero.svg"
-import ArgatioFiveServices from "../ui/ArgatioFiveServices";
+import ArgatioFiveServices from "@/components/ui/ArgatioFiveServices";
 
 export default function HeroSection() {
   return (

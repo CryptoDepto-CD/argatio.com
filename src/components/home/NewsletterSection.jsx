@@ -1,5 +1,5 @@
 import Link from "next/link";
-import NewsletterForm from "./NewsletterForm";
+import NewsletterForm from "@/components/home/NewsletterForm";
 import SocialMediaLinks from "@/components/UI/SocialMediaLinks";
 
 export default function NewsletterSection() {
