@@ -10,3 +10,8 @@
   font-family: "Montserrat";
   src: url("../../public/fonts/montserrat.ttf");
 }
+
+@font-face {
+  font-family: "Nats";
+  src: url("../../public/fonts/NATS-Regular.ttf");
+}
