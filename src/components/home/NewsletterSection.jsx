@@ -1,6 +1,6 @@
 import Link from "next/link";
 import NewsletterForm from "@/components/home/NewsletterForm";
-import SocialMediaLinks from "@/components/UI/SocialMediaLinks";
+import SocialMediaLinks from "@/components/ui/SocialMediaLinks";
 
 export default function NewsletterSection() {
 
@@ -14,7 +14,6 @@ export default function NewsletterSection() {
         <div className="flex flex-col items-center justify-between w-full gap-10 md:flex-row">
           <p className="text-clamp-text w-fit font-montserrat lg:text-xl">Seguinos en redes</p>
           <SocialMediaLinks textColor="white" bgColor="bluePrimary" />
-          
         </div>
       </div>
     </div>
