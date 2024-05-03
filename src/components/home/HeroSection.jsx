@@ -1,6 +1,5 @@
 import Image from "next/image";
-
-
+import Link from "next/link";
 import BgHero from "@/../public/bg_hero.svg"
 import ArgatioFiveServices from "@/components/ui/ArgatioFiveServices";
 
@@ -12,9 +11,9 @@ export default function HeroSection() {
           <h2 className="leading-none uppercase font-nats text-balance text-clamp-ultrabig">
             revolucionamos el mundo inmobiliario
           </h2>
-          <button className="w-full px-10 py-2 mx-auto lg:mx-0 text-center text-black uppercase bg-white border-2 border-black border-solid rounded-full font-montserrat hover:opacity-90 max-w-[350px] lg:text-lg">
+          <Link href="https://app.argatio.com/" className="w-full px-10 py-2 mx-auto lg:mx-0 text-center text-black uppercase bg-white border-2 border-black border-solid rounded-full font-montserrat hover:opacity-90 max-w-[350px] lg:text-lg">
             Quiero mi hogar
-          </button>
+          </Link>
         </div>
         <div className="hidden text-right uppercase pt-14 font-nats md:block">
           <p className="text-2xl lg:text-3xl">Convertite en un</p>

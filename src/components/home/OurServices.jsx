@@ -27,6 +27,7 @@ import SearchHouse from "@/../public/icons/search_house.svg";
 import TokenHouse from "@/../public/icons/house_token.svg";
 import DocumentHouse from "@/../public/icons/house_documents.svg";
 import HandsHouse from "@/../public/icons/house_hands.svg";
+import { Link } from "lucide-react";
 
 export default function OurServices() {
   const settings = {
@@ -70,9 +71,9 @@ export default function OurServices() {
         },
       ],
       buttons: () => (
-        <button className="px-10 py-2 mx-auto uppercase transition-all duration-300 border border-black border-solid rounded-full max-w-96 font-montserrat hover:bg-black hover:text-white">
+        <a href="https://app.argatio.com/" className="px-10 py-2 mx-auto uppercase transition-all duration-300 border border-black border-solid rounded-full max-w-96 font-montserrat hover:bg-black hover:text-white">
           Quiero mi hogar
-        </button>
+        </a>
       ),
       bgImage: { src: ImgViviendaPropia, alt: "Vivienda Propia" },
     },
