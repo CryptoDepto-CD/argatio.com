@@ -18,11 +18,11 @@ export default function NavBar(){
             </div>
 
             <ul className={`fixed md:static bg-zinc-950 md:bg-transparent px-20 md:px-0 w-full md:w-auto md:flex top-0 left-0 h-full md:h-auto pt-20 md:pt-0 items-center justify-center ${isOpen ? 'block' : 'hidden'} md:flex z-20`}>
-                <li className={`mr-2 text-white/60 text-sm font-montserrat hover:text-white transition-colors`}><Link href="#">Servicios</Link></li>
-                <li className={`mr-2 text-white/60 text-sm font-montserrat hover:text-white transition-colors`}><Link href="#">ARGA Token</Link></li>
-                <li className={`mr-2 text-white/60 text-sm font-montserrat hover:text-white transition-colors`}><Link href="#">Quienes Somos</Link></li>
-                <li className={`mr-2 text-white/60 text-sm font-montserrat hover:text-white transition-colors`}><Link href="#">Contacto</Link></li>
-                <li className={`mr-5 text-white/60 text-sm font-montserrat hover:text-white transition-colors`}><Link href="#">Iniciar Sesión</Link></li>
+                <li className={`mr-2 text-white/60 text-sm font-montserrat hover:text-white transition-colors`}><Link href="https://app.argatio.com/">Servicios</Link></li>
+                <li className={`mr-2 text-white/60 text-sm font-montserrat hover:text-white transition-colors`}><Link href="https://app.argatio.com/">ARGA Token</Link></li>
+                <li className={`mr-2 text-white/60 text-sm font-montserrat hover:text-white transition-colors`}><Link href="https://app.argatio.com/">Quienes Somos</Link></li>
+                <li className={`mr-2 text-white/60 text-sm font-montserrat hover:text-white transition-colors`}><Link href="https://app.argatio.com/">Contacto</Link></li>
+                <li className={`mr-5 text-white/60 text-sm font-montserrat hover:text-white transition-colors`}><Link href="https://app.argatio.com/">Iniciar Sesión</Link></li>
                 <li className={`mr-2 text-sm font-semibold align-middle flex items-center font-montserrat py-2 px-5 cursor-pointer bg-white rounded-full md:mt-0 mt-4`}><Link href="#">Empezá Hoy</Link></li>
             </ul>
         </nav>
