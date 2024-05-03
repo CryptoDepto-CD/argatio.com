@@ -17,7 +17,7 @@ export default function FeedbackForm() {
       <div className="flex justify-center w-full lg:justify-end">
         {/* <button className="px-16 py-2 text-lg font-semibold text-white uppercase rounded-full w-fit lg:w-6/12 bg-bluePrimary ">Enviar</button> */}
         {/* <ButtonTemplate title="Enviar" className="px-16 py-2 text-lg font-semibold uppercase rounded-full w-fit lg:w-6/12" textColor="white" bgColor="bluePrimary" /> */}
-        <button className="px-10 py-2 text-black uppercase bg-white border-2 border-black border-solid rounded-full font-montserrat hover:opacity-90">Enviar</button>
+        <button className="px-10 py-2 text-black uppercase bg-white border-2 border-black border-solid rounded-full font-montserrat hover:opacity-90 lg:text-xl">Enviar</button>
       </div>
     </form>
   );

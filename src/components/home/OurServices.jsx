@@ -204,8 +204,8 @@ export default function OurServices() {
   ];
 
   return (
-    <section className="flex flex-col items-center overflow-hidden text-center">
-      <Title type="subtitle1">Nuestros servicios</Title>
+    <section className="flex flex-col items-center my-20 overflow-hidden text-center ">
+      <h2 className="font-semibold leading-none text-white uppercase text-clamp-big font-montserrat">Nuestros servicios</h2>
       <div className="flex flex-col items-center w-full py-10 mx-auto text-white slider-container">
         <Slider
           {...settings}

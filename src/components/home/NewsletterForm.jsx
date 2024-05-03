@@ -12,7 +12,7 @@ export default function NewsletterForm() {
   return (
     <form action={formAction} className="flex flex-col items-center w-full font-montserrat">
       <div className="flex items-center justify-between w-full gap-5">
-        <label htmlFor="email" className="hidden text-clamp-text sm:block">
+        <label htmlFor="email" className="hidden text-clamp-text sm:block lg:text-xl">
           Suscripción
         </label>
         <input
@@ -21,7 +21,7 @@ export default function NewsletterForm() {
           name="id"
           required
           placeholder="namel@argatio.com"
-          className="w-full px-5 text-center bg-black border-b-2 outline-none border-b-white placeholder:italic "
+          className="w-full px-5 text-center bg-transparent bg-black border-b-2 outline-none border-b-white placeholder:italic text-clamp-text"
         />
         <div className="object-center w-10 h-10 overflow-hidden ">
           <button className="w-10 h-10 rotate-45 bg-white -translate-x-7"></button>

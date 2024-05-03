@@ -17,7 +17,6 @@ export default function Testimonials() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [currentTestimonyIndex, setCurrentTestimonyIndex] = useState(0);
 
-
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) =>
@@ -33,34 +32,38 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <section className="flex flex-col items-center max-w-screen-xl gap-5 p-5 mx-auto my-10">
+    <section className="flex flex-col items-center max-w-screen-xl gap-5 p-5 mx-auto my-10 md:px-10">
       <div className="flex flex-col items-center w-full gap-10 mx-auto justify-evenly md:flex-row">
-        <div className="flex flex-col items-center w-full gap-5 max-w-56">
+        <div className="flex flex-col items-center w-full gap-5 max-w-60">
           {() => {}}
-          <h3 className="text-4xl uppercase font-nats">Testimonio</h3>
+          <h3 className="leading-none uppercase text-clamp-big font-nats">
+            Testimonios
+          </h3>
           <div className="flex w-full h-full min-h-28">
-          <div className="relative w-full h-full text-center text-balance">
-            {testimonials.map((testimony, index) => (
-              <p
-                key={index}
-                className={`absolute top-0 left-0 transition-opacity duration-1000 ${
-                  index === currentTestimonyIndex ? "opacity-100" : "opacity-0"
-                }`}
-              >
-                {testimony}
-              </p>
-            ))}
-          </div>
+            <div className="relative w-full h-full text-center text-balance">
+              {testimonials.map((testimony, index) => (
+                <p
+                  key={index}
+                  className={`absolute top-0 left-0 transition-opacity duration-1000 text-[clamp(1.2rem,3vw,1.6rem)] leading-none ${
+                    index === currentTestimonyIndex
+                      ? "opacity-100"
+                      : "opacity-0"
+                  }`}
+                >
+                  {testimony}
+                </p>
+              ))}
+            </div>
           </div>
         </div>
         <div className="flex items-center justify-center h-full">
-          <div className="relative top-0 bottom-0 left-0 w-screen h-[100vw] md:h-[600px] p-10  max-w-[500px]">
+          <div className="relative top-0 bottom-0 left-0 w-screen h-[100vw] md:h-[500px] lg:h-[700px] p-10  max-w-[450px] lg:max-w-[700px]">
             {images.map((image, index) => (
               <Image
                 key={index}
                 src={image}
                 alt={`Imagen ${index + 1}`}
-                className={`p-5 max-w-screen-[500px] object-contain absolute top-0 left-0 transition-opacity duration-1000 ${
+                className={`p-5 object-contain absolute top-0 left-0 transition-opacity duration-1000 ${
                   index === currentImageIndex ? "opacity-100" : "opacity-0"
                 }`}
               />
@@ -68,7 +71,7 @@ export default function Testimonials() {
           </div>
         </div>
       </div>
-      <button className="px-10 py-2 mx-auto text-center text-black uppercase bg-white border-2 border-black border-solid rounded-full font-montserrat hover:opacity-90">
+      <button className="px-10 py-2 mx-auto text-center text-black uppercase bg-white border-2 border-black border-solid rounded-full font-montserrat hover:opacity-90 text-clamp-text">
         Quiero ser dueño
       </button>
     </section>

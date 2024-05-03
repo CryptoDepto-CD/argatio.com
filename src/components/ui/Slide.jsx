@@ -8,7 +8,7 @@ export default function Slide({title, icons, buttons, bgImage}) {
       <div className="flex flex-col items-center w-full h-full gap-10 px-10 py-4 text-black ">
         <TitleCarousel {...title} />
         <ThreeIconsCarousel icons={icons} />
-        <div className="flex flex-col gap-3 text-xs md:text-sm lg:flex-row">
+        <div className="flex flex-col gap-3 text-xs lg:text-lg lg:flex-row">
           {buttons()}
         </div>
         {/* <button className="px-10 py-2 mx-auto uppercase transition-all duration-300 border border-black border-solid rounded-full max-w-96 font-montserrat hover:bg-black hover:text-white">
