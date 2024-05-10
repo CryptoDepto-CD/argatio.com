@@ -1,13 +1,14 @@
 "use client";
 
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 import ArgatioLogo1 from "@/../public/argatio_logo_1.svg";
 import ArgatioLogo2 from "@/../public/argatio_logo_2.svg";
-import { useEffect, useState } from "react";
+import ArgatioLogo3 from "@/../public/argatio_logo_3.svg";
 
 export default function Testimonials() {
-  const images = [ArgatioLogo1, ArgatioLogo2];
+  const images = [ArgatioLogo1, ArgatioLogo2, ArgatioLogo3];
   const testimonials = [
     "Nunca pensé en tener mi casa propia, es un sueño!",
     "No creí que sería posible tener un negocio propio a esta edad, pero ahora esa es mi realidad!",
@@ -34,7 +35,7 @@ export default function Testimonials() {
   return (
     <section className="flex flex-col items-center max-w-screen-xl gap-5 p-5 mx-auto my-10 md:px-10">
       <div className="flex flex-col items-center w-full gap-10 mx-auto justify-evenly md:flex-row">
-        <div className="flex flex-col items-center w-full gap-5 max-w-60">
+        <div className="flex flex-col items-center w-full gap-5 max-w-60 xl:max-w-72">
           {() => {}}
           <h3 className="leading-none uppercase text-clamp-big font-nats">
             Testimonios
@@ -44,7 +45,7 @@ export default function Testimonials() {
               {testimonials.map((testimony, index) => (
                 <p
                   key={index}
-                  className={`absolute top-0 left-0 transition-opacity duration-1000 text-[clamp(1.2rem,3vw,1.6rem)] leading-none ${
+                  className={`absolute top-0 left-0 transition-opacity duration-1000 text-[clamp(1.1rem,3vw,1.6rem)] leading-none font-montserrat ${
                     index === currentTestimonyIndex
                       ? "opacity-100"
                       : "opacity-0"
