@@ -4,7 +4,7 @@ import TitleCarousel from "./TitleCarousel";
 
 export default function Slide({title, icons, buttons, bgImage}) {
   return (
-    <div className="flex flex-col items-center justify-between object-cover w-full max-w-screen-lg py-10 mx-auto my-auto bg-white h-fit lg:flex-row rounded-3xl lg:py-0">
+    <div className="flex flex-col items-center object-cover w-full max-w-screen-lg min-h-[full] py-10 mx-auto my-auto bg-white justify-evenly lg:justify-between lg:flex-row rounded-3xl lg:py-0 py-">
       <div className="flex flex-col items-center w-full h-full gap-10 px-10 py-4 text-black ">
         <TitleCarousel {...title} />
         <ThreeIconsCarousel icons={icons} />
@@ -19,7 +19,7 @@ export default function Slide({title, icons, buttons, bgImage}) {
         <Image
           src={bgImage.src}
           alt={bgImage.alt}
-          className="object-cover w-full aspect-[4/2.8] lg:aspect-[9/16] lg:rounded-3xl"
+          className="object-cover w-full aspect-[4/4] lg:aspect-[9/16] lg:rounded-3xl"
         />
       </div>
     </div>

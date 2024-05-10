@@ -4,8 +4,7 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Title from "../ui/Title";
-import Slide from "../ui/Slide";
+import Slide from "../ui/slide/Slide";
 
 // Carousel Imagenes
 import ImgViviendaPropia from "@/../public/img_vivienda_propia.png";
@@ -70,7 +69,7 @@ export default function OurServices() {
         },
       ],
       buttons: () => (
-        <button className="px-10 py-2 mx-auto uppercase transition-all duration-300 border border-black border-solid rounded-full max-w-96 font-montserrat hover:bg-black hover:text-white">
+        <button className="px-10 py-2 mx-auto font-semibold uppercase transition-all duration-300 border border-black border-solid rounded-full max-w-96 font-montserrat hover:bg-black hover:text-white">
           Quiero mi hogar
         </button>
       ),
@@ -100,7 +99,7 @@ export default function OurServices() {
         },
       ],
       buttons: () => (
-        <button className="px-10 py-2 mx-auto uppercase transition-all duration-300 border border-black border-solid rounded-full max-w-96 font-montserrat hover:bg-black hover:text-white">
+        <button className="px-10 py-2 mx-auto font-semibold uppercase transition-all duration-300 border border-black border-solid rounded-full max-w-96 font-montserrat hover:bg-black hover:text-white">
           Quiero mi espacio
         </button>
       ),
@@ -131,10 +130,10 @@ export default function OurServices() {
       ],
       buttons: () => (
         <>
-          <button className="px-10 py-2 mx-auto uppercase transition-all duration-300 border border-black border-solid rounded-full max-w-96 font-montserrat hover:bg-black hover:text-white">
+          <button className="px-10 py-2 mx-auto font-semibold uppercase transition-all duration-300 border border-black border-solid rounded-full max-w-96 font-montserrat hover:bg-black hover:text-white">
             Oportunidades
           </button>
-          <button className="px-10 py-2 mx-auto text-white uppercase transition-all duration-100 bg-black border border-black border-solid rounded-full max-w-96 font-montserrat hover:opacity-75">
+          <button className="px-10 py-2 mx-auto font-semibold text-white uppercase transition-all duration-100 bg-black border border-black border-solid rounded-full max-w-96 font-montserrat hover:opacity-75">
             Simular Inversion
           </button>
         </>
@@ -165,7 +164,7 @@ export default function OurServices() {
         },
       ],
       buttons: () => (
-        <button className="px-10 py-2 mx-auto uppercase transition-all duration-300 border border-black border-solid rounded-full max-w-96 font-montserrat hover:bg-black hover:text-white">
+        <button className="px-10 py-2 mx-auto font-semibold uppercase transition-all duration-300 border border-black border-solid rounded-full max-w-96 font-montserrat hover:bg-black hover:text-white">
           Quiero ser dueño
         </button>
       ),
@@ -195,7 +194,7 @@ export default function OurServices() {
         },
       ],
       buttons: () => (
-        <button className="px-10 py-2 mx-auto uppercase transition-all duration-300 border border-black border-solid rounded-full max-w-96 font-montserrat hover:bg-black hover:text-white">
+        <button className="px-10 py-2 mx-auto font-semibold uppercase transition-all duration-300 border border-black border-solid rounded-full max-w-96 font-montserrat hover:bg-black hover:text-white">
           Quiero mi hogar
         </button>
       ),
@@ -209,10 +208,10 @@ export default function OurServices() {
       <div className="flex flex-col items-center w-full py-10 mx-auto text-white slider-container">
         <Slider
           {...settings}
-          className="text-black w-[300vw] sm:w-[220vw] 2xl:w-[170vw]"
+          className="text-black w-[300vw] sm:w-[220vw] 2xl:w-[180vw] min-h-fit"
         >
           {slides.map((slide, index) => (
-            <div className="px-10" key={index}>
+            <div className="min-h-full px-10" key={index}>
               <Slide {...slide} />
             </div>
           ))}
