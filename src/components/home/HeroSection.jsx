@@ -1,8 +1,7 @@
 import Image from "next/image";
 
-
 import BgHero from "@/../public/bg_hero.svg"
-import ArgatioFiveServices from "../ui/ArgatioFiveServices";
+import NewArgatioFiveServices from "@/components/ui/NewArgatioFiveServices";
 
 export default function HeroSection() {
   return (
@@ -22,7 +21,7 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="py-3 text-xs lg:w-1/3 font-montserrat">
-        <ArgatioFiveServices />
+        <NewArgatioFiveServices />
       </div>
       <div className="text-right uppercase font-nats md:hidden max-w-[300px]">
         <p className="text-2xl">Convertite en</p>
