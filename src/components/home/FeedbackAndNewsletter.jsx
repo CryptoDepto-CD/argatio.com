@@ -1,7 +1,5 @@
-
-import FeedbackSection from "./FeedbackSection";
-import NewsletterSection from "./NewsletterSection";
-
+import FeedbackSection from "@/components/home/FeedbackSection";
+import NewsletterSection from "@/components/home/NewsletterSection";
 
 export default function FeedbackAndNewsletterSection() {
   return (

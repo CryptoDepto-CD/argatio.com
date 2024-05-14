@@ -3,7 +3,7 @@
 import { useFormState } from "react-dom";
 
 import { sendFeedback } from "@/lib/actions";
-import ButtonTemplate from "@/components/UI/Button";
+import ButtonTemplate from "@/components/ui/Button";
 
 export default function FeedbackForm() {
   const [state, formAction] = useFormState(sendFeedback, {

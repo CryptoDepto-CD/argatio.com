@@ -1,6 +1,6 @@
 import Image from "next/image";
-import ThreeIconsCarousel from "./ThreeIconsCarousel";
-import TitleCarousel from "./TitleCarousel";
+import ThreeIconsCarousel from "@/components/ui/slide/ThreeIconsCarousel";
+import TitleCarousel from "@/components/ui/slide/TitleCarousel";
 
 export default function Slide({title, icons, buttons, bgImage}) {
   return (

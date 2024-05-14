@@ -10,8 +10,8 @@ import Link from "next/link";
 export default function ArgatioFiveServices() {
   return (
     <div className="grid grid-cols-2 grid-rows-2 gap-1 text-xs text-center scale-100 sm:scale-100 font-montserrat">
-      <Link href="" className="absolute uppercase text-[8px] top-0 left-0 p-1 aspect-square border-8 rounded-full w-[60px] text-center leading-3 my-auto flex items-center scale-75 z-10 xl:scale-100 lg:top-2 lg:left-2 hover:bg-black hover:invert duration-300">arga token</Link>
-      <Link href="" className="flex flex-col items-center pb-5 pr-5 transition-all duration-300 bg-white rounded-tl-2xl md:p-14 p-14 bg-opacity-10 hover:bg-opacity-90 hover:scale-110 hover:-translate-x-2 hover:-translate-y-2 hover:bg-black hover:invert lg:rounded-tl-3xl backdrop-blur-sm">
+      <Link href="https://app.argatio.com/" className="absolute uppercase text-[8px] top-0 left-0 p-1 aspect-square border-8 rounded-full w-[60px] text-center leading-3 my-auto flex items-center scale-75 z-10 xl:scale-100 lg:top-2 lg:left-2 hover:bg-black hover:invert duration-300">arga token</Link>
+      <Link href="https://app.argatio.com/marketplace" className="flex flex-col items-center pb-5 pr-5 transition-all duration-300 bg-white rounded-tl-2xl md:p-14 p-14 bg-opacity-10 hover:bg-opacity-90 hover:scale-110 hover:-translate-x-2 hover:-translate-y-2 hover:bg-black hover:invert lg:rounded-tl-3xl backdrop-blur-sm">
         <div className="my-auto">
           <Image
             src={Invertir}
@@ -21,7 +21,7 @@ export default function ArgatioFiveServices() {
           <p className="leading-6 uppercase xl:text-base">Invertir</p>
         </div>
       </Link>
-      <Link href="" className="flex flex-col items-center pb-5 pl-5 transition-all duration-300 bg-white rounded-tr-full p-14 bg-opacity-10 hover:bg-opacity-90 hover:scale-110 hover:translate-x-2 hover:-translate-y-2 aspect-square md:pb-10 hover:bg-black hover:invert backdrop-blur-sm">
+      <Link href="https://app.argatio.com/" className="flex flex-col items-center pb-5 pl-5 transition-all duration-300 bg-white rounded-tr-full p-14 bg-opacity-10 hover:bg-opacity-90 hover:scale-110 hover:translate-x-2 hover:-translate-y-2 aspect-square md:pb-10 hover:bg-black hover:invert backdrop-blur-sm">
         <div className="my-auto">
           <Image
             src={NegocioPropio}
@@ -33,7 +33,7 @@ export default function ArgatioFiveServices() {
           </p>
         </div>
       </Link>
-      <Link href="" className="flex flex-col items-center pt-5 pr-5 transition-all duration-300 bg-white rounded-bl-full p-14 bg-opacity-10 hover:bg-opacity-90 hover:scale-110 hover:-translate-x-2 hover:translate-y-2 aspect-square md:pt-10 hover:bg-black hover:invert backdrop-blur-sm">
+      <Link href="https://app.argatio.com/" className="flex flex-col items-center pt-5 pr-5 transition-all duration-300 bg-white rounded-bl-full p-14 bg-opacity-10 hover:bg-opacity-90 hover:scale-110 hover:-translate-x-2 hover:translate-y-2 aspect-square md:pt-10 hover:bg-black hover:invert backdrop-blur-sm">
         <div className="my-auto">
           <p className="leading-6 uppercase xl:text-base">Comprar</p>
           <Image
@@ -43,7 +43,7 @@ export default function ArgatioFiveServices() {
           />
         </div>
       </Link>
-      <Link href="" className="flex flex-col items-center pt-5 pl-5 transition-all duration-300 bg-white rounded-br-full p-14 bg-opacity-10 hover:bg-opacity-90 hover:scale-110 hover:translate-x-2 hover:translate-y-2 aspect-square md:pt-10 hover:bg-black hover:invert backdrop-blur-sm">
+      <Link href="https://app.argatio.com/" className="flex flex-col items-center pt-5 pl-5 transition-all duration-300 bg-white rounded-br-full p-14 bg-opacity-10 hover:bg-opacity-90 hover:scale-110 hover:translate-x-2 hover:translate-y-2 aspect-square md:pt-10 hover:bg-black hover:invert backdrop-blur-sm">
         <div className="my-auto">
           <p className="leading-6 uppercase xl:text-base">Vender</p>
           <Image
@@ -54,7 +54,7 @@ export default function ArgatioFiveServices() {
         </div>
       </Link>
       {/* <div className="relative top-0 z-10 w-full h-full"> */}
-      <Link href="" className="absolute z-10 flex flex-col items-center object-top p-5 pt-6 my-auto transition-all duration-300 bg-white rounded-full md:max-w-28 max-w-[80px] left-[36.5%] sm:left-[35%] top-[33.3%] bg-opacity-40 hover:bg-opacity-95 hover:scale-110 aspect-square h-fit scale-90 sm:scale-100 hover:bg-black hover:invert lg:scale-125 lg:hover:scale-[1.45] 2xl:top-[40%] 2xl:left-[40%] 2xl:scale-150 2xl:hover:scale-[1.7] backdrop-blur-sm">
+      <Link href="https://app.argatio.com/" className="absolute z-10 flex flex-col items-center object-top p-5 pt-6 my-auto transition-all duration-300 bg-white rounded-full md:max-w-28 max-w-[80px] left-[36.5%] sm:left-[35%] top-[33.3%] bg-opacity-40 hover:bg-opacity-95 hover:scale-110 aspect-square h-fit scale-90 sm:scale-100 hover:bg-black hover:invert lg:scale-125 lg:hover:scale-[1.45] 2xl:top-[40%] 2xl:left-[40%] 2xl:scale-150 2xl:hover:scale-[1.7] backdrop-blur-sm">
           <Image
             src={ViviendaPropia}
             alt="Vivienda Propia"
