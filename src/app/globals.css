@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-  background-color: #0B0B0B;
+  background: radial-gradient(40% 130% at 45% 75%, #3A3A3A 0%, #0B0B0B 100%);
+  background-repeat: repeat-y;
 }
 
 @font-face {
