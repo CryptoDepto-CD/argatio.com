@@ -3,7 +3,7 @@ function Button({ children, type, onclick, href }) {
   if (type == "link") {
     return (
       <Link
-        className="px-10 py-2 bg rounded-full font-semibold bg-white hover:bg-white/55 transition-colors"
+        className="w-full px-10 py-1 font-semibold text-center text-black transition-colors bg-white rounded-full hover:bg-black outline outline-white font-montserrat hover:text-white grow"
         href={href}
       >
         {children}
@@ -12,7 +12,7 @@ function Button({ children, type, onclick, href }) {
   } else if (type == "button") {
     return (
       <button
-        className="px-10 py-2 bg rounded-full font-semibold bg-white hover:bg-white/55 transition-colors"
+        className="w-full px-10 py-1 font-semibold text-center text-black transition-colors bg-white rounded-full hover:bg-black outline outline-white font-montserrat hover:text-black"
         onClick={onclick}
       >
         {children}
