@@ -57,7 +57,7 @@ export default function NewArgatioFiveServices() {
         </div>
       </Link>
       {/* <div className="relative top-0 z-10 w-full h-full"> */}
-      <Link href="https://app.argatio.com/" className="absolute z-10 flex flex-col items-center object-top p-5 pt-6 my-auto transition-all duration-300 bg-white rounded-full md:max-w-28 max-w-[80px] left-[36.5%] sm:left-[35%] top-[33.3%] bg-opacity-40 hover:bg-opacity-95  aspect-square h-fit scale-90 sm:scale-100 hover:bg-black hover:invert lg:scale-125  2xl:top-[40%] 2xl:left-[40%] 2xl:scale-150  backdrop-blur-sm drop-shadow-[0px_1px_4px_rgba(255,255,255,0.30)] shadow-[0px_5px_4px_0px_rgba(0,0,0,0.30)] hover:shadow-[0px_0px_15px_3px_rgba(0,0,0,1)]">
+      <Link href="/ViviendaPropia" className="absolute z-10 flex flex-col items-center object-top p-5 pt-6 my-auto transition-all duration-300 bg-white rounded-full md:max-w-28 max-w-[80px] left-[36.5%] sm:left-[35%] top-[33.3%] bg-opacity-40 hover:bg-opacity-95  aspect-square h-fit scale-90 sm:scale-100 hover:bg-black hover:invert lg:scale-125  2xl:top-[40%] 2xl:left-[40%] 2xl:scale-150  backdrop-blur-sm drop-shadow-[0px_1px_4px_rgba(255,255,255,0.30)] shadow-[0px_5px_4px_0px_rgba(0,0,0,0.30)] hover:shadow-[0px_0px_15px_3px_rgba(0,0,0,1)]">
           <Image
             src={ViviendaPropia}
             alt="Vivienda Propia"

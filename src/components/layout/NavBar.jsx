@@ -23,7 +23,7 @@ export default function NavBar(){
                 <li className={`mr-2 text-white/60 text-sm font-montserrat hover:text-white transition-colors`}><Link href="https://app.argatio.com/">Quienes Somos</Link></li>
                 <li className={`mr-2 text-white/60 text-sm font-montserrat hover:text-white transition-colors`}><Link href="https://app.argatio.com/">Contacto</Link></li>
                 <li className={`mr-5 text-white/60 text-sm font-montserrat hover:text-white transition-colors`}><Link href="https://app.argatio.com/">Iniciar Sesión</Link></li>
-                <li className={`mr-2 text-sm font-semibold align-middle flex items-center font-montserrat py-2 px-5 cursor-pointer bg-white rounded-full md:mt-0 mt-4`}><Link href="#">Empezá Hoy</Link></li>
+                <li className={`mr-2 text-sm font-semibold align-middle flex items-center font-montserrat py-2 px-5 cursor-pointer bg-white rounded-full md:mt-0 mt-4 text-black`}><Link href="#">Empezá Hoy</Link></li>
             </ul>
         </nav>
     )
