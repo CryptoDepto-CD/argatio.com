@@ -2,7 +2,7 @@ import BgForms from "@/../public/ViviendaPropia/forms_bg.svg"
 
 import Image from "next/image";
 
-import HeroSection from "@/components/ViviendaPropia/HeroSection";
+// import HeroSection from "@/components/ViviendaPropia/HeroSection";
 import ApplyAsBuyerSection from "@/components/viviendaPropia/ApplyAsBuyerSection";
 import ApplyPropertySection from "@/components/viviendaPropia/ApplyPropertySection";
 import HowItWorksSection from "@/components/viviendaPropia/HowItWorksSection";
@@ -12,7 +12,7 @@ import NeedHelpSection from "@/components/viviendaPropia/NeedHelpSection";
 export default function ViviendaPropia() {
   return (
     <main className="font-monserrat">
-      <HeroSection />
+      {/* <HeroSection /> */}
       <HowItWorksSection />
       <WhyOwnHome />
       <div id="homeSection" className="relative flex flex-col items-center p-10 justify-evenly lg:flex-row gap-14">
