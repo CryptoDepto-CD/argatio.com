@@ -3,7 +3,7 @@ import HeroSection from "@/components/home/HeroSection";
 import OurServices from "@/components/home/OurServices";
 import Testimonials from "@/components/home/Testimonials";
 
-import Button from "@/components/ui/Button";
+import Button from "@/components/ui/Button/Button";
 
 export default function Home() {
   return (

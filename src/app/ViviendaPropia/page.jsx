@@ -19,7 +19,7 @@ export default function ViviendaPropia() {
         <ApplyPropertySection />
         <div className="hidden w-2 h-[clamp(600px,90vh,1000px)] bg-white lg:block"></div>
         <ApplyAsBuyerSection />
-        <Image src={BgForms} alt="background" className="absolute px-5 -z-10 max-h-1000px" />
+        <Image src={BgForms} alt="background" className="absolute px-5 -z-10 max-w-[1000px]" />
       </div>
       <NeedHelpSection />
     </main>
