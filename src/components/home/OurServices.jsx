@@ -70,7 +70,7 @@ export default function OurServices() {
         },
       ],
       buttons: () => (
-        <a href="https://app.argatio.com/" className="px-10 py-2 mx-auto uppercase transition-all duration-300 border border-black border-solid rounded-full max-w-96 font-montserrat hover:bg-black hover:text-white">
+        <a href="/ViviendaPropia" className="px-10 py-2 mx-auto uppercase transition-all duration-300 border border-black border-solid rounded-full max-w-96 font-montserrat hover:bg-black hover:text-white">
           Quiero mi hogar
         </a>
       ),
