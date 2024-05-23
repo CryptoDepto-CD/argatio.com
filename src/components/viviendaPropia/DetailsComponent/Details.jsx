@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import Link from "next/link";
 
 export default function Details({index, title, children}) {
@@ -5,7 +7,7 @@ export default function Details({index, title, children}) {
     <details
       key={index}
       name="need"
-      className="px-6 py-3 bg-white md:px-10 text-clamp-text rounded-3xl"
+      className="px-6 py-2 bg-white md:px-10 text-clamp-text rounded-3xl text-black font-montserrat"
     >
       <summary className="font-semibold cursor-pointer">
         {title}
@@ -25,4 +27,10 @@ export default function Details({index, title, children}) {
       </div>
     </details>
   );
+}
+
+Details.propTypes = {
+  index: PropTypes.number,
+  title: PropTypes.string.isRequired,
+  children: PropTypes.object.isRequired,
 }

@@ -17,7 +17,7 @@ export default function BuyRentLocalDialog({ open, handleClick }) {
     >
       <div
         onClick={handleClick}
-        className="fixed top-0 bottom-0 left-0 z-40 w-screen h-screen bg-black bg-opacity-50 backdrop-blur-sm hover:hidden"
+        className="fixed top-0 bottom-0 left-0 z-40 w-screen h-screen bg-black bg-opacity-50 backdrop-blur-[2px] hover:hidden"
       ></div>
       <div
         className={`z-50 fixed top-[20vh] left-[10vw] bg-white  rounded-[50px] py-10 text-bluePrimary w-[clamp(250px,80vw,80vw)] h-[clamp(500px,65vh,1000px)] overflow-x-hidden overflow-y-scroll `}
@@ -43,7 +43,7 @@ export default function BuyRentLocalDialog({ open, handleClick }) {
         </div>
 
         <div className="flex flex-col gap-10 px-12 md:px-20 py-14 md:flex-row text-balance">
-          <p className="text-[clamp(1.1rem,4vw,1.4rem)] font-medium">
+          <p className="text-[clamp(1.1rem,4vw,1.4rem)] font-medium w-2/5">
             Dividimos el valor de tu inmueble en participaciones que pueden ser
             compradas por diferentes personas.
           </p>

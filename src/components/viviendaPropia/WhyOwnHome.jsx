@@ -1,6 +1,6 @@
 import Icon1 from "@/../public/ViviendaPropia/icon_1.svg";
 import Icon2 from "@/../public/ViviendaPropia/icon_2.svg";
-import Icon3 from "@/../public/ViviendaPropia/icon_2.svg";
+import Icon3 from "@/../public/ViviendaPropia/icon_3.svg";
 import Icon4 from "@/../public/ViviendaPropia/icon_4.svg";
 import Image from "next/image";
 

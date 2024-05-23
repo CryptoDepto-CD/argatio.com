@@ -1,7 +1,9 @@
-import Button from "@/components/ui/Button"
+import PropTypes from 'prop-types';
+
+import Button from "@/components/ui/Button/Button"
 
 
-const inputStyles = "px-4 md:px-10 py-2 text-sm text-black transition-all bg-white md:text-xl rounded-xl focus:outline-1 focus:outline-gray-500 placeholder:italic"
+const inputStyles = "px-4 md:px-10 py-2 text-sm text-black transition-all bg-white md:text-xl rounded-xl  outline-none border-2 focus:border-gray-500 placeholder:italic"
 
 
 export default function ApplyForm({type}) {
@@ -11,17 +13,21 @@ export default function ApplyForm({type}) {
       <input id="email" name="email" placeholder="Email" type="email" required className={inputStyles} />
       <input id="phone" name="phone" placeholder="(número de área) Teléfono" type="tel" required className={inputStyles} />
       <input id="location" name="location" placeholder="Localidad / Provincia" type="text" required className={inputStyles} />
-      <select id="type" name="type" placeholder="" className={inputStyles}>
+      <select id="propertyType" name="propertyType" aria-label="State" placeholder="" className={inputStyles}>
         <option value="0">Tipo de Propiedad ▼</option>
         <option value="1">Tipo 1</option>
         <option value="2">Tipo 2</option>
         <option value="3">Tipo 3</option>
       </select>
       {type === "property" && (<input id="price" name="price" placeholder="Precio Estimado" type="number" required className={inputStyles} />)}
-      <textarea id="description" name="description" placeholder="Algo más que nos quieras contar..." className={inputStyles + ` ${type === 'property' ? 'h-[8ch]' : 'h-[13ch]'} `} />
+      <textarea id="description" name="description" placeholder="Algo más que nos quieras contar..." className={inputStyles + ` ${type === 'property' ? 'h-[8ch]' : 'h-[13ch]'} resize-none `} />
       <div className="mx-auto my-5 max-w-40">
       <Button type="button">Enviar</Button>
       </div>
     </form>
   )
+}
+
+ApplyForm.propTypes = {
+  type: PropTypes.oneOf(["buyer", "property"]),
 }

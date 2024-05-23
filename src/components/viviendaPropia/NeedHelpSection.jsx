@@ -1,3 +1,4 @@
+import Button from "../ui/Button/Button";
 import Details from "./DetailsComponent/Details";
 
 const elements = [
@@ -267,10 +268,13 @@ export default function NeedHelpSection() {
       <h2 className="pb-10 mx-auto leading-tight text-center uppercase text-clamp-big font-nats">
         ¿necesitas ayuda?
       </h2>
-      <div className="max-w-[1050px] mx-auto px-5 text-black flex flex-col gap-5">
+      <div className="max-w-[1050px] mx-auto px-5 text-black flex flex-col gap-5 ">
         {elements.map((element, index) => (
           <Details key={index} title={element.title}>{element.children}</Details>
         ))}
+      </div>
+      <div className="p-5 flex items-center mx-auto max-w-52 my-9">
+        <Button type="link" href="#">Contacto</Button>
       </div>
     </section>
   );
