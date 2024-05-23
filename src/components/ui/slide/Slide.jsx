@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import Image from "next/image";
 import ThreeIconsCarousel from "@/components/ui/slide/ThreeIconsCarousel";
 import TitleCarousel from "@/components/ui/slide/TitleCarousel";
@@ -24,4 +26,22 @@ export default function Slide({title, icons, buttons, bgImage}) {
       </div>
     </div>
   );
+}
+
+Slide.propTypes = {
+  title: {
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    icon: PropTypes.object,
+  },
+  icons: PropTypes.arrayOf({
+    src: PropTypes.object.isRequired,
+    alt: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+  }).isRequired,
+  buttons: PropTypes.func.isRequired,
+  bgImage: {
+    src: PropTypes.object.isRequired,
+    alt: PropTypes.string.isRequired,
+  }.isRequired,
 }
