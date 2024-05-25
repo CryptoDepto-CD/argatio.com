@@ -30,7 +30,7 @@ export default function Testimonials() {
     }, 4000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length, testimonials.length]);
 
   return (
     <section className="flex flex-col items-center max-w-screen-xl gap-5 p-5 mx-auto my-10 md:px-10">

@@ -17,10 +17,10 @@ export default function NavBar(){
                 </button>
             </div>
 
-            <ul className={`fixed md:static bg-zinc-950 md:bg-transparent px-20 md:px-0 w-full md:w-auto md:flex top-0 left-0 h-full md:h-auto pt-20 md:pt-0 items-center justify-center ${isOpen ? 'block' : 'hidden'} md:flex z-20 *:md:text-center`}>
+            <ul className={`fixed md:static bg-zinc-950 md:bg-transparent px-20 md:px-0 w-full md:w-auto md:flex top-0 left-0 h-full md:h-auto pt-20 md:pt-0 items-center justify-center ${isOpen ? 'block' : 'hidden'} md:flex z-20 *:md:text-center lg:gap-5`}>
                 <li className={`mr-2 md:mt-0 mt-3 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}><Link href="https://app.argatio.com/">Servicios</Link></li>
-                <li className={`mr-2 md:mt-0 mt-3 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}><Link href="https://app.argatio.com/">Preventa</Link></li>
                 <li className={`mr-2 md:mt-0 mt-3 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}><Link href="https://app.argatio.com/">ARGA Token</Link></li>
+                <li className={`mr-2 md:mt-0 mt-3 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}><Link href="https://app.argatio.com/">Preventa</Link></li>
                 <li className={`mr-2 md:mt-0 mt-3 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}><Link href="https://app.argatio.com/">Quienes Somos</Link></li>
                 <li className={`mr-2 md:mt-0 mt-3 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}><Link href="https://app.argatio.com/">Contacto</Link></li>
                 <li className={`mr-2 md:mt-0 mt-12 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}><Link href="https://app.argatio.com/">Iniciar Sesión</Link></li>
