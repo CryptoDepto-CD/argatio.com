@@ -1,6 +1,7 @@
 'use client';
 
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import NavBar from "@/components/layout/Navbar/NavBar";
 import "./globals.css";
 import Footer from "@/components/layout/Footer/Footer";
@@ -46,6 +47,7 @@ export default function RootLayout({ children }) {
             walletConnect(),
           ]}
         >
+           <Script src="/analytics.js" strategy="afterInteractive"></Script>
           <NavBar />
           {children}
           <Footer />

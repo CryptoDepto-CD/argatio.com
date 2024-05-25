@@ -2,7 +2,7 @@ import FeedbackAndNewsletterSection from "@/components/home/FeedbackAndNewslette
 import HeroSection from "@/components/home/HeroSection";
 import OurServices from "@/components/home/OurServices";
 import Testimonials from "@/components/home/Testimonials";
-
+import Script from "next/script";
 import Button from "@/components/ui/Button/Button";
 
 export default function Home() {
