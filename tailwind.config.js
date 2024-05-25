@@ -22,6 +22,12 @@ module.exports = {
         "clamp-title": "clamp(2rem,5vw,3.2rem)",
         "clamp-subtitle": "clamp(1.6rem,4vw,2.5rem)",
         "clamp-text": "clamp(1.1rem,4vw,1.25rem)",
+      },
+      keyframes: {
+        argatoken: {
+          '0%, 100%': { filter: 'drop-shadow(0 0 0px white)' },
+          '50%': { filter: 'drop-shadow(0 0 18px white)' },
+        }
       }
     },
   },
