@@ -1,6 +1,7 @@
 "use client";
 import Button from "@/components/ui/Button/Button";
 import { useRef, useState } from "react";
+import { ERC20Button } from "@/components/web3Buttons/ERC20-Button";
 
 export default function InvestForm({ buttonName, buttonClick, light = false }) {
   const [money, setMoney] = useState(0);
