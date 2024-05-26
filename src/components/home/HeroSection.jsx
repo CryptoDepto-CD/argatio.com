@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import BgHero from "@/../public/bg_hero.svg"
+import BgHero from "@/../public/bg_hero.svg";
 import NewArgatioFiveServices from "@/components/ui/NewArgatioFiveServices";
 import Link from "next/link";
 import ArgatioFiveServices from "@/components/ui/ArgatioFiveServices";
@@ -13,13 +13,18 @@ export default function HeroSection() {
           <h2 className="leading-none uppercase font-nats text-balance text-clamp-ultrabig">
             revolucionamos el mundo inmobiliario
           </h2>
-          <Link href="https://app.argatio.com/" className="w-full px-10 py-2 mx-auto lg:mx-0 text-center text-black uppercase bg-white border-2 border-black border-solid rounded-full font-montserrat hover:opacity-90 max-w-[350px] lg:text-lg">
+          <Link
+            href="/ViviendaPropia#homeSection"
+            className="w-full px-10 py-2 mx-auto lg:mx-0 text-center text-black uppercase bg-white border-2 border-black border-solid rounded-full font-montserrat hover:opacity-90 max-w-[350px] lg:text-lg"
+          >
             Quiero mi hogar
           </Link>
         </div>
         <div className="hidden text-right uppercase pt-14 font-nats md:block">
           <p className="text-2xl lg:text-3xl">Convertite en un</p>
-          <h2 className="text-5xl leading-none text-balance text-clamp-ultrabig">Dueño Inteligente</h2>
+          <h2 className="text-5xl leading-none text-balance text-clamp-ultrabig">
+            Dueño Inteligente
+          </h2>
         </div>
       </div>
       <div className="py-3 text-xs lg:w-1/3 font-montserrat">
@@ -29,7 +34,11 @@ export default function HeroSection() {
         <p className="text-2xl">Convertite en</p>
         <h2 className="text-5xl text-balance">Dueño Inteligente</h2>
       </div>
-      <Image src={BgHero} alt="" className="right-0 hidden max-w-md xl:max-w-[40vw] md:block md:absolute -z-10" />
+      <Image
+        src={BgHero}
+        alt=""
+        className="right-0 hidden max-w-md xl:max-w-[40vw] md:block md:absolute -z-10"
+      />
     </section>
   );
 }
