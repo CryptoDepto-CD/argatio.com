@@ -15,19 +15,24 @@ export default function Wallet() {
     <main className="">
 
       {!address ? (
-        <ConnectWallet
-          btnTitle='Iniciar sesión'
-          modalTitle='Welcome'
-          hideTestnetFaucet={true}
-          hideSwitchToPersonalWallet={true}
-        />
+        <div className="w-full h-screen flex items-center justify-center">
+          <ConnectWallet
+            btnTitle='Iniciar sesión'
+            modalTitle='Welcome'
+            hideTestnetFaucet={true}
+            hideSwitchToPersonalWallet={true}
+          />
+        </div>
+
       ) : (
-        <span>{address}</span>
+        <>
+          <VestingPreventSection />
+          <InvestSection />
+          <WalletSection />
+        </>
       )}
 
-      <VestingPreventSection />
-      <InvestSection />
-      <WalletSection />
+
 
     </main >
   )
