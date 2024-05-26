@@ -72,7 +72,10 @@ export default function Testimonials() {
           </div>
         </div>
       </div>
-      <Link href="https://app.argatio.com/" className="px-10 py-2 mx-auto text-center text-black uppercase bg-white border-2 border-black border-solid rounded-full font-montserrat hover:opacity-90 text-clamp-text">
+      <Link
+        href="/ViviendaPropia#homeSection"
+        className="px-10 py-2 mx-auto text-center text-black uppercase bg-white border-2 border-black border-solid rounded-full font-montserrat hover:opacity-90 text-clamp-text"
+      >
         Quiero ser dueño
       </Link>
     </section>
