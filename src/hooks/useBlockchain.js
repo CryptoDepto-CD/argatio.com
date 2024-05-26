@@ -15,7 +15,7 @@ import {
 } from "@/utils/constants";
 import { useAddress, useBalance } from "@thirdweb-dev/react";
 
-export const getERC20Balance = (_addressERC20) => {
+export const GetERC20Balance = (_addressERC20) => {
     const address = useAddress();
     const { data: usdt, isLoading: isLoadingUSDT } = useBalance(_addressERC20);
 }
