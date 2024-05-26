@@ -6,6 +6,8 @@ import { Menu, X } from "lucide-react";
 import { useAddress, useNetworkMismatch, useSwitchChain } from "@thirdweb-dev/react";
 import Matic from "@/../public/wallet/icon_matic.svg"
 
+import ButtonBlockchain from "@/components/ui/ButtonBlockchain/ButtonBlockchain";
+
 export default function NavBar() {
   const address = useAddress()
   const isMismatched = useNetworkMismatch();
@@ -62,16 +64,14 @@ export default function NavBar() {
         >
           <Link href="https://app.argatio.com/">Contacto</Link>
         </li>*/}
-        <li
-          className={`mr-2 md:mt-0 mt-12 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}
-        >
-          <Link href="/wallet">{address ? 'Mi cuenta' : 'Iniciar Sesión'}</Link>
-        </li>
-        <li
+        <ButtonBlockchain type="link" href="/wallet" btnTitle="Iniciar Sesión">
+          Mi Billetera
+        </ButtonBlockchain>
+        {/* <li
           className={`mr-2 text-xs lg:text-sm font-semibold align-middle flex items-center font-montserrat py-2 px-5 cursor-pointer bg-white rounded-full md:mt-0 mt-3 text-black w-fit min-w-fit hover:shadow-[0px_0px_9px_0px_white]`}
         >
           <Link href="#">Empezá Hoy</Link>
-        </li>
+        </li> */}
       </ul>
 
 
