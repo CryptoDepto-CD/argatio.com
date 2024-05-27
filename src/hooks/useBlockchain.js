@@ -1,4 +1,4 @@
-import { 
+import {
     addressUSDT,
     addressUSDC,
     addressBUSD,
@@ -14,8 +14,24 @@ import {
     addressExchangeARGA
 } from "@/utils/constants";
 import { useAddress, useBalance } from "@thirdweb-dev/react";
+import { ethers } from "ethers";
+
+// -------------------------------------------------------------------
+// -------------------------   GETTERS   -----------------------------
+// -------------------------------------------------------------------
 
 export const GetERC20Balance = (_addressERC20) => {
     const address = useAddress();
     const { data: usdt, isLoading: isLoadingUSDT } = useBalance(_addressERC20);
+}
+
+// -------------------------------------------------------------------
+// --------------------------   UTILS   ------------------------------
+// -------------------------------------------------------------------
+
+export const GetWeiAmount = (_tokenAddress, _amount) => {
+    if (_tokenAddress === addressUSDT || _tokenAddress === addressUSDC)
+        return ethers.utils.parseUnits(_amount, 6)
+    else
+        return ethers.utils.parseEther(_amount)
 }

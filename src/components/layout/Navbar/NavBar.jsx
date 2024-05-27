@@ -3,8 +3,15 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import { useAddress, useNetworkMismatch, useSwitchChain } from "@thirdweb-dev/react";
+import Matic from "@/../public/wallet/icon_matic.svg"
+
+import ButtonBlockchain from "@/components/ui/ButtonBlockchain/ButtonBlockchain";
 
 export default function NavBar() {
+  const address = useAddress()
+  const isMismatched = useNetworkMismatch();
+  const switchChain = useSwitchChain();
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -57,17 +64,32 @@ export default function NavBar() {
         >
           <Link href="https://app.argatio.com/">Contacto</Link>
         </li>*/}
-        <li
-          className={`mr-2 md:mt-0 mt-12 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}
-        >
-          <Link href="/wallet">Iniciar Sesión</Link>
-        </li>
-        <li
+        <ButtonBlockchain type="link" href="/wallet" btnTitle="Iniciar Sesión">
+          Mi Billetera
+        </ButtonBlockchain>
+        {/* <li
           className={`mr-2 text-xs lg:text-sm font-semibold align-middle flex items-center font-montserrat py-2 px-5 cursor-pointer bg-white rounded-full md:mt-0 mt-3 text-black w-fit min-w-fit hover:shadow-[0px_0px_9px_0px_white]`}
         >
           <Link href="#">Empezá Hoy</Link>
-        </li>
+        </li> */}
       </ul>
+
+
+      {isMismatched && (
+        <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+                    bg-zinc-800 w-11/12 h-1/3 md:w-9/12 md:h-4/6 flex flex-col items-center justify-center z-10
+                    rounded-[10px] '>
+          <Image src={Matic} alt={'Matic'} className="w-20" />
+          <span className='text-lg font-bold text-[var(--light-blue)] md:text-2xl my-5 px-4 text-center'>
+            Por favor, cambia a la red Polygon
+          </span>
+          <button className=' text-sm mx-2 rounded-[10px] border-2 border-white bg-transparent px-3 py-1 text-white font-semibold hover:bg-[var(--dark-blue)] md:text-xl'
+            onClick={() => switchChain(process.env.NEXT_PUBLIC_ACTIVE_CHAIN_ID)}>
+            Cambiar a Polygon
+          </button>
+        </div>
+      )}
+
     </nav>
   );
 }
