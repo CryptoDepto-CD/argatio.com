@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
 
           {/* Analiticas */}
 
-          <Script strategy="afterInteractive" async>
+          <Script strategy="afterInteractive" async id="analytics">
             {`
              window.dataLayer = window.dataLayer || [];
              function gtag(){dataLayer.push(arguments);}
