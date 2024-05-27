@@ -40,8 +40,11 @@ export default function WithdrawDialog({ open, handleClick }) {
                   className="text-white bg-black w-[clamp(6.5rem,20vw,15rem)] rounded-lg py-2 px-5"
                 >
                   <option value="1">ARGA</option>
-                  <option value="2">ARGA</option>
-                  <option value="3">ARGA</option>
+                  <option value="2">CD</option>
+                  <option value="3">MATIC</option>
+                  <option value="3">USDT</option>
+                  <option value="3">USDC</option>
+                  <option value="3">BUSD</option>
                 </select>
               </div>
               <div className="flex items-center justify-end gap-3 md:text-clamp-text">

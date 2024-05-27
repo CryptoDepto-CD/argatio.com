@@ -16,13 +16,13 @@ export default function Phases() {
       </div>
       <div className={`flex flex-col items-center justify-center px-10 text-center rounded-3xl aspect-square shadow-[2px_2px_0px_3px_white] ${phase === 2 && activeStyles}`}>
         <p className="uppercase text-clamp-title font-nats">Fase 02</p>
-        <p className="lg:text-xl">Arga Token = US$0.07</p>
-        <p className="lg:text-xl">13/05/24 - 31/05/24</p>
+        <p className="lg:text-xl">Arga Token = US$0.08</p>
+        <p className="lg:text-xl">01/06/24 - 28/06/24</p>
       </div>
       <div className={`flex flex-col items-center justify-center px-10 text-center rounded-3xl aspect-square shadow-[2px_2px_0px_3px_white] ${phase === 3 && activeStyles}`}>
         <p className="uppercase text-clamp-title font-nats">Fase 03</p>
-        <p className="lg:text-xl">Arga Token = US$0.07</p>
-        <p className="lg:text-xl">13/05/24 - 31/05/24</p>
+        <p className="lg:text-xl">Arga Token = US$0.11</p>
+        <p className="lg:text-xl">01/07/24 - 31/07/24</p>
       </div>
     </div>
   )

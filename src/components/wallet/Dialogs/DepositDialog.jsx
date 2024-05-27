@@ -1,9 +1,11 @@
 "use client";
 
 import Button from "@/components/ui/Button/Button";
+import { useAddress } from "@thirdweb-dev/react";
 
 export default function DepositDialog({ open, handleClick }) {
   
+  const address = useAddress()
 
   return (
     <dialog className="z-40" open={open}>
@@ -19,7 +21,7 @@ export default function DepositDialog({ open, handleClick }) {
             Dirección de la wallet
           </p>
           <p className="leading-none break-all text-clamp-text font-montserrat">
-          007ACc6969abF392bB009f216D22aDEa36d
+            {address}
           </p>
         </div>
 
@@ -35,7 +37,7 @@ export default function DepositDialog({ open, handleClick }) {
             e.preventDefault();
           }}
         >
-          Ingresar
+          Copiar
         </Button>
       </div>
       </div>
