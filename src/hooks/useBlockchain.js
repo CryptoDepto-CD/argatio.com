@@ -52,6 +52,18 @@ export const GetPhaseInvestment = (_phaseNumber) => {
     }
 }
 
+export const GetPhaseInfo = (_phaseNumber) => {
+    const { contract } = useContract(addressVestingARGA, VestingABI)
+    const { data } = useContractRead(contract, "getPhase", [_phaseNumber])
+
+    return {
+        tokenPrice: data?.tokenPrice ? parseFloat(ethers.utils.formatEther(data.tokenPrice)).toFixed(2) : 0,
+        initialBalance: data?.initialBalance ? parseFloat(ethers.utils.formatEther(data.initialBalance)) : 0,
+        currentBalance: data?.balance ? parseFloat(ethers.utils.formatEther(data.balance)) : 0,
+        maxTokensPerInvestor: data?.maxTokensPerInvestor ? parseFloat(ethers.utils.formatEther(data.maxTokensPerInvestor)).toFixed(0) : 0
+    }
+}
+
 // -------------------------------------------------------------------
 // --------------------------   UTILS   ------------------------------
 // -------------------------------------------------------------------

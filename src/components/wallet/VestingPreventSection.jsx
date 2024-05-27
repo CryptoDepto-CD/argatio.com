@@ -1,10 +1,17 @@
 import Phases from "@/components/ui/ArgaToken/Phases";
+import { GetPhaseInfo } from "@/hooks/useBlockchain";
 
 export default function VestingPreventSection() {
   const activeStyles = "text-black bg-white";
-
-  const phase = 1;
   
+  const phase = 1;
+
+  const {
+    initialBalance,
+    currentBalance,
+    maxTokensPerInvestor
+  } = GetPhaseInfo(0)
+
   return (
     <section className="px-10 py-10 mx-auto max-w-screen-2xl">
       <div className="flex flex-row items-center max-w-screen-xl mx-auto">
@@ -50,12 +57,12 @@ export default function VestingPreventSection() {
         </div>
         <div className="flex text-clamp-†ext mt-1 gap-1 md:w-1/3 flex-col lg:flex-row">
           <div className="flex-auto text-center text-black bg-white p-7 rounded-3xl shrink">
-            <span>14014</span>
+            <span>{(initialBalance - currentBalance).toFixed(0)}</span>
             <p>Tokens vendidos</p>
           </div>
           <div className="flex-auto text-center text-black bg-white p-7 rounded-3xl">
             <span>Limite de wallets por fase</span>
-            <p>4000000</p>
+            <p>{maxTokensPerInvestor}</p>
           </div>
         </div>
       </div>
