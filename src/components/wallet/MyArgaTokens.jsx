@@ -1,6 +1,11 @@
-
+import { GetPhaseInvestment } from "@/hooks/useBlockchain";
 
 export default function MyArgaTokens() {
+
+  const { 
+    userInvestment
+  } = GetPhaseInvestment(0)
+
   return (
     <div className="py-4 my-auto">
       <h3 className="mx-auto mb-5 leading-none text-center uppercase text-clamp-title font-nats">
@@ -11,12 +16,12 @@ export default function MyArgaTokens() {
         <div className="*:mb-2">
           <p className="font-medium uppercase">Adquirido</p>
           <p className="flex gap-5">
-            <span className="min-w-[7ch]">14.29</span>
+            <span className="min-w-[7ch]">{userInvestment}</span>
             <span>Arga tokens</span>
           </p>
           <p className="flex gap-5">
-            <span className="min-w-[7ch]">1.0</span>
-            <span>$US</span>
+            <span className="min-w-[7ch]">{(userInvestment * 0.07).toFixed(2)}</span>
+            <span> $USD </span>
           </p>
         </div>
         <div className="*:mb-2">
