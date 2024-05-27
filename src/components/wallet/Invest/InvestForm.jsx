@@ -1,34 +1,108 @@
 "use client";
 import Button from "@/components/ui/Button/Button";
 import { useRef, useState } from "react";
+import { ERC20Button } from "@/components/web3Buttons/ERC20-Button";
+import { VestingButton } from "@/components/web3Buttons/VestingButton";
+import {
+  addressUSDT,
+  addressUSDC,
+  addressBUSD,
+  addressVestingARGA
+} from "@/utils/constants";
+import { GetPhaseInfo } from "@/hooks/useBlockchain";
+import Alerta from "@/components/ui/Alerta/Alerta";
 
 export default function InvestForm({ buttonName, buttonClick, light = false }) {
-  const [money, setMoney] = useState(0);
+  const [inputValue, setInputValue] = useState(1);
+  const [approvalSuccess, setApprovalSuccess] = useState(false);
+  const [selectedToken, setSelectedToken] = useState('USDT')
+  const [addressSelectedCurrency, setAddressSelectedCurrency] = useState(addressUSDT)
 
-  const valueInput = useRef();
+  const {
+    tokenPrice
+  } = GetPhaseInfo(0)
+
+  const handleTokenChange = (e) => {
+    const currencyValue = e.target.value;
+    setSelectedToken(currencyValue)
+
+    if (currencyValue === 'USDT') {
+      setAddressSelectedCurrency(addressUSDT);
+    } else if (currencyValue === 'USDC') {
+      setAddressSelectedCurrency(addressUSDC);
+    } else if (currencyValue === 'BUSD') {
+      setAddressSelectedCurrency(addressBUSD);
+    }
+}
+
+  const handleApprovalSuccess = () => {
+    setApprovalSuccess(true);
+    Alerta({
+      title: 'Todo listo',
+      text: `Aprobaste el uso de ${selectedToken} correctamente. Ya puedes comprar`,
+      img: Error,
+    });
+  };
+
+  const handleApprovalError = (error) => {
+    setApprovalSuccess(false);
+    Alerta({
+      title: 'Ups..',
+      text: error.reason,
+      img: Error,
+    });
+  };
+
+  const handlePurchaseSuccess = () => {
+    setApprovalSuccess(false);
+    Alerta({
+      title: 'Completado',
+      text: `Compra realizada con éxito.`,
+      img: Error,
+    });
+  };
+
+  const handlePurchaseError = (error) => {
+    if (error.reason === "ERC20: transfer amount exceeds balance") {
+      setApprovalSuccess(false);
+      Alerta({
+        title: 'Ups..',
+        text: 'No tienes suficiente saldo.',
+        img: Error,
+      });
+    } else {
+      setApprovalSuccess(false);
+      Alerta({
+        title: 'Ups..',
+        text: error.reason,
+        img: Error,
+      });
+    }
+  };
 
   return (
-    <form className={`${light ? "text-black" : "text-white"}`}>
+    <div className={`${light ? "text-black" : "text-white"}`}>
       <div className="flex flex-wrap items-center justify-center mt-16 mb-10 gap-x-10 gap-y-8 text-clamp-text">
         <div className="flex flex-col items-center">
           <p className="font-semibold font-montserrat">Inversión</p>
           <div className="flex items-center gap-2">
             <select id="wallet" name="wallet" required
               className={`p-2 ${!light ? "text-black bg-white" : "text-white bg-black"} rounded-md`}
+              value={selectedToken}
+              onChange={handleTokenChange}
             >
-              <option value="1">USDT</option>
-              <option value="2">USDT</option>
-              <option value="3">USDT</option>
+              <option value="USDT">USDT</option>
+              <option value="USDC">USDC</option>
+              <option value="BUSD">BUSD</option>
             </select>
             <input
               type="number"
               id="value"
               name="value"
               min={0}
-              ref={valueInput}
-              value={money}
+              value={inputValue}
               onChange={(event) => {
-                setMoney(event.target.value);
+                setInputValue(event.target.value);
               }}
               required
               autoFocus
@@ -45,7 +119,7 @@ export default function InvestForm({ buttonName, buttonClick, light = false }) {
             className={`aspect-square rounded-full border-[4px] border-solid flex items-center justify-center ${light ? "border-black" : "border-white"}`}
           >
             <span className="px-5 min-w-[8ch] text-center">
-              {money === 0 ? "00000" : money / 0.08}
+              {tokenPrice ? (inputValue / tokenPrice).toFixed(2) : 0}
             </span>
           </div>
           <p className="text-3xl leading-none uppercase font-nats">
@@ -55,14 +129,38 @@ export default function InvestForm({ buttonName, buttonClick, light = false }) {
       </div>
 
       <div className="mx-auto mt-5 w-fit">
-        <Button
+
+        {/* <Button
           type="button"
           invert={light}
           onclick={buttonClick}
         >
           {buttonName}
-        </Button>
+        </Button> */}
+
+        {!approvalSuccess ? (
+          <ERC20Button
+            type={'approve'}
+            tokenAddress={addressSelectedCurrency}
+            tokenName={selectedToken}
+            amount={inputValue.toString()}
+            spender={addressVestingARGA}
+            onSuccessFunction={() => handleApprovalSuccess()}
+            onErrorFunction={(error) => handleApprovalError(error)}
+          />
+        ) : (
+          <VestingButton
+            type={'invest'}
+            stableAddress={addressSelectedCurrency}
+            stableName={selectedToken}
+            stableAmount={inputValue.toString()}
+            onSuccessFunction={() => handlePurchaseSuccess()}
+            onErrorFunction={(error) => handlePurchaseError(error)}
+          />
+        )}
+
+
       </div>
-    </form>
+    </div>
   );
 }

@@ -31,8 +31,8 @@ export default function RootLayout({ children }) {
     embeddedWallet({ recommended: true }),
     smartWalletConfig
   );
-  argatioWallet.meta.name = 'Argatio Wallet';
-  argatioWallet.meta.iconURL = 'https://yt3.googleusercontent.com/DvS3Cj5RVUSarFMDRdCqim5EDTxrwKtiDuRbNnKkYti0JX2mtm7QO5xlNNfS6iy-mjQjcPXLb5Y=s900-c-k-c0x00ffffff-no-rj';
+  argatioWallet.meta.name = 'Google';
+  argatioWallet.meta.iconURL = 'https://imgs.search.brave.com/sjPObxeNSprMYkkMbssLgSklyn2X6rF4UNp8sUX5rsQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/aWNvbi1pY29ucy5j/b20vaWNvbnMyLzcy/OS9QTkcvOTYvZ29v/Z2xlX2ljb24taWNv/bnMuY29tXzYyNzM2/LnBuZw';
 
   return (
     <html lang="en">
