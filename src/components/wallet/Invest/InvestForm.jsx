@@ -9,6 +9,7 @@ import {
   addressBUSD,
   addressVestingARGA
 } from "@/utils/constants";
+import { GetPhaseInfo } from "@/hooks/useBlockchain";
 import Alerta from "@/components/ui/Alerta/Alerta";
 
 export default function InvestForm({ buttonName, buttonClick, light = false }) {
@@ -16,6 +17,10 @@ export default function InvestForm({ buttonName, buttonClick, light = false }) {
   const [approvalSuccess, setApprovalSuccess] = useState(false);
   const [selectedToken, setSelectedToken] = useState('USDT')
   const [addressSelectedCurrency, setAddressSelectedCurrency] = useState(addressUSDT)
+
+  const {
+    tokenPrice
+  } = GetPhaseInfo(0)
 
   const handleTokenChange = (e) => {
     const currencyValue = e.target.value;
@@ -114,7 +119,7 @@ export default function InvestForm({ buttonName, buttonClick, light = false }) {
             className={`aspect-square rounded-full border-[4px] border-solid flex items-center justify-center ${light ? "border-black" : "border-white"}`}
           >
             <span className="px-5 min-w-[8ch] text-center">
-              {inputValue === 0 ? "00000" : inputValue / 0.08}
+              {tokenPrice ? (inputValue / tokenPrice).toFixed(2) : 0}
             </span>
           </div>
           <p className="text-3xl leading-none uppercase font-nats">
