@@ -20,11 +20,13 @@ export default function InvestSection({ wallet }) {
         {wallet ? (
           ""
         ) : (
-          <p className="px-5 py-2 mx-auto font-semibold border-2 border-white border-solid rounded-lg shrink-0 font-montserrat">
+          <>
+          {/* <p className="px-5 py-2 mx-auto font-semibold border-2 border-white border-solid rounded-lg shrink-0 font-montserrat">
             Wallet externa
             <br />
             no encontrada
-          </p>
+          </p> */}
+          </>
         )}
       </div>
     </section>
