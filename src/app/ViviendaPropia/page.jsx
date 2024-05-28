@@ -15,7 +15,7 @@ export default function ViviendaPropia() {
       <HeroSection />
       <HowItWorksSection />
       <WhyOwnHome />
-      <div
+      {/* <div
         id="homeSection"
         className="relative flex flex-col items-center p-10 justify-evenly lg:flex-row gap-14"
       >
@@ -25,9 +25,9 @@ export default function ViviendaPropia() {
         <Image
           src={BgForms}
           alt="background"
-          className="absolute px-5 -z-10 max-w-[1000px]"
+          className="absolute px-5 -z-10 max-w-[1000px] w-full"
         />
-      </div>
+      </div> */}
       <NeedHelpSection />
     </main>
   );

@@ -7,15 +7,15 @@ export default function SocialMediaLinks() {
   const SocialMediaIcons = [
     {
       icon: <Youtube size={30} />,
-      link: "https://www.youtube.com/@mtsclubnegocios",
+      link: "https://youtube.com/@argatio_?si=HMFB2Xic9E_9jU71",
       name: "Icono de youtube",
     },
     {
       icon: <Instagram size={30} />,
-      link: "https://www.instagram.com/mtsclubdefi",
+      link: "https://www.instagram.com/argatio__?igsh=MXZkZjYzNXkxNzFweA==",
       name: "Icono de instagram",
     },
-    { icon: <Linkedin size={30} />, link: "#", name: "Icono de linkedin" },
+    { icon: <Linkedin size={30} />, link: "https://www.linkedin.com/company/crypto-depto/", name: "Icono de linkedin" },
   ];
 
   return (

@@ -13,6 +13,7 @@ import {
   smartWallet,
   walletConnect,
 } from '@thirdweb-dev/react';
+import TelegramButton from "@/components/layout/TelegramButton/TelegramButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -72,6 +73,7 @@ export default function RootLayout({ children }) {
           <NavBar />
           {children}
           <Footer />
+          <TelegramButton />
         </ThirdwebProvider>
       </body>
     </html>
