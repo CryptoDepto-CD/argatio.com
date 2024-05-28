@@ -9,15 +9,15 @@ export default function Footer() {
   const SocialMediaIcons = [
     {
       icon: <Youtube size={30} />,
-      link: "https://www.youtube.com/@mtsclubnegocios",
+      link: "https://youtube.com/@argatio_?si=HMFB2Xic9E_9jU71",
       name: "Icono de youtube",
     },
     {
       icon: <Instagram size={30} />,
-      link: "https://www.instagram.com/mtsclubdefi",
+      link: "https://www.instagram.com/argatio__?igsh=MXZkZjYzNXkxNzFweA==",
       name: "Icono de instagram",
     },
-    { icon: <Linkedin size={30} />, link: "#", name: "Icono de linkedin" },
+    { icon: <Linkedin size={30} />, link: "https://www.linkedin.com/company/crypto-depto/", name: "Icono de linkedin" },
   ];
 
   return (
@@ -30,7 +30,7 @@ export default function Footer() {
           <p className="font-bold">Invertí en Argatio</p>
           <ol className="flex flex-col gap-2">
             <li>
-              <Link href="#" className="transition-all hover:underline">
+              <Link href="/AboutUs" className="transition-all hover:underline">
                 ¿Quiénes somos?
               </Link>
             </li>
@@ -88,12 +88,12 @@ export default function Footer() {
           <p className="font-bold">¿Te ayudamos?</p>
           <ol className="flex flex-col gap-2">
             <li>
-              <Link href="#" className="transition-all hover:underline">
+              <Link href="https://t.me/+RHYVHbF6iPMwZTgx" className="transition-all hover:underline">
                 Centro de Ayuda
               </Link>
             </li>
             <li>
-              <Link href="#" className="transition-all hover:underline">
+              <Link href="https://t.me/+RHYVHbF6iPMwZTgx" className="transition-all hover:underline">
                 Contacto
               </Link>
             </li>
