@@ -33,15 +33,15 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="es">
-        <Script strategy="afterInteractive" async src="https://www.googletagmanager.com/gtag/js?id=G-JC2P5TSYWE" />
-        <Script dangerouslySetInnerHTML={{
+        <Script id="google-tagmanager" strategy="afterInteractive" async src="https://www.googletagmanager.com/gtag/js?id=G-JC2P5TSYWE" />
+        <Script id="google-analytics" dangerouslySetInnerHTML={{
           __html: `window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
         
           gtag('config', 'G-JC2P5TSYWE');`
         }}></Script>
-        <Script dangerouslySetInnerHTML={{
+        <Script id="meta-analytics" dangerouslySetInnerHTML={{
           __html: `
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
