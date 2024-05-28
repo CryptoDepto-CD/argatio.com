@@ -16,6 +16,7 @@
     "@thirdweb-dev/react": "^4.6.25",
     "@thirdweb-dev/sdk": "^4.0.86",
     "client-only": "^0.0.1",
+    "clipboard-copy": "^4.0.1",
     "ethers": "^5.7.2",
     "lucide": "^0.372.0",
     "lucide-react": "^0.372.0",
