@@ -16,14 +16,16 @@ export default function NavBar() {
 
   return (
     <nav className="relative flex items-center justify-between px-12 py-4 uppercase">
-      <Image
-        src="/logotipo.svg"
-        height={160}
-        width={160}
-        alt="Logo"
-        priority={true}
-        className="pr-4 mr-3"
-      />
+      <Link href="/">
+        <Image
+          src="/logotipo.svg"
+          height={160}
+          width={160}
+          alt="Logo"
+          priority={true}
+          className="pr-4 mr-3"
+        />
+      </Link>
 
       <div className="z-50 md:hidden">
         <button
@@ -41,13 +43,13 @@ export default function NavBar() {
         <li
           className={`mr-2 md:mt-0 mt-3 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}
         >
-          <Link href="/ArgaToken">ARGA Token</Link>
+          <Link href="/ArgaToken" onClick={() => setIsOpen(false)}>ARGA Token</Link>
         </li>
 
         <li
           className={`mr-2 md:mt-0 mt-3 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}
         >
-          <Link href="/ViviendaPropia">Vivienda Propia</Link>
+          <Link href="/ViviendaPropia" onClick={() => setIsOpen(false)}>Vivienda Propia</Link>
         </li>
         {/* <li
           className={`mr-2 md:mt-0 mt-3 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}
