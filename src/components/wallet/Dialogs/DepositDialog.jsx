@@ -1,11 +1,23 @@
 "use client";
-
+import { useState } from 'react';
+import clipboardCopy from 'clipboard-copy';
 import Button from "@/components/ui/Button/Button";
 import { useAddress } from "@thirdweb-dev/react";
 
 export default function DepositDialog({ open, handleClick }) {
-  
+
   const address = useAddress()
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyAddress = (e) => {
+    e.preventDefault();
+    clipboardCopy(address);
+    setCopied(true);
+
+    setTimeout(() => {
+      setCopied(false);
+    }, 3000);
+  };
 
   return (
     <dialog className="z-40" open={open}>
@@ -29,17 +41,28 @@ export default function DepositDialog({ open, handleClick }) {
           <p >RED</p>
           <p>Polygon</p>
         </div>
-        <div className="mx-auto my-10 w-fit">
-        <Button
-          type="button"
-          invert={true}
-          onclick={(e) => {
-            e.preventDefault();
-          }}
-        >
-          Copiar
-        </Button>
-      </div>
+
+        <div className='flex justify-center gap-2'>
+          <span className='text-red-500 font-bold text-sm md:text-xl'>Importante:</span>
+          <span className='text-sm md:text-xl text-center'>Sólo envía criptomonedas a esta dirección a través de la red Polygon</span>
+        </div>
+
+        <div className="mx-auto my-10 w-fit relative">
+          <Button
+            type="button"
+            invert={true}
+            onclick={handleCopyAddress}
+          >
+            Copiar
+          </Button>
+
+          {copied && (
+            <div className='absolute w-full flex justify-center mt-4'>
+              <span className='text-green-600 font-bold'>Dirección copiada</span>
+            </div>
+          )}
+
+        </div>
       </div>
     </dialog>
   );

@@ -46,9 +46,12 @@ export const GetPhaseInvestment = (_phaseNumber) => {
     const address = useAddress()
     const { contract } = useContract(addressVestingARGA, VestingABI)
     const { data } = useContractRead(contract, "getUserInvestment", [address, _phaseNumber])
+    const { data: releasable } = useContractRead(contract, "releasableAmount", [_phaseNumber], {from: address})
 
     return {
-        userInvestment: data?.total ? parseFloat(ethers.utils.formatEther(data.total)).toFixed(0) : 0
+        userInvestment: data?.total ? parseFloat(ethers.utils.formatEther(data.total)).toFixed(0) : 0,
+        userBalance: data?.balance ? parseFloat(ethers.utils.formatEther(data.balance)).toFixed(0) : 0,
+        userReleasable: releasable ? parseFloat(ethers.utils.formatEther(releasable)).toFixed(0) : 0,
     }
 }
 
