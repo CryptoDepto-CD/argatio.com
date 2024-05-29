@@ -12,7 +12,7 @@ export default function Home() {
         className="rounded-2xl fixed bottom-1 right-4 z-50"
         height={725}
         width={440}
-        src="http://mtsclub.org/chatbots/argatio"
+        src="https://mtsclub.org/chatbots/argatio"
       />
       <HeroSection />
       <OurServices />
