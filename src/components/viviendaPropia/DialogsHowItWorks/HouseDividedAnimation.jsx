@@ -23,7 +23,7 @@ export default function HouseDividedAnimation() {
   }, [images.length]);
 
   return (
-    <div className="relative w-full aspect-[4/3] ">
+    <div className="relative w-full aspect-[4/3] md:w-1/2">
       {images.map((image, index) => (
         <Image
           key={index}
