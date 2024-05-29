@@ -21,11 +21,11 @@ export default function WhyOwnHome() {
       title: "personaliza",
       text: "La financiación se personaliza de acuerdo a las posibilidades del comprador",
     },
-    {
-      image: Icon4,
-      title: "dueño",
-      text: "Ya sos dueño con solo la compra de una parte y eso no cambia salvo que la vendas.",
-    },
+    // {
+    //   image: Icon4,
+    //   title: "dueño",
+    //   text: "Ya sos dueño con solo la compra de una parte y eso no cambia salvo que la vendas.",
+    // },
   ];
 
   return (
@@ -33,7 +33,7 @@ export default function WhyOwnHome() {
       <h2 className="pb-10 text-center uppercase text-clamp-big font-nats ">
         ¿Por qué vivienda propia?
       </h2>
-      <div className="flex flex-wrap items-end gap-10 gap-y-14">
+      <div className="flex flex-wrap items-end gap-10 gap-y-14 justify-evenly">
         {elements.map( (element, index) => (
           <div className="flex flex-col items-center h-full gap-7 text-center w-[clamp(250px,25%,400px)]  my-auto mx-auto" key={index}>
             <div className="flex items-end max-w-52 min-h-52">
