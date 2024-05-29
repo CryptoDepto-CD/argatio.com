@@ -43,7 +43,7 @@ export default function BuyRentLocalDialog({ open, handleClick }) {
         </div>
 
         <div className="flex flex-col gap-10 px-12 md:px-20 py-14 md:flex-row text-balance">
-          <p className="text-[clamp(1.1rem,4vw,1.4rem)] font-medium w-2/5">
+          <p className="text-[clamp(1.1rem,4vw,1.4rem)] font-medium md:w-2/5">
             Dividimos el valor de tu inmueble en participaciones que pueden ser
             compradas por diferentes personas.
           </p>

@@ -43,6 +43,11 @@ export default function NavBar() {
         <li
           className={`mr-2 md:mt-0 mt-3 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}
         >
+          <Link href="https://whitepaper.argatio.com/" onClick={() => setIsOpen(false)}>White Paper</Link>
+        </li>
+        <li
+          className={`mr-2 md:mt-0 mt-3 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}
+        >
           <Link href="/ArgaToken" onClick={() => setIsOpen(false)}>ARGA Token</Link>
         </li>
 
@@ -55,17 +60,17 @@ export default function NavBar() {
           className={`mr-2 md:mt-0 mt-3 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}
         >
           <Link href="https://app.argatio.com/">Preventa</Link>
-        </li>
+        </li> */}
         <li
           className={`mr-2 md:mt-0 mt-3 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}
         >
-          <Link href="https://app.argatio.com/">Quienes Somos</Link>
+          <Link href="/UnderConstruction" onClick={() => setIsOpen(false)}>Quienes Somos</Link>
         </li>
-        <li
+        {/* <li
           className={`mr-2 md:mt-0 mt-3 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}
         >
           <Link href="https://app.argatio.com/">Contacto</Link>
-        </li>*/}
+        </li> */}
         <ButtonBlockchain type="link" href="/wallet" btnTitle="Iniciar Sesión">
           Mi Billetera
         </ButtonBlockchain>
