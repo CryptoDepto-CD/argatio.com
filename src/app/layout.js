@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
           __html: `window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-        
+
           gtag('config', 'G-JC2P5TSYWE');`
         }}></Script>
         <Script id="meta-analytics" dangerouslySetInnerHTML={{
