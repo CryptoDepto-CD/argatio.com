@@ -21,7 +21,7 @@ export default function HeroSection() {
           </div>
           <div className="flex flex-col w-full gap-[2.5rem_5vw] lg:flex-row text-black">
             <Button type="link" href="#howItWorksSection">Como Funciona</Button>
-            <Button type="link" href="#homeSection">Quiero mi hogar</Button>
+            <Button type="link" href="/UnderConstruction">Quiero mi hogar</Button>
           </div>
           
 

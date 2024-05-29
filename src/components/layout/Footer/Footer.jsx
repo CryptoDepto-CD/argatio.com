@@ -30,22 +30,22 @@ export default function Footer() {
           <p className="font-bold">Invertí en Argatio</p>
           <ol className="flex flex-col gap-2">
             <li>
-              <Link href="/AboutUs" className="transition-all hover:underline">
+              <Link href="/UnderConstruction" className="transition-all hover:underline">
                 ¿Quiénes somos?
               </Link>
             </li>
             <li>
-              <Link href="#" className="transition-all hover:underline">
+              <Link href="https://whitepaper.argatio.com/" className="transition-all hover:underline">
                 White paper
               </Link>
             </li>
             <li>
-              <Link href="#" className="transition-all hover:underline">
+              <Link href="https://whitepaper.argatio.com/10.-hoja-de-ruta-roadmap" className="transition-all hover:underline">
                 Road map
               </Link>
             </li>
             <li>
-              <Link href="#" className="transition-all hover:underline">
+              <Link href="https://whitepaper.argatio.com/12.-aspectos-legales-y-de-cumplimiento" className="transition-all hover:underline">
                 Información Legal
               </Link>
             </li>
@@ -63,22 +63,22 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="#" className="transition-all hover:underline">
+              <Link href="/UnderConstruction" className="transition-all hover:underline">
                 Negocio propio
               </Link>
             </li>
             <li>
-              <Link href="#" className="transition-all hover:underline">
+              <Link href="/UnderConstruction" className="transition-all hover:underline">
                 Invertir
               </Link>
             </li>
             <li>
-              <Link href="#" className="transition-all hover:underline">
+              <Link href="/UnderConstruction" className="transition-all hover:underline">
                 Comprar
               </Link>
             </li>
             <li>
-              <Link href="#" className="transition-all hover:underline">
+              <Link href="/UnderConstruction" className="transition-all hover:underline">
                 Vender
               </Link>
             </li>
@@ -104,10 +104,10 @@ export default function Footer() {
       <div className="flex flex-wrap items-center gap-5 px-4 py-5 border-t border-solid md:px-10">
         <div className="flex gap-1 text-[10px]">
           <p>© 2024 Cripto Depto. All right reserved.</p>
-          <Link href="#" className="transition-all hover:underline">
+          <Link href="https://whitepaper.argatio.com/12.-aspectos-legales-y-de-cumplimiento/politicas-de-privacidad-y-seguridad" className="transition-all hover:underline">
             Privacy Policy
           </Link>
-          <Link href="#" className="transition-all hover:underline">
+          <Link href="https://whitepaper.argatio.com/12.-aspectos-legales-y-de-cumplimiento" className="transition-all hover:underline">
             Terms of Service
           </Link>
         </div>

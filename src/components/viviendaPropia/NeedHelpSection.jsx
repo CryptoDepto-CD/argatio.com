@@ -273,8 +273,8 @@ export default function NeedHelpSection() {
           <Details key={index} title={element.title}>{element.children}</Details>
         ))}
       </div>
-      <div className="p-5 flex items-center mx-auto max-w-52 my-9">
-        <Button type="link" href="#">Contacto</Button>
+      <div className="flex items-center p-5 mx-auto max-w-52 my-9">
+        <Button type="link" href="https://t.me/+RHYVHbF6iPMwZTgx">Contacto</Button>
       </div>
     </section>
   );
