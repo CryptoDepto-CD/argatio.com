@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ArgaTokenAnimation from "../ui/ArgaToken/ArgaTokenAnimation";
 import BuyArgaToken from "../ui/ArgaToken/BuyArgaToken/BuyArgaToken";
 import Button from "../ui/Button/Button";
@@ -10,7 +11,7 @@ export default function HeroSection() {
       <p className="text-clamp-text">El token que impulsa la plataforma de tokenización de inmuebles ARGATIO</p>
       <div className="flex items-center gap-[2rem_5vw] justify-between w-full max-w-[900px] flex-col *:min-w-fit *:flex-auto md:flex-row">
         <BuyArgaToken />
-        <button className="px-10 py-1 uppercase min-w-fit grow w-full rounded-full bg-[#545454] opacity-80 hover:cursor-not-allowed" disabled>Stake Arga Token</button>
+        <Link href="/UnderConstruction" className="px-10 py-1 uppercase min-w-fit grow w-full rounded-full bg-[#545454] opacity-80 hover:cursor-not-allowed" disabled>Stake Arga Token</Link>
       </div>
     </section>
   )
