@@ -103,7 +103,7 @@ export default function Footer() {
       
       <div className="flex flex-wrap items-center gap-5 px-4 py-5 border-t border-solid md:px-10">
         <div className="flex gap-1 text-[10px]">
-          <p>© 2024 Cripto Depto. All right reserved.</p>
+          <p>© 2024 Argatio. All right reserved.</p>
           <Link href="https://whitepaper.argatio.com/12.-aspectos-legales-y-de-cumplimiento/politicas-de-privacidad-y-seguridad" className="transition-all hover:underline">
             Privacy Policy
           </Link>
