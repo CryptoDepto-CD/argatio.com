@@ -67,12 +67,6 @@ export default function RootLayout({ children }) {
           ]}
         >
           <NavBar />
-          <iframe
-            className="rounded-2xl fixed bottom-1 right-4 z-50"
-            height={725}
-            width={440}
-            src="https://mtsclub.org/chatbots/argatio"
-          />
           {children}
           <Footer />
           <TelegramButton />
