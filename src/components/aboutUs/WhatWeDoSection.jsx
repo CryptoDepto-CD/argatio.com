@@ -24,7 +24,7 @@ export default function WhatWeDoSection() {
   ];
 
   return (
-    <section className="m-10 my-16 mb-24">
+    <section className="m-10 my-20 mb-32">
       <h2 className="py-10 text-center uppercase font-nats text-clamp-big">
         ¿Qué hacemos?
       </h2>
