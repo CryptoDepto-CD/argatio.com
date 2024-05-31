@@ -12,5 +12,8 @@ export const addressVestingCD4 = process.env.NEXT_PUBLIC_VESTING_04_ADDRESS
 export const addressVestingCDG = process.env.NEXT_PUBLIC_VESTING_GLOBAL_ADDRESS
 
 export const addressVestingARGA = process.env.NEXT_PUBLIC_ARGA_VESTING_ADDRESS
-export const addressTeamArga = process.env.NEXT_PUBLIC_ARGA_TEAM_ADDRESS
+export const addressTeamArga = process.env.NEXT_PUBLIC_ARGA_TEAM_VESTING_ADDRESS
 export const addressExchangeARGA = process.env.NEXT_PUBLIC_EXCHANGE_ADDRESS
+
+export const ownerAddress1 = process.env.NEXT_PUBLIC_OWNER1_ADDRESS
+export const ownerAddress2 = process.env.NEXT_PUBLIC_OWNER2_ADDRESS
