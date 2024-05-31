@@ -6,6 +6,7 @@ import WalletSection from "@/components/wallet/WalletSection";
 import ButtonBlockchain from "@/components/ui/ButtonBlockchain/ButtonBlockchain";
 import { ConnectWallet } from "@thirdweb-dev/react";
 import { useAddress, useDisconnect } from "@thirdweb-dev/react";
+import AdminSection from "@/components/wallet/AdminSection";
 
 export default function Wallet() {
 
@@ -46,6 +47,7 @@ export default function Wallet() {
           <VestingPreventSection />
           <InvestSection />
           <WalletSection />
+          <AdminSection />
         </>
       )}
 
