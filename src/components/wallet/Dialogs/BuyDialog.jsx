@@ -12,12 +12,12 @@ export default function BuyDialog({ open, handleClick }) {
         className={`z-50 fixed top-[10%] 2xl:top-[17%] left-[10%] lg:left-[25%] bg-white  rounded-2xl p-10 px-6 md:px-10  w-[clamp(250px,80vw,900px)] lg:w-[clamp(200px,50vw,1000px)] overflow-hidden`}
       >
         <div className="flex flex-col items-center gap-4 text-center font-nats">
-          <p className="leading-none uppercase text-clamp-big">Fase 01</p>
+          <p className="leading-none uppercase text-clamp-big">Fase 02</p>
           <p className=" leading-none text-[clamp(1.2rem,4vw,2rem)] font-montserrat">
-            Arga Token = US$0.07
+            Arga Token = US$0.08
           </p>
           <p className=" leading-none text-[clamp(1.2rem,4vw,2rem)] font-montserrat">
-            13/05/24 - 31/05/24
+            01/06/24 - 28/06/24
           </p>
         </div>
 

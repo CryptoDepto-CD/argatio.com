@@ -14,11 +14,12 @@ import {
     addressExchangeARGA
 } from "@/utils/constants";
 import { NATIVE_TOKEN_ADDRESS } from "@thirdweb-dev/react";
-import { 
-    useAddress, 
-    useBalance, 
+import {
+    useAddress,
+    useBalance,
     useContract,
-    useContractRead } from "@thirdweb-dev/react";
+    useContractRead
+} from "@thirdweb-dev/react";
 import { ethers } from "ethers";
 import VestingABI from "@/utils/Vesting.json"
 
@@ -46,12 +47,21 @@ export const GetPhaseInvestment = (_phaseNumber) => {
     const address = useAddress()
     const { contract } = useContract(addressVestingARGA, VestingABI)
     const { data } = useContractRead(contract, "getUserInvestment", [address, _phaseNumber])
-    const { data: releasable } = useContractRead(contract, "releasableAmount", [_phaseNumber], {from: address})
+    const { data: releasable } = useContractRead(contract, "releasableAmount", [_phaseNumber], { from: address })
 
     return {
         userInvestment: data?.total ? parseFloat(ethers.utils.formatEther(data.total)).toFixed(0) : 0,
         userBalance: data?.balance ? parseFloat(ethers.utils.formatEther(data.balance)).toFixed(0) : 0,
         userReleasable: releasable ? parseFloat(ethers.utils.formatEther(releasable)).toFixed(0) : 0,
+    }
+}
+
+export const GetCurrentPhaseNumber = () => {
+    const { contract } = useContract(addressVestingARGA, VestingABI)
+    const { data } = useContractRead(contract, "getCurrentPhaseNumber")
+
+    return {
+        phaseNumber: data ?? 0
     }
 }
 
