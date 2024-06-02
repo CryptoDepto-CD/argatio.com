@@ -9,7 +9,7 @@ import {
   addressBUSD,
   addressVestingARGA
 } from "@/utils/constants";
-import { GetPhaseInfo } from "@/hooks/useBlockchain";
+import { GetPhaseInfo, GetCurrentPhaseNumber } from "@/hooks/useBlockchain";
 import Alerta from "@/components/ui/Alerta/Alerta";
 
 export default function InvestForm({ buttonName, buttonClick, light = false }) {
@@ -19,8 +19,12 @@ export default function InvestForm({ buttonName, buttonClick, light = false }) {
   const [addressSelectedCurrency, setAddressSelectedCurrency] = useState(addressUSDT)
 
   const {
+    phaseNumber
+  } = GetCurrentPhaseNumber()
+
+  const {
     tokenPrice
-  } = GetPhaseInfo(0)
+  } = GetPhaseInfo(phaseNumber)
 
   const handleTokenChange = (e) => {
     const currencyValue = e.target.value;

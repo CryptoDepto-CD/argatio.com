@@ -1,16 +1,18 @@
 import Phases from "@/components/ui/ArgaToken/Phases";
-import { GetPhaseInfo } from "@/hooks/useBlockchain";
+import { GetPhaseInfo, GetCurrentPhaseNumber } from "@/hooks/useBlockchain";
 
 export default function VestingPreventSection() {
   const activeStyles = "text-black bg-white";
   
-  const phase = 1;
+  const {
+    phaseNumber
+  } = GetCurrentPhaseNumber()
 
   const {
     initialBalance,
     currentBalance,
     maxTokensPerInvestor
-  } = GetPhaseInfo(0)
+  } = GetPhaseInfo(phaseNumber)
 
   return (
     <section className="px-10 py-10 mx-auto max-w-screen-2xl">
@@ -34,21 +36,21 @@ export default function VestingPreventSection() {
       <div className="mx-auto max-w-[400px] md:max-w-full">
         <div className="flex border-[5px] border-white border-solid rounded-[28px] items-center font-montserrat *:flex-1  mx-auto *:min-w-48 *:w-full  md:w-full flex-col md:flex-row">
           <div
-            className={`flex flex-col items-center justify-center px-10 text-center rounded-3xl aspect-[4/3] shadow-[2px_2px_0px_3px_white] ${phase === 1 && activeStyles}`}
+            className={`flex flex-col items-center justify-center px-10 text-center rounded-3xl aspect-[4/3] shadow-[2px_2px_0px_3px_white] ${phaseNumber === 0 && activeStyles}`}
           >
             <p className="uppercase text-clamp-title font-nats">Fase 01</p>
             <p className="lg:text-xl">Arga Token = US$0.07</p>
             <p className="lg:text-xl">13/05/24 - 31/05/24</p>
           </div>
           <div
-            className={`flex flex-col items-center justify-center px-10 text-center rounded-3xl aspect-[4/3] shadow-[2px_2px_0px_3px_white] ${phase === 2 && activeStyles}`}
+            className={`flex flex-col items-center justify-center px-10 text-center rounded-3xl aspect-[4/3] shadow-[2px_2px_0px_3px_white] ${phaseNumber === 1 && activeStyles}`}
           >
             <p className="uppercase text-clamp-title font-nats">Fase 02</p>
             <p className="lg:text-xl">Arga Token = US$0.08</p>
             <p className="lg:text-xl">01/06/24 - 28/06/24</p>
           </div>
           <div
-            className={`flex flex-col items-center justify-center px-10 text-center rounded-3xl aspect-[4/3] shadow-[2px_2px_0px_3px_white] ${phase === 3 && activeStyles}`}
+            className={`flex flex-col items-center justify-center px-10 text-center rounded-3xl aspect-[4/3] shadow-[2px_2px_0px_3px_white] ${phaseNumber === 2 && activeStyles}`}
           >
             <p className="uppercase text-clamp-title font-nats">Fase 03</p>
             <p className="lg:text-xl">Arga Token = US$0.11</p>
