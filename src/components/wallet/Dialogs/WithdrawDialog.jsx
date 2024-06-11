@@ -21,7 +21,7 @@ export default function WithdrawDialog({ open, handleClick }) {
               type="text"
               id="direction"
               name="direction"
-              autofocus
+              autoFocus
               required
               className="w-full px-5 py-2 border border-black border-solid rounded-lg outline-none max-w-[50ch] mx-auto text-sm md:text-clamp-text  bg-transparent"
             />
