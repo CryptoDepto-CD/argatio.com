@@ -1,10 +1,70 @@
 {
-        "heroSection": {
+    "vivienda-propia": {
+        "hero-section": {
             "title": "Vivienda Propia",
-            "subtitle1": "una financiación adaptada a tus posibilidades",
-            "button1": "Como Funciona",
-            "button2": "Quiero mi hogar",
-            "subtitle2": "Convertite en un",
-            "subtitle3": "Dueño Inteligente"
+            "tailored": "una financiación adaptada a tus posibilidades",
+            "button-how": "Como Funciona",
+            "button-iwant": "Quiero mi hogar",
+            "become": "Convertite en un",
+            "smart-owner": "Dueño Inteligente"
+        },
+        "how-it-works-section": {
+            "title": "¿Cómo funciona?",
+            "step-1": "¿Cómo vendo mi casa?",
+            "sell-house-dialog": {
+                "title": "Vende tu propiedad con Argatio",
+                "subtitle": "Disfruta de los beneficios de la Tokenización",
+                "text-section-1": "Dividimos el valor de tu inmueble en participaciones que pueden ser compradas por diferentes personas.",
+                "text-section-2": "Ofrecemos estas partes a nuestra red de inversores, quienes pueden adquirir una participación de la propiedad.",
+                "text-section-3": "Dividimos el valor de tu inmueble en participaciones que pueden ser compradas por diferentes personas.",
+                "text-section-4": "Utilizamos tecnología BLOCKCHAIN para una transacción transparente y segura.",
+                "text-section-5": {
+                    "leasing": "Leasing con Opción a Compra",
+                    "text": "También ofrecemos la propiedad a inquilinos potenciales mediante nuestro modelo de leasing, donde pueden comprar partes gradualmente hasta convertirse en propietarios completos."
+                },
+                "text-section-6": "Registrate y respondemos todas tus dudas",
+                "button": "Quiero vender"
+            },
+            "step-2": "¿Cómo compro mi casa?",
+            "buy-house-dialog": {
+                "title": "Compra una propiedad con Argatio",
+                "subtitle": "Convertirte en dueño",
+                "text-section-1": "Navega por nuestro catálogo de propiedades disponibles y elige la que mejor se adapte a tus necesidades y presupuesto.",
+                "text-section-2": "También puedes proponer una vivienda que esté a la venta y que desees comprar con nuestro método, nos pondremos en contacto con el dueño.",
+                "text-section-3": "Dividimos el valor de tu inmueble en participaciones que pueden ser compradas por diferentes personas.",
+                "text-section-4": "Cuando hayas comprado todas las participaciones de la propiedad, te conviertes en el propietario total de la vivienda.",
+                "text-section-5": "Utilizamos tecnología BLOCKCHAIN para una transacción transparente y segura.",
+                "text-section-6": "Registrate y respondemos todas tus dudas",
+                "button": "Quiero vender"
+            },
+            "step-3": "¿Cómo compro la casa que alquilo?",
+            "buy-rent-house-dialog": {
+                "title": "Compra la casa que alquilas con Argatio",
+                "subtitle": "De inquilino a propietario",
+                "text-section-1": {
+                    "text-1": "Asegúrate de que la propiedad que estás alquilando esté disponible para la venta.",
+                    "text-2": "Puede ya estar registrada en Argatio, en caso de no ser asi, nos ponemos en contacto con el dueño de la propiedad para contarle como seria el proceso."
+                },  
+                "text-section-2": "Dividimos el valor de tu inmueble en participaciones que pueden ser compradas por diferentes personas.",
+                "text-section-3": "Cuando hayas comprado todas las participaciones de la propiedad, te conviertes en el propietario total de la vivienda.",
+                "text-section-4": "Utilizamos tecnología BLOCKCHAIN para una transacción transparente y segura.",
+                "text-section-5": "Registrate y respondemos todas tus dudas",
+                "button": "Quiero vender"
+            },
+            "step-4": "¿Cómo compro el local que alquilo?",
+            "buy-rent-local-dialog": {
+                "title": "Compra el local que alquilas con Argatio",
+                "subtitle": "De inquilino a propietario",
+                "text-section-1": {
+                    "text-1": "Asegúrate de que la propiedad que estás alquilando esté disponible para la venta.",
+                    "text-2": "Puede ya estar registrada en Argatio, en caso de no ser asi, nos ponemos en contacto con el dueño de la propiedad para contarle como seria el proceso."
+                },  
+                "text-section-2": "Dividimos el valor de tu inmueble en participaciones que pueden ser compradas por diferentes personas.",
+                "text-section-3": "Cuando hayas comprado todas las participaciones de la propiedad, te conviertes en el propietario total de la vivienda.",
+                "text-section-4": "Utilizamos tecnología BLOCKCHAIN para una transacción transparente y segura.",
+                "text-section-5": "Registrate y respondemos todas tus dudas",
+                "button": "Quiero vender"   
+            } 
         }
+    }
 }
