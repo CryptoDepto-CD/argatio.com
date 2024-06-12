@@ -4,7 +4,7 @@
             "title": "OWN HOME",
             "tailored": "Tailored financing to suit your needs",
             "button-how": "How does it work?",
-            "button-iwant": "i want my home",
+            "button-iwant": "I want my home",
             "become": "Become a",
             "smart-owner": "smart owner"
         },
@@ -65,6 +65,22 @@
                 "text-section-5": "Sign Up and we will answer all your questions",
                 "button": "I want my space"   
             } 
+        },
+        "why-own-home": {
+            "title": "Why my own home?",
+            "acelerate": {
+                "title": "Accelerate",
+                "text": "Tokenization allows the sale of the property to be accelerated."
+            },
+            "mininmum" : {
+                "title": "minimum",
+                "text": "You can be part of it with a minimum of capital."
+            },
+            "personalize": {
+                "title": "personalize",
+                "text": "Financing is personalized according to the buyer's possibilities"
+            }
         }
     }
+    
 }
