@@ -42,6 +42,15 @@
           "text": "The ARGA tokens can be used in staking programs to generate additional yields."
         }
       }
+    },
+
+    "presale-vesting-section": {
+      "presale": "Presale",
+      "phases": {
+        "phase01": "Phase 01",
+        "phase02": "Phase 02",
+        "phase03": "Phase 03"
+      }
     }
   }
 }

@@ -1,7 +1,10 @@
 import Phases from "@/components/ui/ArgaToken/Phases";
 import BuyArgaToken from "../ui/ArgaToken/BuyArgaToken/BuyArgaToken";
+import { useTranslations } from "next-intl";
 
 export default function VestingPreventSection() {
+  const t = useTranslations("argatoken.presale-vesting-section")
+
   return (
     <section className="px-10 py-10">
       <div className="flex flex-row items-center justify-center">
@@ -15,7 +18,7 @@ export default function VestingPreventSection() {
           </p>
         </div>
         <div className="uppercase">
-          <p className="leading-none text-[clamp(1.5rem,3.6vw,4rem)] font-nats">Preventa</p>
+          <p className="leading-none text-[clamp(1.5rem,3.6vw,4rem)] font-nats">{t("presale")}</p>
           <p className="leading-none text-clamp-ultrabig font-nats">VESTING</p>
         </div>
       </div>
