@@ -8,8 +8,12 @@ import BuyHouse4 from "@/../public/ViviendaPropia/buy_house_2.png";
 import DialogCover from "./DialogCover";
 import HouseDividedAnimation from "./HouseDividedAnimation";
 import ChangeHousesAnimation from "./ChangeHousesAnimation";
+import { useTranslations } from "next-intl";
 
 export default function BuyHouseDialog({ open, handleClick }) {
+
+  const t = useTranslations("vivienda-propia.how-it-works-section.buy-house-dialog")
+
   return (
     <dialog
       className="z-40 hidden transition-all duration-500 group-hover:block font-montserrat"
@@ -23,14 +27,14 @@ export default function BuyHouseDialog({ open, handleClick }) {
         className={`z-50 fixed top-[20vh] left-[10vw] bg-white  rounded-[50px] py-10 text-bluePrimary w-[clamp(250px,80vw,80vw)] h-[clamp(500px,65vh,1000px)] overflow-x-hidden overflow-y-scroll `}
       >
         <DialogCover
-          title="Compra una propiedad con Argatio"
-          text="Convertite en dueño"
+          title={t("title")}
+          text={t("subtitle")}
         />
 
         <div className="flex flex-col px-12 pb-10 md:flex-row pt-14 md:px-20 gap-y-5 ">
           <div className="w-full md:w-1/2 md:pr-10 *:md:line-clamp-5">
-            <p className="text-[clamp(1.1rem,4vw,1.4rem)] font-medium mb-10">Navega por nuestro catálogo de propiedades disponibles y elige la que mejor se adapte a tus necesidades y presupuesto.</p>
-            <p className="text-[clamp(1.1rem,4vw,1.4rem)] font-medium">También puedes proponer una vivienda que esté a la venta y que desees comprar con nuestro método, nos pondremos en contacto con el dueño. </p>
+            <p className="text-[clamp(1.1rem,4vw,1.4rem)] font-medium mb-10">{t("text-section-1")}</p>
+            <p className="text-[clamp(1.1rem,4vw,1.4rem)] font-medium">{t("text-section-2")}</p>
           </div>
           <div className="w-full md:w-1/2 min-h-[75%] aspect-[4/3]">
             <ChangeHousesAnimation />
@@ -39,8 +43,7 @@ export default function BuyHouseDialog({ open, handleClick }) {
 
         <div className="flex flex-col gap-10 px-12 md:px-20 py-14 md:flex-row text-balance">
           <p className="text-[clamp(1.1rem,4vw,1.4rem)] font-medium md:w-1/2">
-            Dividimos el valor de tu inmueble en participaciones que pueden ser
-            compradas por diferentes personas.
+            {t("text-section-3")}
           </p>
           <HouseDividedAnimation />
         </div>
@@ -59,15 +62,13 @@ export default function BuyHouseDialog({ open, handleClick }) {
         <div className="flex flex-col gap-10 px-12 md:px-20 py-14 md:flex-row text-balance">
           <Image src={BuyHouse2} alt="Casa" className="w-full md:w-3/5 " />
           <p className="text-[clamp(1.1rem,4vw,1.4rem)] font-medium md:w-2/4">
-            Cuando hayas comprado todas las participaciones de la propiedad, te
-            conviertes en el propietario total de la vivienda.
+            {t("text-section-4")}
           </p>
         </div>
 
         <div className="flex justify-end gap-10 px-12 md:px-20 py-14 md:flex-row text-balance">
           <p className="text-[clamp(1.1rem,4vw,1.4rem)] font-medium max-w-[300px] text-center md:mr-[10vw]">
-            Utilizamos tecnología BLOCKCHAIN para una transacción transparente y
-            segura.
+            {t("text-section-5")}
           </p>
         </div>
 
@@ -76,10 +77,10 @@ export default function BuyHouseDialog({ open, handleClick }) {
           <div className="w-full py-[5vw] text-center backdrop-blur-sm">
             <div className="flex flex-col items-center p-10 gap-14">
               <p className="text-center text-clamp-subtitle">
-                Registrate y respondemos todas tus dudas
+                {t("text-section-6")}
               </p>
               <button className="px-10 py-1 mx-auto font-semibold uppercase transition-all duration-300 border border-black border-solid rounded-full max-w-96 font-montserrat hover:bg-black hover:text-white">
-                Quiero vender
+                {t("button")}
               </button>
             </div>
           </div>

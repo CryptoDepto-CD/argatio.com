@@ -1,10 +1,70 @@
 {
-        "heroSection": {
+    "vivienda-propia": {
+        "hero-section": {
             "title": "OWN HOME",
-            "subtitle1": "Tailored financing to suit your needs",
-            "button1": "How does it work?",
-            "button2": "i want my home",
-            "subtitle2": "Become a",
-            "subtitle3": "smart owner"
-        } 
+            "tailored": "Tailored financing to suit your needs",
+            "button-how": "How does it work?",
+            "button-iwant": "i want my home",
+            "become": "Become a",
+            "smart-owner": "smart owner"
+        },
+        "how-it-works-section": {
+            "title": "How does it work?",
+            "step-1": "How do I sell my house?",
+            "sell-house-dialog": {
+                "title": "Sell ​​your property with Argatio",
+                "subtitle": "Enjoy the benefits of Tokenization",
+                "text-section-1": "We divide the value of your property into stakes that can be purchased by different people.",
+                "text-section-2": "We offer these portions to our network of investors, who can acquire a stake in the property.",
+                "text-section-3": "Once all the property stakes are acquired, Argatio buys your property, guaranteeing you a complete and secure sale.",
+                "text-section-4": "We use blockchain technology for a transparent and secure transaction.",
+                "text-section-5": {
+                    "leasing": "Leasing with Option to Buy",
+                    "text": "We also offer the property to potential tenants through our leasing model, where they can gradually purchase stakes until they become full owners."
+                },
+                "text-section-6": "Sign Up and we will answer all your questions",
+                "button": "I want to sell"
+            },
+            "step-2": "How do I buy my house?",
+            "buy-house-dialog": {
+                "title": "Buy a property with Argatio",
+                "subtitle": "Become an owner",
+                "text-section-1": "Browse our catalog of available properties and choose the one that best fits your needs and budget.",
+                "text-section-2": "You can also propose a property that is for sale and that you wish to buy using our method, and we will contact the owner.",
+                "text-section-3": "The value of the property you choose is divided into stakes that you can buy gradually.",
+                "text-section-4": "When you have purchased all the stakes in the property, you become the total owner of the house.",
+                "text-section-5": "We use blockchain technology for a transparent and secure transaction.",
+                "text-section-6": "Sign Up and we will answer all your questions",
+                "button": "I want to be an owner"
+            },
+            "step-3": "How do I buy the house I rent?",
+            "buy-rent-house-dialog": {
+                "title": "Buy the house you rent with Argatio",
+                "subtitle": "From tenant to owner",
+                "text-section-1": {
+                    "text-1": "Make sure that the property you are renting is available for sale.",
+                    "text-2": "It may already be listed with Argatio; if not, we will contact the property owner to explain the process."
+                },  
+                "text-section-2": "The value of the property you choose is divided into stakes that you can buy gradually.",
+                "text-section-3": "When you have purchased all the stakes in the property, you become the total owner of the house.",
+                "text-section-4": "We use blockchain technology for a transparent and secure transaction.",
+                "text-section-5": "Sign Up and we will answer all your questions",
+                "button": "I want my home"
+            },
+            "step-4": "How to buy the premises I rent?",
+            "buy-rent-local-dialog": {
+                "title": "Buy the premises you rent with Argatio",
+                "subtitle": "From tenant to owner",
+                "text-section-1": {
+                    "text-1": "Make sure that the property you are renting is available for sale.",
+                    "text-2": "It may already be listed with Argatio; if not, we will contact the property owner to explain the process."
+                },  
+                "text-section-2": "The value of the property you choose is divided into stakes that you can buy gradually.",
+                "text-section-3": "When you have purchased all the stakes in the property, you become the total owner of the house.",
+                "text-section-4": "We use blockchain technology for a transparent and secure transaction.",
+                "text-section-5": "Sign Up and we will answer all your questions",
+                "button": "I want my space"   
+            } 
+        }
+    }
 }
