@@ -6,8 +6,12 @@ import NegocioPropio from "@/../public/icons/negocio_propio.svg";
 import Comprar from "@/../public/icons/comprar.svg";
 import Vender from "@/../public/icons/vender.svg";
 import ViviendaPropia from "@/../public/icons/vivienda_propia.svg";
+import { useTranslations } from "next-intl";
 
 export default function NewArgatioFiveServices() {
+
+  const t = useTranslations('newFive');
+
   return (
     <div className="grid grid-cols-2 grid-rows-2 gap-1 text-xs text-center scale-100 sm:scale-100 font-montserrat ">
       <Link
@@ -16,7 +20,7 @@ export default function NewArgatioFiveServices() {
       >
         <div className="w-full h-full transition-all duration-300 bg-transparent rounded-tl-full  mix-blend-screen drop-shadow-[0px_1px_4px_rgba(255,255,255,0.30)] backdrop-blur-sm shadow-[-250px_-250px_0px_250px_rgba(255,255,255,0.10)] group-hover:shadow-[-250px_-250px_0px_250px_rgba(255,255,255,1)] -translate-x-1 -translate-y-1 "></div>
         <div className="absolute uppercase text-[8px] top-0 left-0 p-1 aspect-square border-8 rounded-full w-[60px] text-center leading-3 my-auto flex items-center scale-75 xl:scale-100 lg:top-2 lg:left-2  drop-shadow-[0px_1px_4px_rgba(255,255,255,0.30)] text-white group-hover:invert">
-          arga token
+          {t('title')}
         </div>
       </Link>
       <Link
@@ -29,7 +33,7 @@ export default function NewArgatioFiveServices() {
             alt="Invertir"
             className="w-3/4 min-w-8 md:w-full max-w-24 blur-none"
           />
-          <p className="leading-6 uppercase xl:text-base">Invertir</p>
+          <p className="leading-6 uppercase xl:text-base">{t('text1')}</p>
         </div>
       </Link>
       <Link
@@ -43,7 +47,7 @@ export default function NewArgatioFiveServices() {
             className="w-3/4 min-w-8 md:w-full max-w-20 2xl:max-w-24"
           />
           <p className="mt-1 text-center uppercase text-balance max-w-10 xl:text-base">
-            Negocio Propio
+          {t('text2')}
           </p>
         </div>
       </Link>
@@ -52,7 +56,7 @@ export default function NewArgatioFiveServices() {
         className="flex flex-col items-center pt-5 pr-5 transition-all duration-500 bg-white rounded-bl-full p-14 bg-opacity-15 hover:bg-opacity-100 h aspect-square md:pt-10 hover:bg-black hover:invert backdrop-blur-sm drop-shadow-[0px_1px_4px_rgba(255,255,255,0.30)] shadow-[0px_5px_4px_0px_rgba(0,0,0,0.30)_inset] hover:shadow-[0px_0px_15px_3px_rgba(0,0,0,1)]"
       >
         <div className="my-auto">
-          <p className="leading-6 uppercase xl:text-base">Comprar</p>
+          <p className="leading-6 uppercase xl:text-base">{t('text3')}</p>
           <Image
             src={Comprar}
             alt="Invertir"
@@ -65,7 +69,7 @@ export default function NewArgatioFiveServices() {
         className="flex flex-col items-center pt-5 pl-5 transition-all duration-500 bg-white rounded-br-full p-14 bg-opacity-15 hover:bg-opacity-100 aspect-square md:pt-10 hover:bg-black hover:invert backdrop-blur-sm drop-shadow-[0px_1px_4px_rgba(255,255,255,0.30)] shadow-[0px_5px_4px_0px_rgba(0,0,0,0.30)_inset] hover:shadow-[0px_0px_15px_3px_rgba(0,0,0,1)]"
       >
         <div className="my-auto">
-          <p className="leading-6 uppercase xl:text-base">Vender</p>
+          <p className="leading-6 uppercase xl:text-base">{t('text4')}</p>
           <Image
             src={Vender}
             alt="Invertir"
@@ -84,7 +88,7 @@ export default function NewArgatioFiveServices() {
           className="w-2/4 max-w-14"
         />
         <p className="text-[10px] leading-3 md:text-xs text-center uppercase">
-          Vivienda Propia
+        {t('text5')}
         </p>
       </Link>
       {/* </div> */}

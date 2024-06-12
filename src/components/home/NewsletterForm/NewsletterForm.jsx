@@ -4,7 +4,12 @@ import { useFormState } from "react-dom";
 
 import { submitEmailOfNewsletter } from "@/lib/actions";
 
+import { useTranslations } from "next-intl";
+
 export default function NewsletterForm() {
+
+  const t = useTranslations('newsForm');
+
   const [state, formAction] = useFormState(submitEmailOfNewsletter, {
     message: null,
   });
@@ -13,7 +18,7 @@ export default function NewsletterForm() {
     <form action={formAction} className="flex flex-col items-center w-full font-montserrat">
       <div className="flex items-center justify-between w-full gap-5">
         <label htmlFor="email" className="hidden text-clamp-text sm:block lg:text-xl">
-          Suscripción
+        {t('subs')}
         </label>
         <input
           type="email"
