@@ -4,6 +4,13 @@
       "revolution": "sumate a la revolucion inmobiliaria",
       "token": "El token que impulsa la plataforma de tokenización de inmuebles ARGATIO"
     },
-    "buy-argatoken": "Comprar Arga Token"
+
+    "buy-argatoken": "Comprar Arga Token",
+
+    "contract-section": {
+      "title": "CONTRATO ARGA TOKEN",
+      "btn-audit": "Auditoria",
+      "btn-legal-opinion": "Opinión Legal"
+    }
   }
 }

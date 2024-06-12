@@ -4,6 +4,13 @@
       "revolution": "join the real estate revolution",
       "token": "The token that powers the ARGATIO real estate tokenization platform"
     },
-    "buy-argatoken": "BUY ARGA TOKEN"
+
+    "buy-argatoken": "BUY ARGA TOKEN",
+
+    "contract-section": {
+      "title": "ARGA TOKEN CONTRACT",
+      "btn-audit": "Audit",
+      "btn-legal-opinion": "Legal opinion"
+    }
   }
 }
