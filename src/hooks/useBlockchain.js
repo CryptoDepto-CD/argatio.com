@@ -39,7 +39,9 @@ export const GetERC20Balance = (_addressERC20) => {
     const { data } = useBalance(_addressERC20);
 
     return {
-        tokenBalance: data ? parseFloat(data.displayValue).toFixed(2) : 0
+        weiBalance: data ? data.value : 0,
+        tokenBalance: data ? parseFloat(data.displayValue).toFixed(2) : 0,
+        fullTokenBalance: data ? data.displayValue : 0
     }
 }
 
@@ -82,7 +84,10 @@ export const GetPhaseInfo = (_phaseNumber) => {
 // -------------------------------------------------------------------
 
 export const GetWeiAmount = (_tokenAddress, _amount) => {
-    if (_tokenAddress === addressUSDT || _tokenAddress === addressUSDC)
+
+    if (!_amount)
+        return 0
+    else if (_tokenAddress === addressUSDT || _tokenAddress === addressUSDC)
         return ethers.utils.parseUnits(_amount, 6)
     else
         return ethers.utils.parseEther(_amount)
