@@ -65,6 +65,21 @@
                 "text-section-5": "Registrate y respondemos todas tus dudas",
                 "button": "Quiero vender"   
             } 
+        },
+        "why-own-home": {
+            "title": "¿Por qué vivienda propia?",
+            "acelerate": {
+                "title": "acelera",
+                "text": "La tokenizacion permite que se acelere la venta del inmueble."
+            },
+            "mininmum" : {
+                "title": "mínimo",
+                "text": "Se puede ser parte con un mínimo de capital."
+            },
+            "personalize": {
+                "title": "personaliza",
+                "text": "La financiación se personaliza de acuerdo a las posibilidades del comprador"
+            }
         }
     }
 }
