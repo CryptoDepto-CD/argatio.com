@@ -1,0 +1,11 @@
+{
+  "home": {
+      "navbar": {
+        "ownhome": "Vivienda Propia"
+      },
+      "links":{
+          "contact":"Contacto",
+          "products":"Productos"
+      }
+  }
+}

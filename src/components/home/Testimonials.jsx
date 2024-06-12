@@ -36,7 +36,6 @@ export default function Testimonials() {
     <section className="flex flex-col items-center max-w-screen-xl gap-5 p-5 mx-auto my-10 md:px-10">
       <div className="flex flex-col items-center w-full gap-10 mx-auto justify-evenly md:flex-row">
         <div className="flex flex-col items-center w-full gap-5 max-w-60 xl:max-w-72">
-          {() => {}}
           <h3 className="leading-none uppercase text-clamp-big font-nats">
             Testimonios
           </h3>

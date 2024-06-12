@@ -1,0 +1,11 @@
+{
+  "home": {
+      "navbar": {
+        "ownhome": "Own Home"
+      },
+      "links":{
+          "contact":"Contact",
+          "products":"Products"
+      }
+  }
+}

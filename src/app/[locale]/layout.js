@@ -7,22 +7,37 @@ import Footer from "@/components/layout/Footer/Footer";
 import TelegramButton from "@/components/layout/TelegramButton/TelegramButton";
 import { Providers } from "@/providers/providers";
 
+import { NextIntlClientProvider, useMessages } from "next-intl";
+import { getLocale, getMessages } from "next-intl/server";
+
 const inter = Inter({ subsets: ["latin"] });
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, params: { locale } }) {
+
+  const messages = useMessages();
 
   return (
-    <html lang="es">
-      <Script id="google-tagmanager" strategy="afterInteractive" async src="https://www.googletagmanager.com/gtag/js?id=G-JC2P5TSYWE" />
-      <Script id="google-analytics" dangerouslySetInnerHTML={{
-        __html: `window.dataLayer = window.dataLayer || [];
+    <html lang={locale}>
+      <Script
+        id="google-tagmanager"
+        strategy="afterInteractive"
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-JC2P5TSYWE"
+      />
+      <Script
+        id="google-analytics"
+        dangerouslySetInnerHTML={{
+          __html: `window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'G-JC2P5TSYWE');`
-      }}></Script>
-      <Script id="meta-analytics" dangerouslySetInnerHTML={{
-        __html: `
+          gtag('config', 'G-JC2P5TSYWE');`,
+        }}
+      ></Script>
+      <Script
+        id="meta-analytics"
+        dangerouslySetInnerHTML={{
+          __html: `
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
             n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -33,15 +48,17 @@ export default function RootLayout({ children }) {
             'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '1001366404856784');
             fbq('track', 'PageView');
-          `
-      }}></Script>
+          `,
+        }}
+      ></Script>
       <body className={inter.className + " text-white"}>
         <Providers>
-
-          <NavBar />
-          {children}
-          <Footer />
-          <TelegramButton />
+          <NextIntlClientProvider locale={locale} messages={messages}>
+            <NavBar />
+            {children}
+            <Footer />
+            <TelegramButton />
+          </NextIntlClientProvider>
         </Providers>
       </body>
     </html>
