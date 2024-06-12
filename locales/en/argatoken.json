@@ -20,6 +20,28 @@
     "assignments-section": {
       "title": "assignments",
       "text": "Token Distribution"
+    },
+
+    "arg-utilities-section": {
+      "title": "arg utilities",
+      "utilities": {
+        "fixed-yield": {
+          "title": "Fixed yield",
+          "text": "Investors receive a fixed annual yield (APY) of 8%, distributed monthly."
+        },
+        "stake": {
+          "title": "Stake",
+          "text": "Investing in fractions of properties, diversifying and minimizing risks."
+        },
+        "high-liquidity": {
+          "title": "High Liquidity",
+          "text": "Tokens can be sold on the secondary market, offering flexibility and quick access to funds."
+        },
+        "staking": {
+          "title": "Staking",
+          "text": "The ARGA tokens can be used in staking programs to generate additional yields."
+        }
+      }
     }
   }
 }

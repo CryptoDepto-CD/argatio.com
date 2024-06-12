@@ -21,6 +21,28 @@
       "title": "Asignaciones",
       "text": "Distribución de Tokens",
       "img-alt": "Distribucion de tokens"
+    },
+
+    "arg-utilities-section": {
+      "title": "Utilidades ARG",
+      "utilities": {
+        "fixed-yield": {
+          "title": "Rendimiento Fijo",
+          "text": "Los inversores reciben un rendimiento anual fijo (APY) del 8%, distribuido mensualmente."
+        },
+        "stake": {
+          "title": "Participación",
+          "text": "Inversión en fracciones de propiedades, diversificando y minimizando riesgos."
+        },
+        "high-liquidity": {
+          "title": "Alta Liquidez",
+          "text": "Los tokens pueden ser vendidos en el mercado secundario, ofreciendo flexibilidad y acceso rápido a los fondos."
+        },
+        "staking": {
+          "title": "Staking",
+          "text": "Los tokens ARGA pueden ser utilizados en programas de staking para generar rendimientos adicionales."
+        }
+      }
     }
   }
 }
