@@ -1,0 +1,16 @@
+{
+  "common": {
+    "navbar": {
+      "own-home": "Vivienda Propia",
+      "aboutus": "Quienes somos",
+      "button-blockchain": {
+        "btn-title": "Iniciar Sesión",
+        "children": "Mi billetera"
+      },
+      "mismatched": {
+        "text": "Por favor, cambia a la red Polygon",
+        "button": "Cambiar a Polygon"
+      }
+    }
+  }
+}
