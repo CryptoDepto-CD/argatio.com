@@ -11,6 +11,26 @@
         "text": "Please switch to the Polygon network",
         "button": "Switch to Polygon"
       }
+    },
+    "footer": {
+      "invest": {
+        "title": "Invest in Argatio",
+        "aboutus": "About us",
+        "legal-information": "Legal information"
+      },
+      "our-services": {
+        "title": "Our services",
+        "own-home": "Own home",
+        "own-business": "Own business",
+        "invest": "Invest",
+        "buy": "Buy",
+        "sell": "Sell"
+      },
+      "help": {
+        "title": "Can we help you?",
+        "help-center": "Help Center",
+        "contact": "Contact"
+      }
     }
   }
 }

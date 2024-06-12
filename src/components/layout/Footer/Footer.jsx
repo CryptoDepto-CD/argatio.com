@@ -1,113 +1,158 @@
 import LogoArgatio from "@/../public/logo_footer.svg";
+import LogoArgatioEn from "@/../public/logo_footer_en.svg";
 import Image from "next/image";
 import Link from "next/link";
 
 import { Instagram, Youtube, Linkedin } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function Footer() {
+  const t = useTranslations("common.footer");
+
+  const locale = useLocale()
 
   const SocialMediaIcons = [
     {
       icon: <Youtube size={30} />,
       link: "https://youtube.com/@argatio_?si=HMFB2Xic9E_9jU71",
-      name: "Icono de youtube",
+      name: "logo youtube",
     },
     {
       icon: <Instagram size={30} />,
       link: "https://www.instagram.com/argatio__?igsh=MXZkZjYzNXkxNzFweA==",
-      name: "Icono de instagram",
+      name: "logo instagram",
     },
-    { icon: <Linkedin size={30} />, link: "https://www.linkedin.com/company/crypto-depto/", name: "Icono de linkedin" },
+    {
+      icon: <Linkedin size={30} />,
+      link: "https://www.linkedin.com/company/crypto-depto/",
+      name: "logo linkedin",
+    },
   ];
 
   return (
     <footer className="w-full bg-black">
       <div className="flex flex-row flex-wrap items-start justify-between px-10 py-10 text-sm gap-7 md:justify-evenly md:text-base">
         <Link href="/" className="w-[48%] max-w-60 shrink">
-          <Image src={LogoArgatio} alt="Logo Argatio" className="w-[90%]" />
+          <Image src={locale === "en" ? LogoArgatioEn : LogoArgatio} alt="Logo Argatio" className="w-[90%]" />
         </Link>
         <div className="min-w-[15ch] flex flex-col gap-2">
-          <p className="font-bold">Invertí en Argatio</p>
+          <p className="font-bold">{t("invest.title")}</p>
           <ol className="flex flex-col gap-2">
             <li>
-              <Link href="/UnderConstruction" className="transition-all hover:underline">
-                ¿Quiénes somos?
+              <Link
+                href="/UnderConstruction"
+                className="transition-all hover:underline"
+              >
+                {t("invest.aboutus")}
               </Link>
             </li>
             <li>
-              <Link href="https://whitepaper.argatio.com/" className="transition-all hover:underline">
+              <Link
+                href="https://whitepaper.argatio.com/"
+                className="transition-all hover:underline"
+              >
                 White paper
               </Link>
             </li>
             <li>
-              <Link href="https://whitepaper.argatio.com/10.-hoja-de-ruta-roadmap" className="transition-all hover:underline">
+              <Link
+                href="https://whitepaper.argatio.com/10.-hoja-de-ruta-roadmap"
+                className="transition-all hover:underline"
+              >
                 Road map
               </Link>
             </li>
             <li>
-              <Link href="https://whitepaper.argatio.com/12.-aspectos-legales-y-de-cumplimiento" className="transition-all hover:underline">
-                Información Legal
+              <Link
+                href="https://whitepaper.argatio.com/12.-aspectos-legales-y-de-cumplimiento"
+                className="transition-all hover:underline"
+              >
+                {t("invest.legal-information")}
               </Link>
             </li>
           </ol>
         </div>
         <div className="min-w-[15ch] flex flex-col gap-2">
-          <p className="font-bold">Nuestros servicios</p>
+          <p className="font-bold">{t("our-services.title")}</p>
           <ol className="flex flex-col gap-2">
             <li>
               <Link
                 href="/ViviendaPropia"
                 className="transition-all hover:underline"
               >
-                Vivienda propia
+                {t("our-services.own-home")}
               </Link>
             </li>
             <li>
-              <Link href="/UnderConstruction" className="transition-all hover:underline">
-                Negocio propio
+              <Link
+                href="/UnderConstruction"
+                className="transition-all hover:underline"
+              >
+                {t("our-services.own-business")}
               </Link>
             </li>
             <li>
-              <Link href="/UnderConstruction" className="transition-all hover:underline">
-                Invertir
+              <Link
+                href="/UnderConstruction"
+                className="transition-all hover:underline"
+              >
+                {t("our-services.invest")}
               </Link>
             </li>
             <li>
-              <Link href="/UnderConstruction" className="transition-all hover:underline">
-                Comprar
+              <Link
+                href="/UnderConstruction"
+                className="transition-all hover:underline"
+              >
+                {t("our-services.buy")}
               </Link>
             </li>
             <li>
-              <Link href="/UnderConstruction" className="transition-all hover:underline">
-                Vender
+              <Link
+                href="/UnderConstruction"
+                className="transition-all hover:underline"
+              >
+                {t("our-services.sell")}
               </Link>
             </li>
           </ol>
         </div>
         <div className="min-w-[15ch] flex flex-col gap-2">
-          <p className="font-bold">¿Te ayudamos?</p>
+          <p className="font-bold">{t("help.title")}</p>
           <ol className="flex flex-col gap-2">
             <li>
-              <Link href="https://t.me/+RHYVHbF6iPMwZTgx" className="transition-all hover:underline">
-                Centro de Ayuda
+              <Link
+                href="https://t.me/+RHYVHbF6iPMwZTgx"
+                className="transition-all hover:underline"
+              >
+                {t("help.help-center")}
               </Link>
             </li>
             <li>
-              <Link href="https://t.me/+RHYVHbF6iPMwZTgx" className="transition-all hover:underline">
-                Contacto
+              <Link
+                href="https://t.me/+RHYVHbF6iPMwZTgx"
+                className="transition-all hover:underline"
+              >
+                {t("help.contact")}
               </Link>
             </li>
           </ol>
         </div>
       </div>
-      
+
       <div className="flex flex-wrap items-center gap-5 px-4 py-5 border-t border-solid md:px-10">
         <div className="flex gap-1 text-[10px]">
           <p>© 2024 Argatio. All right reserved.</p>
-          <Link href="https://whitepaper.argatio.com/12.-aspectos-legales-y-de-cumplimiento/politicas-de-privacidad-y-seguridad" className="transition-all hover:underline">
+          <Link
+            href="https://whitepaper.argatio.com/12.-aspectos-legales-y-de-cumplimiento/politicas-de-privacidad-y-seguridad"
+            className="transition-all hover:underline"
+          >
             Privacy Policy
           </Link>
-          <Link href="https://whitepaper.argatio.com/12.-aspectos-legales-y-de-cumplimiento" className="transition-all hover:underline">
+          <Link
+            href="https://whitepaper.argatio.com/12.-aspectos-legales-y-de-cumplimiento"
+            className="transition-all hover:underline"
+          >
             Terms of Service
           </Link>
         </div>
