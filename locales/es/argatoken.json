@@ -11,6 +11,16 @@
       "title": "CONTRATO ARGA TOKEN",
       "btn-audit": "Auditoria",
       "btn-legal-opinion": "Opinión Legal"
+    },
+
+    "how-buy-section": {
+      "title": "¿Cómo comprar?"
+    },
+
+    "assignments-section": {
+      "title": "Asignaciones",
+      "text": "Distribución de Tokens",
+      "img-alt": "Distribucion de tokens"
     }
   }
 }
