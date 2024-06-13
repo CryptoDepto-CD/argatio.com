@@ -1,3 +1,134 @@
 {
-  "home": {}
+  "home": {
+    "heroHome":{
+      "title":"We Revolutionize The Real Estate World",
+      "link": "I want my home",
+      "subtitle1": "Become a",
+      "subtitle2": "Smart owner",
+      "subtitle3": "Become a",
+      "subtitle4": "Smart owner"
+    },
+    "newsHome":{
+      "title": "Receive news",
+      "subtitle": "Follow us on social media"
+    },
+    "feedback":{
+      "subtitle": "We grow with your opinion"
+    },
+    "slices":{
+      "header": "Our services",
+      "slice1":{
+        "title": "Own home",
+        "description": "From tenant to owner",
+        "buttonText": "I want my home",
+        "icons": [
+          {
+            "text": "Find your home"
+          },
+          {
+            "text": "Manage the financing"
+          },
+          {
+            "text": "Become a owner"
+          }
+        ]
+      },
+      "slice2": {
+        "title": "Own business",
+        "decription": "Your business, your premises",
+        "buttonText": "I want my space",
+        "icons": [
+          {
+            "text": "Find your space"
+          },
+          {
+            "text": "Manage the financing"
+          },
+          {
+            "text": "Become a owner"
+          }
+        ]
+      },
+      "slice3":{
+        "title": "Invest",
+        "description": "Multiply your money all over the world",
+        "buttonText1": "Opportunities",
+        "buttonText2": "Simulate investment",
+        "icons": [
+          {
+            "text": "Select a property"
+          },
+          {
+            "text": "Analyze the numbers"
+          },
+          {
+            "text": "Receive the profits"
+          }
+        ]
+      },
+      "slice4": {
+        "title": "Buy",
+      "description": "A reality for everyone",
+      "buttonText": "I want to be an owner",
+      "icons": [
+        {
+          "text": "Search and select"
+        },
+        {
+          "text": "Manage your purchase"
+        },
+        {
+          "text": "Live your dream"
+        }
+      ]
+      },
+      "slice5": {
+        "title": "Sell",
+        "description": "Enjoy the benefits of tokenization",
+        "buttonText": "I want investors",
+        "icons": [
+          {
+            "text": "We tokenize your property"
+          },
+          {
+            "text": "We reach investors"
+          },
+          {
+            "text": "Receive your money"
+          }
+        ]
+      }
+    },
+    "testimonials": {
+      "text1": "I never thought about having my own house, it's a dream!",
+      "text2": "I didn't think it would be possible to have my own business at this age, but now that is my reality!",
+      "text3": "At first I had doubts, but after investing I am sure it was the best decision of my life!",
+      "title": "Testimonials",
+      "button": "I want to the an owner"
+    },
+    "newsForm":
+    {
+     "subs": "Subscription"
+    },
+    "feedForm":{
+      "button": "Send",
+      "text": "The project seemed to me..."
+    },
+    "newFive":{
+      "title":"Arga token",
+      "text1": "Invest",
+      "text2": "Own business",
+      "text3": "Buy",
+      "text4": "Sell",
+      "text5": "Own home"
+    },
+    "fiveServices":{
+      "title":"Arga token",
+      "text1": "Invest",
+      "text2": "Own business",
+      "text3": "Buy",
+      "text4": "Sell",
+      "text5": "Own home"
+    }
+  }
 }
