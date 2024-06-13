@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 
 export default function NewsletterForm() {
 
-  const t = useTranslations('newsForm');
+  const t = useTranslations('home.newsForm');
 
   const [state, formAction] = useFormState(submitEmailOfNewsletter, {
     message: null,

@@ -1,0 +1,35 @@
+{
+    "aboutUs":{
+        "discoverMore": {
+            "discover": "Discover more about Argatio",
+            "info": "More information available on our social media."
+        },
+        "heroAbout":{
+            "title": "About us",
+            "subtitle1": "Argatio is a real estate platform that combines the traditional world with the cutting-edge technology of blockchain. We aim to revolutionize real estate investment, making it accessible and equitable for everyone. We strive to open up investment opportunities that were once restricted to an exclusive circle, democratizing access to the real estate market on a global scale. Argatio is a real estate platform that combines the traditional world with the cutting-edge technology of blockchain. We aim to revolutionize real estate investment, making it accessible and equitable for everyone. We strive to open up investment opportunities that were once restricted to an exclusive circle, democratizing access to the real estate market on a global scale."
+        },
+        "mission":{
+            "title": "Mission",
+            "description": "Our mission is to democratize access to homeownership by integrating tokenization and innovative leasing options.",
+            "text": "We tell you everything"
+        },
+        "ourTeam":{
+            "title": "Our team",
+            "description": "We firmly believe that the key to success lies in people. Therefore, we focus on bringing together the best talents, passionate and committed professionals, ready to tackle and overcome the challenges of the dynamic real estate world."
+        },
+        "socialMedia": {
+            "text": "Follow us on our social media"
+        },
+        "whatWeDo": {
+            "header": "What we do?",
+            "elements": {
+                "title1": "Tokenization",
+                "text1": "We convert properties into digital fractions for investment and shared ownership.",
+                "title2": "Leasing",
+                "text2": "Tenants can gradually become owners by paying a leasing fee that turns into an investment.",
+                "title3": "Acquisition",
+                "text3": "With each payment, tenants acquire property tokens, progressing towards full ownership."
+            }
+        }
+    }
+}

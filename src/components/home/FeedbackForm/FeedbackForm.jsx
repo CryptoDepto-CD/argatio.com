@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 
 export default function FeedbackForm() {
 
-  const t = useTranslations('feedForm');
+  const t = useTranslations('home.feedForm');
 
   const [state, formAction] = useFormState(sendFeedback, {
     message: null,

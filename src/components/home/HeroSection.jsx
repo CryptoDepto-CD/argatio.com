@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 
 export default function HeroSection() {
 
-  const t = useTranslations("heroHome")
+  const t = useTranslations("home.heroHome")
 
   return (
     <section className="flex flex-col items-center w-full gap-12 px-10 py-8 mx-auto my-10 lg:my-0 md:flex-row justify-evenly lg:h-[clamp(600px,100dvh-80px,1300px)] ">

@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 
 export default function FeedbackSection() {
 
-  const t = useTranslations("feedback")
+  const t = useTranslations("home.feedback")
 
   return (
     <div className="flex flex-col items-center w-11/12 max-w-screen-sm gap-5 lg:w-5/12">

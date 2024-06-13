@@ -31,7 +31,7 @@ import { Link } from "lucide-react";
 
 export default function OurServices() {
 
-  const t = useTranslations('slides');
+  const t = useTranslations('home.slides');
 
   const settings = {
     className: "center",
