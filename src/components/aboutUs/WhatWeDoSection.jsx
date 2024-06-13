@@ -3,22 +3,26 @@ import Image from "next/image";
 import Tokenizacion from "@/../public/AboutUs/tokenizacion.svg";
 import Leasing from "@/../public/AboutUs/leasing.svg";
 import Adquisicion from "@/../public/AboutUs/adquisicion.svg";
+import { useTranslations } from "next-intl";
 
 export default function WhatWeDoSection() {
+
+  const t = useTranslations("whatWeDo")
+
   const elements = [
     {
-      title: "Tokenización",
-      text: "Transformamos propiedades en fracciones digitales para una inversión y propiedad compartida.",
+      title: t('elements.title1'),
+      text: t('elements.text1'),
       img: Tokenizacion,
     },
     {
-      title: "Leasing",
-      text: "Los inquilinos pueden convertirse gradualmente en propietarios, pagando un leasing que se convierte en inversión.",
+      title: t('elements.title2'),
+      text: t('elements.text2'),
       img: Leasing,
     },
     {
-      title: "Adquisición",
-      text: "Con cada pago, los inquilinos adquieren tokens de la propiedad, avanzando hacia la propiedad plena.",
+      title: t('elements.title3'),
+      text: t('elements.text3'),
       img: Adquisicion,
     },
   ];
@@ -26,7 +30,7 @@ export default function WhatWeDoSection() {
   return (
     <section className="m-10 my-20 mb-32">
       <h2 className="py-10 text-center uppercase font-nats text-clamp-big">
-        ¿Qué hacemos?
+        {t('header')}
       </h2>
       <div className="flex flex-row flex-wrap justify-center my-5 gap-14">
         {elements.map((element, index) => (

@@ -2,6 +2,7 @@
 
 import Test from "@/../public/AboutUs/text_mati.svg";
 import Carousel from "./Carousel/Carousel";
+import { useTranslations } from "next-intl";
 
 const cards = [
   {
@@ -63,17 +64,17 @@ const cards = [
 ];
 
 export default function OurTeamSection() {
+
+  const t = useTranslations("ourTeam")
+
   return (
     <section className="m-10 my-16">
       <div className="">
         <h2 className="my-8 leading-none text-center uppercase font-nats text-clamp-big">
-          nuestro equipo
+          {t('title')}
         </h2>
         <p className="max-w-screen-md mx-auto text-center text-clamp-text font-montserrat">
-          Creemos firmemente que la clave del éxito radica en las personas. Por
-          eso, nos enfocamos en reunir a los mejores talentos, profesionales
-          apasionados y comprometidos, listos para enfrentar y superar los
-          desafíos del dinámico mundo inmobiliario.
+          {t('description')}
         </p>
         <div>
           <Carousel cards={cards} />
