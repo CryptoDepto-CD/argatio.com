@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 
 export default function DiscoverMoreSection() {
 
-  const t = useTranslations("discoverMore")
+  const t = useTranslations("aboutUs.discoverMore")
 
   const slides = [
     {

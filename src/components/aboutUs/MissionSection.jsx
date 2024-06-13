@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 
 export default function MissionSection() {
 
-  const t = useTranslations("mission")
+  const t = useTranslations("aboutUs.mission")
 
   return (
     <section className="mx-10 my-16">

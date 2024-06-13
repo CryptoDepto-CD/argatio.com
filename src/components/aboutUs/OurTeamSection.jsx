@@ -65,7 +65,7 @@ const cards = [
 
 export default function OurTeamSection() {
 
-  const t = useTranslations("ourTeam")
+  const t = useTranslations("aboutUs.ourTeam")
 
   return (
     <section className="m-10 my-16">

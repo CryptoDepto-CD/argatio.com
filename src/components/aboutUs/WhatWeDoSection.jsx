@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 
 export default function WhatWeDoSection() {
 
-  const t = useTranslations("whatWeDo")
+  const t = useTranslations("aboutUs.whatWeDo")
 
   const elements = [
     {
