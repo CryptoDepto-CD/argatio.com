@@ -11,7 +11,7 @@ import { useTranslations } from "next-intl";
 
 export default function Testimonials() {
 
-  const t = useTranslations('testimonials');
+  const t = useTranslations('home.testimonials');
 
   const images = [ArgatioLogo1, ArgatioLogo2, ArgatioLogo3];
   const testimonials = [

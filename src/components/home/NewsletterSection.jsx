@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 
 export default function NewsletterSection() {
 
-  const t = useTranslations("newsHome")
+  const t = useTranslations("home.newsHome")
 
   return (
     <div className="flex flex-col items-center w-10/12 max-w-screen-sm gap-5 lg:gap-10 lg:w-5/12">
