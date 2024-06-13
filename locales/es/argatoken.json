@@ -1,0 +1,73 @@
+{
+  "argatoken": {
+    "hero-section": {
+      "revolution": "sumate a la revolucion inmobiliaria",
+      "token": "El token que impulsa la plataforma de tokenización de inmuebles ARGATIO"
+    },
+
+    "buy-argatoken": "Comprar Arga Token",
+
+    "contract-section": {
+      "title": "CONTRATO ARGA TOKEN",
+      "btn-audit": "Auditoria",
+      "btn-legal-opinion": "Opinión Legal"
+    },
+
+    "how-buy-section": {
+      "title": "¿Cómo comprar?"
+    },
+
+    "assignments-section": {
+      "title": "Asignaciones",
+      "text": "Distribución de Tokens",
+      "img-alt": "Distribucion de tokens"
+    },
+
+    "arg-utilities-section": {
+      "title": "Utilidades ARG",
+      "utilities": {
+        "fixed-yield": {
+          "title": "Rendimiento Fijo",
+          "text": "Los inversores reciben un rendimiento anual fijo (APY) del 8%, distribuido mensualmente."
+        },
+        "stake": {
+          "title": "Participación",
+          "text": "Inversión en fracciones de propiedades, diversificando y minimizando riesgos."
+        },
+        "high-liquidity": {
+          "title": "Alta Liquidez",
+          "text": "Los tokens pueden ser vendidos en el mercado secundario, ofreciendo flexibilidad y acceso rápido a los fondos."
+        },
+        "staking": {
+          "title": "Staking",
+          "text": "Los tokens ARGA pueden ser utilizados en programas de staking para generar rendimientos adicionales."
+        }
+      }
+    },
+
+    "presale-vesting-section": {
+      "presale": "Preventa",
+      "phases": {
+        "phase01": "Fase 01",
+        "phase02": "Fase 02",
+        "phase03": "Fase 03"
+      }
+    },
+
+    "meet-the-team-section": {
+      "title": "Conoce el equipo",
+      "description": "El equipo de Argatio está dedicado a revolucionar el mercado inmobiliario mediante la integración de tecnología avanzada y un enfoque centrado en el usuario. Juntos, trabajamos para ofrecer soluciones accesibles, seguras y transparentes que beneficien tanto a inversores como a inquilinos y propietarios.",
+      "button": "Quienes Somos"
+    },
+
+    "media-section": {
+      "title": "Medios"
+    },
+
+    "newsletter-section": {
+      "title": "Te invitamos a registrarte",
+      "text": "podrás recibir actualizaciones y promociones",
+      "button": "Enviar"
+    }
+  }
+}

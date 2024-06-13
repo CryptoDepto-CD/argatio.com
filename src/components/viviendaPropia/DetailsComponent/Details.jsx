@@ -1,8 +1,11 @@
 import PropTypes from 'prop-types';
-
+import { useTranslations } from 'next-intl';
 import Link from "next/link";
 
 export default function Details({index, title, children}) {
+
+  const t = useTranslations("vivienda-propia.details")
+
   return (
     <details
       key={index}
@@ -15,8 +18,8 @@ export default function Details({index, title, children}) {
       <div className="flex flex-col py-5 gap-7 hyphens-auto">
         {children}
         <div className="py-5 text-sm text-center md:text-lg">
-          <p>Nuestro chatbot IA responde todas tus dudas.</p>
-          <p>También podemos ponernos en contacto y contarte mas</p>
+          <p>{t("text-1")}</p>
+          <p>{t("text-2")}</p>
           <Link
             href="mailto:info@argatio.com"
             className="underline transition-all hover:no-underline hover:font-medium "
