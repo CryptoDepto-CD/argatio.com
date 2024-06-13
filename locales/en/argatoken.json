@@ -51,6 +51,12 @@
         "phase02": "Phase 02",
         "phase03": "Phase 03"
       }
+    },
+
+    "meet-the-team-section": {
+      "title": "Meet the Team",
+      "description": "The Argatio team is dedicated to revolutionizing the real estate market by integrating advanced technology and a user-centered approach. Together, we work to offer accessible, secure, and transparent solutions that benefit both investors, tenants and owners.",
+      "button": "About Us"
     }
   }
 }
