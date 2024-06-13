@@ -58,6 +58,16 @@
       "title": "Conoce el equipo",
       "description": "El equipo de Argatio está dedicado a revolucionar el mercado inmobiliario mediante la integración de tecnología avanzada y un enfoque centrado en el usuario. Juntos, trabajamos para ofrecer soluciones accesibles, seguras y transparentes que beneficien tanto a inversores como a inquilinos y propietarios.",
       "button": "Quienes Somos"
+    },
+
+    "media-section": {
+      "title": "Medios"
+    },
+
+    "newsletter-section": {
+      "title": "Te invitamos a registrarte",
+      "text": "podrás recibir actualizaciones y promociones",
+      "button": "Enviar"
     }
   }
 }
