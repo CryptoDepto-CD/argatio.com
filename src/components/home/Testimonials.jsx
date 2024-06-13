@@ -6,13 +6,18 @@ import ArgatioLogo1 from "@/../public/argatio_logo_1.svg";
 import ArgatioLogo2 from "@/../public/argatio_logo_2.svg";
 import ArgatioLogo3 from "@/../public/argatio_logo_3.svg";
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
+
 
 export default function Testimonials() {
+
+  const t = useTranslations('testimonials');
+
   const images = [ArgatioLogo1, ArgatioLogo2, ArgatioLogo3];
   const testimonials = [
-    "Nunca pensé en tener mi casa propia, es un sueño!",
-    "No creí que sería posible tener un negocio propio a esta edad, pero ahora esa es mi realidad!",
-    "Al comienzo dudé, pero luego de invertir estoy seguro que fue la mejor decisión de mi vida!",
+    t('testimonials.text1'),
+    t('testimonials.text2'),
+    t('testimonials.text3'),
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -36,9 +41,8 @@ export default function Testimonials() {
     <section className="flex flex-col items-center max-w-screen-xl gap-5 p-5 mx-auto my-10 md:px-10">
       <div className="flex flex-col items-center w-full gap-10 mx-auto justify-evenly md:flex-row">
         <div className="flex flex-col items-center w-full gap-5 max-w-60 xl:max-w-72">
-          {() => {}}
           <h3 className="leading-none uppercase text-clamp-big font-nats">
-            Testimonios
+          {t('title')}
           </h3>
           <div className="flex w-full h-full min-h-28">
             <div className="relative w-full h-full text-center text-balance">
@@ -76,7 +80,7 @@ export default function Testimonials() {
         href="/ViviendaPropia#homeSection"
         className="px-10 py-2 mx-auto text-center text-black uppercase bg-white border-2 border-black border-solid rounded-full font-montserrat hover:opacity-90 text-clamp-text"
       >
-        Quiero ser dueño
+        {t('button')}
       </Link>
     </section>
   );

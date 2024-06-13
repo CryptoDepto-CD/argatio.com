@@ -1,0 +1,134 @@
+{
+  "home": {
+    "heroHome":{
+      "title":"Revolucionamos el mundo inmobiliario",
+      "link": "Quiero mi hogar",
+      "subtitle1": "Convertite en un",
+      "subtitle2": "Dueño inteligente",
+      "subtitle3": "Convertite en un",
+      "subtitle4": "Dueño inteligente"
+    },
+    "newsHome":{
+      "title": "Recibe novedades",
+      "subtitle": "Seguinos en redes"
+    },
+    "feedback":{
+      "subtitle": "Crecemos con tu opinión"
+    },
+    "slices":{
+      "header": "Nuestros servicios",
+      "slice1":{
+        "title": "Vivienda propia",
+        "description": "De inquilino a propietario",
+        "buttonText": "Quiero mi hogar",
+        "icons": [
+          {
+            "text": "Encuentra tu hogar"
+          },
+          {
+            "text": "Gestiona la financiación"
+          },
+          {
+            "text": "Convertite en dueño"
+          }
+        ]
+      },
+      "slice2": {
+        "title": "Negocio propio",
+        "decription": "Tu negocio, tu local",
+        "buttonText": "Quiero mi espacio",
+        "icons": [
+          {
+            "text": "Encuentra tu espacio"
+          },
+          {
+            "text": "Gestiona la financiación"
+          },
+          {
+            "text": "Convertite en dueño"
+          }
+        ]
+      },
+      "slice3":{
+        "title": "INVERTIR",
+        "description": "Multiplica tu dinero en todo el mundo",
+        "buttonText1": "Oportunidades",
+        "buttonText2": "Simular inversión",
+        "icons": [
+          {
+            "text": "Selecciona una propiedad"
+          },
+          {
+            "text": "Analiza los números"
+          },
+          {
+            "text": "Recibe las ganancias"
+          }
+        ]
+      },
+      "slice4": {
+        "title": "Comprar",
+      "description": "Una realidad para todos",
+      "buttonText": "Quiero ser dueño",
+      "icons": [
+        {
+          "text": "Busca y Selecciona"
+        },
+        {
+          "text": "Gestiona tu compra"
+        },
+        {
+          "text": "Vive tu sueño"
+        }
+      ]
+      },
+      "slice5": {
+        "title": "Vender",
+        "description": "Disfruta los beneficios de la tokenizacion",
+        "buttonText": "Quiero mi hogar",
+        "icons": [
+          {
+            "text": "Tokenizamos tu propiedad"
+          },
+          {
+            "text": "Llegamos a los inversores"
+          },
+          {
+            "text": "Recibe tu dinero"
+          }
+        ]
+      }
+    },
+    "testimonials":{
+      "text1": "Nunca pensé en tener mi casa propia, es un sueño!",
+      "text2": "No creí que sería posible tener un negocio propio a esta edad, pero ahora esa es mi realidad!",
+      "text3": "Al comienzo dudé, pero luego de invertir estoy seguro que fue la mejor decisión de mi vida!",
+      "title": "Testimonios",
+      "button": "Quiero ser dueño"
+    },
+    "newsForm":
+    {
+     "subs": "Suscripción"
+    },
+    "feedForm":{
+      "button": "Enviar",
+      "text": "El proyecto me pareció..."
+    },
+    "newFive":{
+      "title":"Arga token",
+      "text1": "Invertir",
+      "text2": "Negocio propio",
+      "text3": "Comprar",
+      "text4": "Vender",
+      "text5": "Vivienda propia"
+    },
+    "fiveServices":{
+      "title":"Arga token",
+      "text1": "Invertir",
+      "text2": "Negocio propio",
+      "text3": "Comprar",
+      "text4": "Vender",
+      "text5": "Vivienda propia"
+  }
+}
+}

@@ -1,0 +1,234 @@
+{
+    "vivienda-propia": {
+        "hero-section": {
+            "title": "OWN HOME",
+            "tailored": "Tailored financing to suit your needs",
+            "button-how": "How does it work?",
+            "button-iwant": "I want my home",
+            "become": "Become a",
+            "smart-owner": "smart owner"
+        },
+        "how-it-works-section": {
+            "title": "How does it work?",
+            "step-1": "How do I sell my house?",
+            "sell-house-dialog": {
+                "title": "Sell ​​your property with Argatio",
+                "subtitle": "Enjoy the benefits of Tokenization",
+                "text-section-1": "We divide the value of your property into stakes that can be purchased by different people.",
+                "text-section-2": "We offer these portions to our network of investors, who can acquire a stake in the property.",
+                "text-section-3": "Once all the property stakes are acquired, Argatio buys your property, guaranteeing you a complete and secure sale.",
+                "text-section-4": "We use blockchain technology for a transparent and secure transaction.",
+                "text-section-5": {
+                    "leasing": "Leasing with Option to Buy",
+                    "text": "We also offer the property to potential tenants through our leasing model, where they can gradually purchase stakes until they become full owners."
+                },
+                "text-section-6": "Sign Up and we will answer all your questions",
+                "button": "I want to sell"
+            },
+            "step-2": "How do I buy my house?",
+            "buy-house-dialog": {
+                "title": "Buy a property with Argatio",
+                "subtitle": "Become an owner",
+                "text-section-1": "Browse our catalog of available properties and choose the one that best fits your needs and budget.",
+                "text-section-2": "You can also propose a property that is for sale and that you wish to buy using our method, and we will contact the owner.",
+                "text-section-3": "The value of the property you choose is divided into stakes that you can buy gradually.",
+                "text-section-4": "When you have purchased all the stakes in the property, you become the total owner of the house.",
+                "text-section-5": "We use blockchain technology for a transparent and secure transaction.",
+                "text-section-6": "Sign Up and we will answer all your questions",
+                "button": "I want to be an owner"
+            },
+            "step-3": "How do I buy the house I rent?",
+            "buy-rent-house-dialog": {
+                "title": "Buy the house you rent with Argatio",
+                "subtitle": "From tenant to owner",
+                "text-section-1": {
+                    "text-1": "Make sure that the property you are renting is available for sale.",
+                    "text-2": "It may already be listed with Argatio; if not, we will contact the property owner to explain the process."
+                },  
+                "text-section-2": "The value of the property you choose is divided into stakes that you can buy gradually.",
+                "text-section-3": "When you have purchased all the stakes in the property, you become the total owner of the house.",
+                "text-section-4": "We use blockchain technology for a transparent and secure transaction.",
+                "text-section-5": "Sign Up and we will answer all your questions",
+                "button": "I want my home"
+            },
+            "step-4": "How to buy the premises I rent?",
+            "buy-rent-local-dialog": {
+                "title": "Buy the premises you rent with Argatio",
+                "subtitle": "From tenant to owner",
+                "text-section-1": {
+                    "text-1": "Make sure that the property you are renting is available for sale.",
+                    "text-2": "It may already be listed with Argatio; if not, we will contact the property owner to explain the process."
+                },  
+                "text-section-2": "The value of the property you choose is divided into stakes that you can buy gradually.",
+                "text-section-3": "When you have purchased all the stakes in the property, you become the total owner of the house.",
+                "text-section-4": "We use blockchain technology for a transparent and secure transaction.",
+                "text-section-5": "Sign Up and we will answer all your questions",
+                "button": "I want my space"   
+            } 
+        },
+        "why-own-home": {
+            "title": "Why my own home?",
+            "acelerate": {
+                "title": "Accelerate",
+                "text": "Tokenization allows the sale of the property to be accelerated."
+            },
+            "mininmum" : {
+                "title": "minimum",
+                "text": "You can be part of it with a minimum of capital."
+            },
+            "personalize": {
+                "title": "personalize",
+                "text": "Financing is personalized according to the buyer's possibilities"
+            }
+        },
+        "need-help-section": {
+            "title": "need help?",
+            "questions": {
+                "n-1": {
+                    "question": "What is tokenization?",
+                    "answer-1": "Tokenization is the process of converting a physical asset, such as real estate, into digital fractions represented by tokens on a blockchain. This enables multiple individuals to acquire a stake in the asset, making investment and trading easier.",
+                    "answer-2": "At Argatio, tokenization is used to transform properties into digital fractions, allowing investors to buy and sell stakes in real estate. Additionally, models like leasing with an option to buy are offered, where tenants can gradually become owners by acquiring stakes in the property with each rental payment."
+                },
+                "n-2": {
+                    "question": "What is Blockchain?",
+                    "answer-1": "Blockchain is a distributed ledger technology that allows for secure, transparent, and decentralized storage of information. Here's a brief explanation:",
+                    "answer-2": {
+                        "strong": "Data structure:",
+                        "text": "It consists of a chain of blocks, where each block contains a set of transactions or data. Each block is linked to the previous one through a cryptographic hash, forming a continuous chain."
+                    },
+                    "answer-3": {
+                        "strong": "Decentralization:",
+                        "text": "Unlike traditional systems that rely on a central authority, in a blockchain, information is maintained by a network of independent nodes (computers) that validate and record transactions."
+                    },
+                    "answer-4": {
+                        "strong": "Transparency and security:",
+                        "text": "Every transaction recorded on the blockchain is visible to all participants in the network, ensuring transparency. Security is achieved through advanced cryptography and distributed consensus, making it extremely difficult to alter the recorded information."
+                    },
+                    "answer-5": {
+                        "strong": "Immutability:",
+                        "text": "Once a transaction is recorded on the blockchain, it cannot be modified or deleted, ensuring data integrity."
+                    },
+                    "answer-6": {
+                        "strong": "Applications:",
+                        "text": "Blockchain is used in various areas, including cryptocurrencies like Bitcoin and Ethereum, smart contracts, supply chain management, and tokenization of assets such as real estate and art."
+                    },
+                    "answer-7": "In summary, blockchain is a technology that provides a secure and transparent way to record and share information without the need for a central authority."
+                },
+                "n-3": {
+                    "question": "What requirements do I need to meet to acquire stakes in a property with Argatio?",
+                    "answer-1": "To acquire stakes in properties through Argatio, you need to meet the following requirements:",
+                    "answer-2": {
+                        "strong": "Platform registration:",
+                        "text": "You must create an account on the Argatio platform and complete the identity verification process (KYC)."
+                    },
+                    "answer-3": {
+                        "strong": "Available funds:",
+                        "text": "Ensure you have sufficient funds in your account to purchase the stakes. You can use fiat currency or cryptocurrencies, depending on the options available on the platform."
+                    },
+                    "answer-4": {
+                        "strong": "Identity verification (KYC):",
+                        "text": "Provide the necessary documentation to verify your identity. This may include a valid identification document (such as a passport or driver's license) and proof of address."
+                    },
+                    "answer-5": {
+                        "strong": "Acceptance of terms and conditions:",
+                        "text": "You must read and accept the terms and conditions of use of the Argatio platform."
+                    },
+                    "answer-6": {
+                        "strong": "Property selection:",
+                        "text": "Choose the property in which you want to invest and decide how many stakes you want to acquire."
+                    },
+                    "answer-7": {
+                        "strong": "Make the purchase:",
+                        "text": "Complete the purchase process through the platform, following the instructions to transfer the necessary funds."
+                    },
+                    "answer-8": "These steps ensure that the investment is made safely and in compliance with all applicable regulations."
+                },
+                "n-4": {
+                    "question": "How long will it take for me to buy my house with Argatio?",
+                    "answer-1": "The time it will take for you to buy your house with Argatio depends on several factors:",
+                    "answer-2": {
+                        "strong": "Amount of stakes purchased:",
+                        "text": "The more stakes you buy with each payment, the faster you will reach full ownership."
+                    },
+                    "answer-3": {
+                        "strong": "Payment frequency:",
+                        "text": "If you make additional payments or purchase stakes more frequently, you will reduce the time required."
+                    },
+                    "answer-4": {
+                        "strong": "Property price:",
+                        "text": "The total value of the property also influences it; more expensive properties require more time if the purchase pace is constant."
+                    },
+                    "answer-5": {
+                        "strong": "Investor interest:",
+                        "text": "The speed at which other investors purchase stakes can affect the availability of fractions for you."
+                    },
+                    "answer-6": "Overall, the process is gradual and flexible, allowing you to acquire the property at a pace that suits your financial capacity."
+                },
+                "n-5": {
+                    "question": "Is my investment safe with Argatio?",
+                    "answer-1": "Yes, your investment with Argatio is secure thanks to the implementation of various measures and advanced technologies that guarantee transparency, security, and trust in all transactions. Here are some key features that ensure the security of your investment:",
+                    "answer-2": {
+                        "strong": "Blockchain technology: ",
+                        "text": "We use blockchain technology, known for its high security and transparency. All transactions and property records are made on a blockchain, ensuring they cannot be altered or manipulated."
+                    },
+                    "answer-3": {
+                        "strong": "Smart contracts:",
+                        "text": "Smart contracts automate and guarantee the fulfillment of agreed terms without the need for intermediaries. This reduces the risk of human errors and fraud."
+                    },
+                    "answer-4": {
+                        "strong": "Verification and audit:",
+                        "text": "We conduct thorough verification processes for all properties and transactions. Additionally, the blockchain allows for real-time audit of all transactions, providing an additional level of security and transparency."
+                    },
+                    "answer-5": {
+                        "strong": "Fixed return and liquidity:",
+                        "text": "We offer a fixed annual return of 8% distributed monthly, providing constant passive income. Additionally, you can sell your property fractions at any time on our secondary market, providing high liquidity and flexibility."
+                    },
+                    "answer-6": {
+                        "strong": "Investment diversification:",
+                        "text": "The ability to buy fractions of multiple properties allows you to diversify your investment, reducing the risk associated with owning a single asset."
+                    },
+                    "answer-7": {
+                        "strong": "Platform security:",
+                        "text": "We use advanced security measures to protect your account and personal data. This includes two-factor authentication (2FA) and data encryption."
+                    },
+                    "answer-8": {
+                        "strong": "Total transparency:",
+                        "text": "All investors have access to detailed and updated information about the performance of their investments and the properties they have invested in. This includes market reports and detailed analysis."
+                    },
+                    "answer-9": "In summary, Argatio combines advanced blockchain technology, smart contracts, and rigorous security measures to ensure that your investment is protected and that you have access to a transparent and reliable platform."
+                },
+                "n-6": {
+                    "question": "Which legal framework regulates Argatio's operation?",
+                    "answer-1": "The legal framework that regulates Argatio's operation includes:",
+                    "answer-2": {
+                        "strong": "Financial regulation:",
+                        "text": "We comply with AML (Anti-Money Laundering) and KYC (Know Your Customer) laws to prevent fraud."
+                    },
+                    "answer-3": {
+                        "strong": "Real estate laws:",
+                        "text": "We adhere to local regulations regarding the buying and leasing of real estate."
+                    },
+                    "answer-4": {
+                        "strong": "Blockchain and cryptocurrency legislation:",
+                        "text": "We follow specific regulations regarding blockchain and cryptocurrencies, such as the SEC regulations in the US and directives in the EU."
+                    },
+                    "answer-5": {
+                        "strong": "Consumer protection:",
+                        "text": "We comply with consumer protection laws, ensuring transparency and fair rights."
+                    },
+                    "answer-6": {
+                        "strong": "Capital market regulation:",
+                        "text": "We follow directives such as MiFID II in the EU and the Securities Exchange Act in the US to ensure market integrity and investor protection."
+                    },
+                    "answer-7": "Argatio ensures compliance with these laws in all jurisdictions where it operates, ensuring security and transparency for its users."
+                }
+            },
+            "button": "Contact"
+        },
+        "details": {
+            "text-1": "Our AI chatbot answers all your questions.",
+            "text-2": "We can also get in touch and tell you more"
+        }
+    }
+    
+}

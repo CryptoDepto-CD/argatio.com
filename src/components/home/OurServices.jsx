@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slide from "../ui/slide/Slide";
+import { useTranslations } from "next-intl";
 
 // Carousel Imagenes
 import ImgViviendaPropia from "@/../public/img_vivienda_propia.png";
@@ -29,6 +30,9 @@ import HandsHouse from "@/../public/icons/house_hands.svg";
 import { Link } from "lucide-react";
 
 export default function OurServices() {
+
+  const t = useTranslations('slides');
+
   const settings = {
     className: "center",
     centerMode: true,
@@ -48,94 +52,94 @@ export default function OurServices() {
   const slides = [
     {
       title: {
-        title: "Vivienda propia",
-        description: "De inquilino a propietario",
+        title: t('slide1.title'),
+        description: t('slide1.description'),
         icon: "",
       },
       icons: [
         {
           src: HeartHouse,
           alt: "Casa con corazon",
-          text: "encuentra tu hogar",
+          text: t('slide1.icons.0.text'),
         },
         {
           src: Financiation,
           alt: "Financiacion",
-          text: "gestiona la financiación",
+          text: t('slide1.icons.1.text'),
         },
         {
           src: Owner,
           alt: "Documento de propiedad",
-          text: "Convertite en dueño",
+          text: t('slide1.icons.2.text'),
         },
       ],
       buttons: () => (
         <a href="/ViviendaPropia" className="px-10 py-2 mx-auto uppercase transition-all duration-300 border border-black border-solid rounded-full max-w-96 font-montserrat hover:bg-black hover:text-white">
-          Quiero mi hogar
+           {t('slide1.buttonText')}
         </a>
       ),
       bgImage: { src: ImgViviendaPropia, alt: "Vivienda Propia" },
     },
     {
       title: {
-        title: "negocio propio",
-        description: "tu negocio, tu local",
+        title:  t('slide2.title'),
+        description: t('slide2.description'),
         icon: "",
       },
       icons: [
         {
           src: HeartHouse,
           alt: "Casa con corazon",
-          text: "encuentra tu espacio",
+          text: t('slide2.icons.0.text'),
         },
         {
           src: Financiation,
           alt: "Financiacion",
-          text: "gestiona la financiación",
+          text: t('slide2.icons.1.text'),
         },
         {
           src: Owner,
           alt: "Documento de propiedad",
-          text: "Convertite en dueño",
+          text: t('slide2.icons.2.text'),
         },
       ],
       buttons: () => (
         <button className="px-10 py-2 mx-auto font-semibold uppercase transition-all duration-300 border border-black border-solid rounded-full max-w-96 font-montserrat hover:bg-black hover:text-white">
-          Quiero mi espacio
+       {t('slide2.buttonText')}
         </button>
       ),
       bgImage: { src: ImgNegocioPropio, alt: "Negocio Propio" },
     },
     {
       title: {
-        title: "INVERTIR",
-        description: "Multiplica tu dinero en todo el mundo.",
+        title: t('slide3.title'),
+        description: t('slide3.description'),
         icon: "",
       },
       icons: [
         {
           src: House,
           alt: "Casa",
-          text: "selecciona una propiedad",
+          text: t('slide3.icons.0.text'),
         },
         {
           src: AnalizingNumbers,
           alt: "Analiza",
-          text: "analiza los números",
+          text: t('slide3.icons.1.text'),
         },
         {
           src: Moneybag,
           alt: "Bolsa de monedas",
-          text: "Recibe las ganancias",
+          text: t('slide3.icons.2.text'),
         },
       ],
       buttons: () => (
         <>
           <button className="px-10 py-2 mx-auto font-semibold uppercase transition-all duration-300 border border-black border-solid rounded-full max-w-96 font-montserrat hover:bg-black hover:text-white">
-            Oportunidades
+          {t('slide3.buttonText1')}
           </button>
           <button className="px-10 py-2 mx-auto font-semibold text-white uppercase transition-all duration-100 bg-black border border-black border-solid rounded-full max-w-96 font-montserrat hover:opacity-75">
-            Simular Inversion
+          {t('slide3.buttonText2')}
           </button>
         </>
       ),
@@ -143,60 +147,60 @@ export default function OurServices() {
     },
     {
       title: {
-        title: "Comprar",
-        description: "una realidad para todos",
+        title: t('slide4.title'),
+        description: t('slide4.description'),
         icon: "",
       },
       icons: [
         {
           src: SearchHouse,
           alt: "Casa con lupa",
-          text: "Busca y Selecciona",
+          text: t('slide4.icons.0.text'),
         },
         {
           src: ManagePurchase,
           alt: "Gestiona tu compra",
-          text: "Gestiona tu compra",
+          text: t('slide4.icons.1.text'),
         },
         {
           src: KeyHouse,
           alt: "Llave",
-          text: "vive tu sueño",
+          text: t('slide4.icons.2.text'),
         },
       ],
       buttons: () => (
         <button className="px-10 py-2 mx-auto font-semibold uppercase transition-all duration-300 border border-black border-solid rounded-full max-w-96 font-montserrat hover:bg-black hover:text-white">
-          Quiero ser dueño
+         {t('slide4.buttonText')}
         </button>
       ),
       bgImage: { src: ImgComprar, alt: "Comprar" },
     },
     {
       title: {
-        title: "vender",
-        description: "disfruta los beneficios de la tokenizacion",
+        title: t('slide5.title'),
+        description: t('slide5.description'),
         icon: "",
       },
       icons: [
         {
           src: TokenHouse,
           alt: "Casa con tokens",
-          text: "tokenizamos tu propiedad",
+          text: t('slide5.icons.0.text'),
         },
         {
           src: DocumentHouse,
           alt: "Casa con documentos",
-          text: "llegamos a los inversores",
+          text: t('slide5.icons.1.text'),
         },
         {
           src: HandsHouse,
           alt: "Negociacion",
-          text: "recibe tu dinero",
+          text: t('slide5.icons.2.text'),
         },
       ],
       buttons: () => (
         <button className="px-10 py-2 mx-auto font-semibold uppercase transition-all duration-300 border border-black border-solid rounded-full max-w-96 font-montserrat hover:bg-black hover:text-white">
-          Quiero mi hogar
+         {t('slide5.buttonText')}
         </button>
       ),
       bgImage: { src: ImgVender, alt: "Vivienda Propia" },
@@ -205,7 +209,7 @@ export default function OurServices() {
 
   return (
     <section className="flex flex-col items-center my-20 overflow-hidden text-center ">
-      <h2 className="font-semibold leading-none text-white uppercase text-clamp-big font-montserrat">Nuestros servicios</h2>
+      <h2 className="font-semibold leading-none text-white uppercase text-clamp-big font-montserrat">{t('header')}</h2>
       <div className="flex flex-col items-center w-full py-10 mx-auto text-white slider-container">
         <Slider
           {...settings}

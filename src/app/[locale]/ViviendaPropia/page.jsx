@@ -2,12 +2,12 @@ import BgForms from "@/../public/ViviendaPropia/forms_bg.svg";
 
 import Image from "next/image";
 
-import HeroSection from "../../components/viviendaPropia/HeroSection";
-import ApplyAsBuyerSection from "../../components/viviendaPropia/ApplyAsBuyerSection";
-import ApplyPropertySection from "../../components/viviendaPropia/ApplyPropertySection";
-import HowItWorksSection from "../../components/viviendaPropia/HowItWorksSection";
-import WhyOwnHome from "../../components/viviendaPropia/WhyOwnHome";
-import NeedHelpSection from "../../components/viviendaPropia/NeedHelpSection";
+import HeroSection from "../../../components/viviendaPropia/HeroSection";
+import ApplyAsBuyerSection from "../../../components/viviendaPropia/ApplyAsBuyerSection";
+import ApplyPropertySection from "../../../components/viviendaPropia/ApplyPropertySection";
+import HowItWorksSection from "../../../components/viviendaPropia/HowItWorksSection";
+import WhyOwnHome from "../../../components/viviendaPropia/WhyOwnHome";
+import NeedHelpSection from "../../../components/viviendaPropia/NeedHelpSection";
 
 export default function ViviendaPropia() {
   return (

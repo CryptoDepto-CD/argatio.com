@@ -1,0 +1,36 @@
+{
+  "common": {
+    "navbar": {
+      "own-home": "Vivienda Propia",
+      "aboutus": "Quienes somos",
+      "button-blockchain": {
+        "btn-title": "Iniciar Sesión",
+        "children": "Mi billetera"
+      },
+      "mismatched": {
+        "text": "Por favor, cambia a la red Polygon",
+        "button": "Cambiar a Polygon"
+      }
+    },
+    "footer": {
+      "invest": {
+        "title": "Invertí en Argatio",
+        "aboutus": "¿Quiénes somos?",
+        "legal-information": "Información Legal"
+      },
+      "our-services": {
+        "title": "Nuestros servicios",
+        "own-home": "Vivienda propia",
+        "own-business": "Negocio propio",
+        "invest": "Invertir",
+        "buy": "Comprar",
+        "sell": "Vender"
+      },
+      "help": {
+        "title": "¿Te ayudamos?",
+        "help-center": "Centro de Ayuda",
+        "contact": "Contacto"
+      }
+    }
+  }
+}

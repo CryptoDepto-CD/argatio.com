@@ -7,12 +7,15 @@ import { useAddress, useNetworkMismatch, useSwitchChain } from "@thirdweb-dev/re
 import Matic from "@/../public/wallet/icon_matic.svg"
 
 import ButtonBlockchain from "@/components/ui/ButtonBlockchain/ButtonBlockchain";
+import { useTranslations } from "next-intl";
 
 export default function NavBar() {
   const address = useAddress()
   const isMismatched = useNetworkMismatch();
   const switchChain = useSwitchChain();
   const [isOpen, setIsOpen] = useState(false);
+
+  const t = useTranslations("common.navbar")
 
   return (
     <nav className="relative flex items-center justify-between px-12 py-4 uppercase">
@@ -54,7 +57,7 @@ export default function NavBar() {
         <li
           className={`mr-2 md:mt-0 mt-3 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}
         >
-          <Link href="/ViviendaPropia" onClick={() => setIsOpen(false)}>Vivienda Propia</Link>
+          <Link href="/ViviendaPropia" onClick={() => setIsOpen(false)}>{t("own-home")}</Link>
         </li>
         {/* <li
           className={`mr-2 md:mt-0 mt-3 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}
@@ -64,15 +67,15 @@ export default function NavBar() {
         <li
           className={`mr-2 md:mt-0 mt-3 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}
         >
-          <Link href="/UnderConstruction" onClick={() => setIsOpen(false)}>Quienes Somos</Link>
+          <Link href="/UnderConstruction" onClick={() => setIsOpen(false)}>{t("aboutus")}</Link>
         </li>
         {/* <li
           className={`mr-2 md:mt-0 mt-3 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}
         >
           <Link href="https://app.argatio.com/">Contacto</Link>
         </li> */}
-        <ButtonBlockchain type="link" href="/wallet" btnTitle="Iniciar Sesión">
-          Mi Billetera
+        <ButtonBlockchain type="link" href="/wallet" btnTitle={t("button-blockchain.btn-title")}>
+          {t("button-blockchain.children")}
         </ButtonBlockchain>
         {/* <li
           className={`mr-2 text-xs lg:text-sm font-semibold align-middle flex items-center font-montserrat py-2 px-5 cursor-pointer bg-white rounded-full md:mt-0 mt-3 text-black w-fit min-w-fit hover:shadow-[0px_0px_9px_0px_white]`}
@@ -88,11 +91,11 @@ export default function NavBar() {
                     rounded-[10px] '>
           <Image src={Matic} alt={'Matic'} className="w-20" />
           <span className='text-lg font-bold text-[var(--light-blue)] md:text-2xl my-5 px-4 text-center'>
-            Por favor, cambia a la red Polygon
+            {t("mismatched.text")}
           </span>
           <button className=' text-sm mx-2 rounded-[10px] border-2 border-white bg-transparent px-3 py-1 text-white font-semibold hover:bg-[var(--dark-blue)] md:text-xl'
             onClick={() => switchChain(process.env.NEXT_PUBLIC_ACTIVE_CHAIN_ID)}>
-            Cambiar a Polygon
+            {t("mismatched.button")}
           </button>
         </div>
       )}

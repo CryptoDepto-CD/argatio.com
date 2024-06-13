@@ -14,8 +14,12 @@ import Circle4 from "@/../public/ViviendaPropia/circle_4.png";
 import Button from "@/components/ui/Button/Button";
 import DialogCover from "./DialogCover";
 import HouseDividedAnimation from "./HouseDividedAnimation";
+import { useTranslations } from "next-intl";
 
 export default function SellHouseDialog({ open, handleClick }) {
+
+  const t = useTranslations("vivienda-propia.how-it-works-section.sell-house-dialog")
+
   return (
     <dialog
       className="z-40 hidden transition-all duration-500 group-hover:block font-montserrat"
@@ -28,12 +32,11 @@ export default function SellHouseDialog({ open, handleClick }) {
       <div
         className={`z-50 fixed top-[20vh] left-[10vw] bg-white  rounded-[50px] py-10 text-bluePrimary w-[clamp(250px,80vw,80vw)] h-[clamp(500px,65vh,1000px)] overflow-x-hidden overflow-y-scroll `}
       >
-        <DialogCover title="Vende tu propiedad con Argatio" text="Disfruta de los beneficios de la Tokenización" />
+        <DialogCover title={t("title")} text={t("subtitle")} />
 
         <div className="flex flex-col gap-10 px-12 md:px-20 py-14 md:flex-row text-balance">
           <p className="text-[clamp(1.1rem,4vw,1.4rem)] font-medium md:w-2/4">
-            Dividimos el valor de tu inmueble en participaciones que pueden ser
-            compradas por diferentes personas.
+            {t("text-section-1")}
           </p>
           <HouseDividedAnimation />
         </div>
@@ -41,8 +44,7 @@ export default function SellHouseDialog({ open, handleClick }) {
         <div className="flex gap-10 px-12 md:px-20 py-14">
           <div className="relative w-full lg:w-3/5">
             <p className="md:absolute text-[clamp(1.1rem,4vw,1.4rem)] max-w-[22rem] top-2 right-2 pb-5 font-medium">
-              Ofrecemos estas partes a nuestra red de inversores, quienes pueden
-              adquirir una participación de la propiedad.
+              {t("text-section-2")}
             </p>
             <div className="">
               <Image src={Circle1} alt="Circulo 1" className="w-1/3" />
@@ -74,15 +76,13 @@ export default function SellHouseDialog({ open, handleClick }) {
         <div className="flex flex-col gap-10 px-12 md:px-20 py-14 md:flex-row text-balance">
           <Image src={SellHouse3} alt="Casa" className="w-full md:w-3/5 " />
           <p className="text-[clamp(1.1rem,4vw,1.4rem)] font-medium md:w-2/4">
-            Dividimos el valor de tu inmueble en participaciones que pueden ser
-            compradas por diferentes personas.
+            {t("text-section-3")}
           </p>
         </div>
 
         <div className="flex flex-col-reverse justify-between gap-10 px-12 md:px-20 py-14 md:flex-row text-balance">
           <p className="text-[clamp(1.1rem,4vw,1.4rem)] font-medium max-w-[300px] text-balance md:pl-10">
-            Utilizamos tecnología BLOCKCHAIN para una transacción transparente y
-            segura.
+            {t("text-section-4")}
           </p>
           <div className="relative w-full md:w-2/4">
             <Image
@@ -98,11 +98,9 @@ export default function SellHouseDialog({ open, handleClick }) {
           <Image src={SellHouse6} alt="Fondo" className="-mb-[25%]" />
           <div className="w-full py-[5vw] text-center backdrop-blur-sm">
             <div className="max-w-[1000px] px-14 mx-auto text-[clamp(1.1rem,4vw,1.4rem)] text-pretty my-auto">
-              <p className="pb-3 font-medium">Leasing con Opción a Compra</p>
+              <p className="pb-3 font-medium">{t("text-section-5.leasing")}</p>
               <p>
-                También ofrecemos la propiedad a inquilinos potenciales mediante
-                nuestro modelo de leasing, donde pueden comprar partes
-                gradualmente hasta convertirse en propietarios completos.
+                {t("text-section-5.text")}
               </p>
             </div>
           </div>
@@ -110,10 +108,10 @@ export default function SellHouseDialog({ open, handleClick }) {
 
         <div className="flex flex-col items-center p-10 gap-14">
           <p className="text-center text-clamp-subtitle">
-            Registrate y respondemos todas tus dudas
+            {t("text-section-6")}
           </p>
           <button className="px-10 py-1 mx-auto font-semibold uppercase transition-all duration-300 border border-black border-solid rounded-full max-w-96 font-montserrat hover:bg-black hover:text-white">
-          Quiero vender
+          {t("button")}
         </button>
         {/* <Button type="link" href="/ViviendaPropia#homeSection">Quiero Vender</Button> */}
         </div>
