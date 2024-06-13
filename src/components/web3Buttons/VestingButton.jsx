@@ -4,6 +4,7 @@ import GlobalVestingABI from '../../utils/OldVesting.json'
 import VestingABI from '../../utils/Vesting.json'
 import { addressVestingARGA } from "@/utils/constants";
 import { GetWeiAmount } from "@/hooks/useBlockchain";
+import { useTranslations } from "next-intl";
 
 export function VestingButton({
     type,
@@ -14,6 +15,8 @@ export function VestingButton({
     onErrorFunction,
     disabled
 }) {
+
+    const t = useTranslations("wallet.investment-section")
 
     var amountInWei = GetWeiAmount(stableAddress, stableAmount)
 
@@ -40,7 +43,7 @@ export function VestingButton({
             isDisabled={disabled}
             contractAbi={VestingABI}
         >
-            {type === "invest" && `Comprar con ${stableAmount} ${stableName}`}
+            {type === "invest" && `${t("vesting-btn")} ${stableAmount} ${stableName}`}
         </Web3Button>
     );
 }

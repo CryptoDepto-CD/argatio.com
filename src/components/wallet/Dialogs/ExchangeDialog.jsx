@@ -8,6 +8,7 @@ import { ethers } from "ethers";
 import { ERC20Button } from "@/components/web3Buttons/ERC20-Button";
 import { ExchangeButton } from "@/components/web3Buttons/ExchangeButton";
 import Alerta from "@/components/ui/Alerta/Alerta";
+import { useTranslations } from "next-intl";
 
 const tokenPhases = [
   { phase: 1, total: 1000, toRealese: 500, liberated: 500 },
@@ -44,11 +45,13 @@ export default function ExchangeDialog({ open, handleClick }) {
     setInputValue(fullTokenBalance)
   }
 
+  const t = useTranslations("wallet.swap");
+
   const handleApprovalSuccess = () => {
     setApprovalSuccess(true);
     Alerta({
-      title: 'Todo listo',
-      text: `Aprobaste el uso de tokens CD correctamente. Ya puedes intercambiar`,
+      title: t("alerts.approval-success.title"),
+      text: t("alerts.approval-success.text"),
       img: Error,
     });
   };
@@ -65,8 +68,8 @@ export default function ExchangeDialog({ open, handleClick }) {
   const handleExchangeSuccess = () => {
     setApprovalSuccess(false);
     Alerta({
-      title: 'Completado',
-      text: `Intercambio realizado con éxito.`,
+      title: t("alerts.exchange-success.title"),
+      text: t("alerts.exchange-success.text"),
       img: Error,
     });
   };
@@ -76,7 +79,7 @@ export default function ExchangeDialog({ open, handleClick }) {
       setApprovalSuccess(false);
       Alerta({
         title: 'Ups..',
-        text: 'No tienes suficiente saldo.',
+        text: t("alerts.exchange-error-text"),
         img: Error,
       });
     } else {
@@ -99,7 +102,7 @@ export default function ExchangeDialog({ open, handleClick }) {
         className={`z-50 fixed top-[10%]  left-[10%] lg:left-[25%] bg-white  rounded-2xl p-10 px-6 md:px-10  w-[clamp(250px,80vw,900px)] lg:w-[clamp(200px,50vw,1000px)] h-[clamp(600px,80vh,950px)] overflow-y-scroll overflow-hidden`}
       >
         <p className=" leading-none text-[clamp(1.2rem,4vw,2rem)] font-montserrat font-semibold uppercase py-5 text-center">
-          Intercambia CD por ARGA
+          {t("dialog.swap")}
         </p>
         <div className="flex flex-col items-center gap-4 text-center md:mx-10">
           <div className="w-full">
@@ -148,7 +151,7 @@ export default function ExchangeDialog({ open, handleClick }) {
 
           <div className="flex flex-col items-center justify-center my-5 font-montserrat">
             <p className="pb-5 font-semibold uppercase md:text-clamp-text text-balance">
-              ¿Cuántos TOKEN CD quieres intercambiar a ARGA TOKEN?
+            {t("dialog.how-many-tokens")}
             </p>
             <div className="flex flex-row flex-wrap items-start justify-center gap-5">
               <div className="flex flex-col items-center gap-1">

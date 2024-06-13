@@ -4,6 +4,7 @@ import ERC20ABI from '../../utils/ERC20.json'
 import ExchangeABI from '../../utils/Exchange.json'
 import { GetWeiAmount } from "@/hooks/useBlockchain";
 import { addressExchangeARGA, addressARGA } from "@/utils/constants";
+import { useTranslations } from "next-intl";
 
 export function ExchangeButton({
     amount,
@@ -11,6 +12,7 @@ export function ExchangeButton({
     onSuccessFunction,
     onErrorFunction,
 }) {
+    const t = useTranslations("wallet.swap")
 
     var amountInWei = GetWeiAmount(addressARGA, amount)
 
@@ -36,7 +38,7 @@ export function ExchangeButton({
             onError={(error) => onErrorFunction(error)}
             contractAbi={ExchangeABI}
         >
-            {type === "exchangeTokens" && `Intercambiar ${amount} tokens CD`}
+            {type === "exchangeTokens" && `${t("exchange-btn")} ${amount} tokens CD`}
         </Web3Button>
     );
 }

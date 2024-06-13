@@ -7,8 +7,10 @@ import ButtonBlockchain from "@/components/ui/ButtonBlockchain/ButtonBlockchain"
 import { ConnectWallet } from "@thirdweb-dev/react";
 import { useAddress, useDisconnect } from "@thirdweb-dev/react";
 import AdminSection from "@/components/wallet/AdminSection";
+import { useTranslations } from "next-intl";
 
 export default function Wallet() {
+  const t = useTranslations("wallet");
 
   const address = useAddress()
   const disconnect = useDisconnect();
@@ -17,15 +19,15 @@ export default function Wallet() {
     <main>
 
       {!address ? (
-        <div className="w-full min-h-screen flex items-center justify-center">
+        <div className="flex items-center justify-center w-full min-h-screen">
           <div>
             <ConnectWallet
-              btnTitle={'Iniciar sesión'}
+              btnTitle={t("login")}
               modalTitle="Welcome"
               hideTestnetFaucet={true}
               hideSwitchToPersonalWallet={true}
               showThirdwebBranding={false}
-              className=" !rounded-full !px-10 !py-1 !font-semibold !containertext-center !text-black !transition-colors !bg-white !hover:bg-black !outline !grow !font-montserrat !hover:text-white"
+              className="!rounded-full !px-10 !py-1 !font-semibold !containertext-center !text-black !transition-colors !bg-white !hover:bg-black !outline !grow !font-montserrat !hover:text-white"
             />
           </div>
 
@@ -33,13 +35,13 @@ export default function Wallet() {
 
       ) : (
         <>
-          <div className="w-full flex justify-end mr-16">
+          <div className="flex justify-end w-full mr-16">
             <div>
               <button
-                className=" mx-12 rounded-full px-10 py-1 font-semibold containertext-center text-black transition-colors bg-white hover:bg-black outline grow font-montserrat hover:text-white"
+                className="px-10 py-1 mx-12 font-semibold text-black transition-colors bg-white rounded-full containertext-center hover:bg-black outline grow font-montserrat hover:text-white"
                 onClick={disconnect}
               >
-                Desconectar
+                {t("disconnect")}
               </button>
             </div>
           </div>
