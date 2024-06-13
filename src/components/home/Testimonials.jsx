@@ -15,9 +15,9 @@ export default function Testimonials() {
 
   const images = [ArgatioLogo1, ArgatioLogo2, ArgatioLogo3];
   const testimonials = [
-    t('testimonials.text1'),
-    t('testimonials.text2'),
-    t('testimonials.text3'),
+    t('text1'),
+    t('text2'),
+    t('text3'),
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

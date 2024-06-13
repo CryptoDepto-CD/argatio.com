@@ -82,7 +82,7 @@ export default function OurServices() {
     },
     {
       title: {
-        title:  t('slide2.title'),
+        title: t('slide2.title'),
         description: t('slide2.description'),
         icon: "",
       },
