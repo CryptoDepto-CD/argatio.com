@@ -4,13 +4,16 @@ import BuyHouse1 from "@/../public/ViviendaPropia/buy_house_1.png";
 import BuyHouse2 from "@/../public/ViviendaPropia/sell_house_3.png";
 import BuyHouse3 from "@/../public/ViviendaPropia/sell_house_6.png";
 import BuyHouse4 from "@/../public/ViviendaPropia/buy_house_2.png";
+import BuyHouseEn4 from "@/../public/ViviendaPropia/buy_house_2_en.png";
 
 import DialogCover from "./DialogCover";
 import HouseDividedAnimation from "./HouseDividedAnimation";
 import ChangeHousesAnimation from "./ChangeHousesAnimation";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function BuyHouseDialog({ open, handleClick }) {
+
+  const locale = useLocale()
 
   const t = useTranslations("vivienda-propia.how-it-works-section.buy-house-dialog")
 
@@ -54,8 +57,12 @@ export default function BuyHouseDialog({ open, handleClick }) {
             alt="Hombre con laptop"
             className="w-full md:w-1/2"
           />
-          <div className="flex items-center justify-center w-full border-2 border-black border-solid rounded-full md:w-1/2 aspect-square shrink-0">
-            <Image src={BuyHouse4} alt="texto" className="max-w-[75%] aspect-square object-contain mx-auto" />
+          <div className="flex items-center justify-center w-full md:w-1/2 aspect-square shrink-0">
+            {locale === "es" ? (
+              <Image src={BuyHouse4} alt="texto" className="max-w-[75%] aspect-square object-contain mx-auto" />
+            ) : (
+              <Image src={BuyHouseEn4} alt="texto" className="max-w-[75%] aspect-square object-contain mx-auto" />
+            )}
           </div>
         </div>
 

@@ -4,6 +4,7 @@ import SellHouse2 from "@/../public/ViviendaPropia/sell_house_2.png";
 import SellHouse3 from "@/../public/ViviendaPropia/sell_house_3.png";
 import SellHouse4 from "@/../public/ViviendaPropia/sell_house_4.png";
 import SellHouse5 from "@/../public/ViviendaPropia/sell_house_5.png";
+import SellHouseEn5 from "@/../public/ViviendaPropia/sell_house_5_en.png";
 import SellHouse6 from "@/../public/ViviendaPropia/sell_house_6.png";
 
 import Circle1 from "@/../public/ViviendaPropia/circle_1.png";
@@ -14,11 +15,13 @@ import Circle4 from "@/../public/ViviendaPropia/circle_4.png";
 import Button from "@/components/ui/Button/Button";
 import DialogCover from "./DialogCover";
 import HouseDividedAnimation from "./HouseDividedAnimation";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function SellHouseDialog({ open, handleClick }) {
 
   const t = useTranslations("vivienda-propia.how-it-works-section.sell-house-dialog")
+
+  const locale = useLocale();
 
   return (
     <dialog
@@ -85,11 +88,20 @@ export default function SellHouseDialog({ open, handleClick }) {
             {t("text-section-4")}
           </p>
           <div className="relative w-full md:w-2/4">
-            <Image
-              src={SellHouse5}
-              alt="Circulo"
-              className="w-[70%] md:absolute max-w-[300px] -top-[40%] -left-[18%]"
-            />
+            { locale === "es" ? (
+                <Image
+                  src={SellHouse5}
+                  alt="Circulo"
+                  className="w-[70%] md:absolute max-w-[300px] -top-[40%] -left-[18%]"
+                />
+              ) : (
+                <Image
+                  src={SellHouseEn5}
+                  alt="Circulo"
+                  className="w-[70%] md:absolute max-w-[300px] -top-[40%] -left-[18%]"
+                />
+              )
+            }
             <Image src={SellHouse4} alt="Hombre con laptop" className="" />
           </div>
         </div>

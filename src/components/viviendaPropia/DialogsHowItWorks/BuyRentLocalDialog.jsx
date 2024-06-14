@@ -4,15 +4,20 @@ import BuyHouse1 from "@/../public/ViviendaPropia/buy_house_1.png";
 import BuyHouse2 from "@/../public/ViviendaPropia/sell_house_3.png";
 import BuyHouse3 from "@/../public/ViviendaPropia/sell_house_6.png";
 import BuyHouse4 from "@/../public/ViviendaPropia/buy_house_2.png";
+import BuyHouseEn4 from "@/../public/ViviendaPropia/buy_house_2_en.png";
 import BuyHouse5 from "@/../public/ViviendaPropia/buy_rent_local_1.png";
+import BuyHouse6 from "@/../public/ViviendaPropia/buy_house_3.png";
+import BuyHouseEn6 from "@/../public/ViviendaPropia/buy_house_3_en.png";
 
 import DialogCover from "./DialogCover";
 import HouseDividedAnimation from "./HouseDividedAnimation";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function BuyRentLocalDialog({ open, handleClick }) {
 
   const t = useTranslations("vivienda-propia.how-it-works-section.buy-rent-local-dialog")
+  const locale = useLocale()
+
   return (
     <dialog
       className="z-40 hidden transition-all duration-500 group-hover:block font-montserrat"
@@ -55,12 +60,18 @@ export default function BuyRentLocalDialog({ open, handleClick }) {
             alt="Hombre con laptop"
             className="w-full md:w-1/2"
           />
-          <div className="flex items-center justify-center w-full border-2 border-black border-solid rounded-full md:w-1/2 aspect-square shrink-0">
-            <Image
-              src={BuyHouse4}
-              alt="texto"
-              className="max-w-[75%] aspect-square object-contain mx-auto"
-            />
+          <div className="relative flex items-center justify-center w-full md:w-1/2 aspect-square shrink-0">
+            {locale === "es" ? (
+              <>
+                <Image src={BuyHouse4} alt="texto" className="absolute z-20 -top-5 -left-5 sm:-top-8 md:-top-6 md:-left-8 xl:-left-14 max-w-[75%] aspect-square object-contain mx-auto" />
+                <Image src={BuyHouse6} alt="texto" className="absolute z-10 bottom-0 -right-2 sm:-right-8 md:right-0 max-w-[60%] aspect-square object-contain mx-auto" />
+              </>
+            ) : (
+              <>
+                <Image src={BuyHouseEn4} alt="texto" className="absolute z-20 -top-5 -left-5 sm:-top-8 md:-top-6 md:-left-8 xl:-left-14 max-w-[75%] aspect-square object-contain mx-auto" />
+                <Image src={BuyHouseEn6} alt="texto" className="absolute z-10 bottom-0 -right-2 sm:-right-8 md:right-0 max-w-[60%] aspect-square object-contain mx-auto" />
+              </>
+            )}
           </div>
         </div>
 
