@@ -96,11 +96,11 @@
     },
 
     "my-arga-tokens": {
-      "title": "Mis Arga Tokens",
+      "title": "My Arga Tokens",
       "phase": "PHASE",
       "acquired": "ACQUIRED",
       "released": "RELEASED",
-      "locked": "BLOQUEADO",
+      "locked": "LOCKED",
 
       "release-btn": "Release"
     }

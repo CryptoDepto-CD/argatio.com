@@ -25,7 +25,7 @@ export default function HeroSection() {
           </div>
           <div className="flex flex-col w-full gap-[2.5rem_5vw] lg:flex-row text-black">
             <Button type="link" href="#howItWorksSection">{t("button-how")}</Button>
-            <Button type="link" href="/UnderConstruction">{t("button-iwant")}</Button>
+            <Button type="link" href="/under-construction">{t("button-iwant")}</Button>
           </div>
           
 

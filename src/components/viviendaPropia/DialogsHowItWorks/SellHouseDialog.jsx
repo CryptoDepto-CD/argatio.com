@@ -113,7 +113,7 @@ export default function SellHouseDialog({ open, handleClick }) {
           <button className="px-10 py-1 mx-auto font-semibold uppercase transition-all duration-300 border border-black border-solid rounded-full max-w-96 font-montserrat hover:bg-black hover:text-white">
           {t("button")}
         </button>
-        {/* <Button type="link" href="/ViviendaPropia#homeSection">Quiero Vender</Button> */}
+        {/* <Button type="link" href="/own-home#homeSection">Quiero Vender</Button> */}
         </div>
       </div>
     </dialog>

@@ -14,7 +14,7 @@ export default function HeroSection() {
       <p className="text-clamp-text">{t("token")}</p>
       <div className="flex items-center gap-[2rem_5vw] justify-between w-full max-w-[900px] flex-col *:min-w-fit *:flex-auto md:flex-row">
         <BuyArgaToken />
-        <Link href="/UnderConstruction" className="px-10 py-1 uppercase min-w-fit grow w-full rounded-full bg-[#545454] opacity-80 hover:cursor-not-allowed" disabled>Stake Arga Token</Link>
+        <Link href="/under-construction" className="px-10 py-1 uppercase min-w-fit grow w-full rounded-full bg-[#545454] opacity-80 hover:cursor-not-allowed" disabled>Stake Arga Token</Link>
       </div>
     </section>
   )

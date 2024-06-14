@@ -18,10 +18,10 @@ export default function HeroSection() {
           {t('title')}
           </h2>
           <Link
-            href="/ViviendaPropia#homeSection"
+            href="/own-home#homeSection"
             className="w-full px-10 py-2 mx-auto lg:mx-0 text-center text-black uppercase bg-white border-2 border-black border-solid rounded-full font-montserrat hover:opacity-90 max-w-[350px] lg:text-lg"
           >
-             {t('link')}
+            {t('link')}
           </Link>
         </div>
         <div className="hidden text-right uppercase pt-14 font-nats md:block">

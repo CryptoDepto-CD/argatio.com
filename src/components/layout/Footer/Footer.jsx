@@ -40,7 +40,7 @@ export default function Footer() {
           <ol className="flex flex-col gap-2">
             <li>
               <Link
-                href="/UnderConstruction"
+                href="/under-construction"
                 className="transition-all hover:underline"
               >
                 {t("invest.aboutus")}
@@ -77,7 +77,7 @@ export default function Footer() {
           <ol className="flex flex-col gap-2">
             <li>
               <Link
-                href="/ViviendaPropia"
+                href="/own-home"
                 className="transition-all hover:underline"
               >
                 {t("our-services.own-home")}
@@ -85,7 +85,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="/UnderConstruction"
+                href="/under-construction"
                 className="transition-all hover:underline"
               >
                 {t("our-services.own-business")}
@@ -93,7 +93,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="/UnderConstruction"
+                href="/under-construction"
                 className="transition-all hover:underline"
               >
                 {t("our-services.invest")}
@@ -101,7 +101,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="/UnderConstruction"
+                href="/under-construction"
                 className="transition-all hover:underline"
               >
                 {t("our-services.buy")}
@@ -109,7 +109,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="/UnderConstruction"
+                href="/under-construction"
                 className="transition-all hover:underline"
               >
                 {t("our-services.sell")}
