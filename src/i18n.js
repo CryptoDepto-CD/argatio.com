@@ -10,8 +10,10 @@ export default getRequestConfig(async ({ locale }) => {
     messages: {
       ...(await import(`../locales/${locale}/home.json`)).default,
       ...(await import(`../locales/${locale}/common.json`)).default,
+      ...(await import(`../locales/${locale}/argatoken.json`)).default,
       ...(await import(`../locales/${locale}/viviendaPropia.json`)).default,
-      // ...(await import(`../locales/${locale}/about.json`)).default,
+      ...(await import(`../locales/${locale}/aboutUs.json`)).default,
+      ...(await import(`../locales/${locale}/wallet.json`)).default,
     },
   };
 });

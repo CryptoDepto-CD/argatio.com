@@ -12,6 +12,7 @@ import {
   GetNativeBalance,
   GetERC20Balance
 } from "@/hooks/useBlockchain";
+import { useTranslations } from "next-intl";
 
 const elements = [
   { logo: Matic, token: "MATIC", value: "00.00" },
@@ -21,6 +22,7 @@ const elements = [
 ];
 
 export default function Funds() {
+  const t = useTranslations("wallet.funds")
 
   const { nativeBalance } = GetNativeBalance()
   const { tokenBalance: balanceUSDT } = GetERC20Balance(addressUSDT)
@@ -30,7 +32,7 @@ export default function Funds() {
   return (
     <div>
       <h3 className="my-5 text-center uppercase text-clamp-title font-nats">
-        Fondos
+        {t("title")}
       </h3>
       <div className="">
 

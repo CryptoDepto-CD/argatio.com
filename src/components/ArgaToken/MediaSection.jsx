@@ -1,6 +1,9 @@
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 export default function MediaSection() {
+  const t = useTranslations("argatoken.media-section")
+
   const elements = [
     { text: "TEV", url: "https://youtu.be/bAHGan9dDOQ?si=XUacyTmp6SMK8isJ" },
     {
@@ -16,7 +19,7 @@ export default function MediaSection() {
   return (
     <section className="px-10 py-10">
       <h2 className="py-10 text-center uppercase font-nats text-clamp-title">
-        Medios
+        {t("title")}
       </h2>
       <div className="flex flex-wrap items-center justify-center h-full gap-[3.5rem_8vw]">
         {elements.map((element, index) => (

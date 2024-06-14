@@ -1,0 +1,108 @@
+{
+  "wallet": {
+    "login": "Log In",
+    "disconnect": "Disconnect",
+
+    "presale-vesting-section": {
+      "presale": "Presale",
+      "phases": {
+        "phase01": "Phase 01",
+        "phase02": "Phase 02",
+        "phase03": "Phase 03"
+      },
+      "tokens-sold": "Tokens sold",
+      "limit": "Wallet limit per phase"
+    },
+
+    "investment-section": {
+      "form": {
+        "title": "Investment"
+      },
+
+      "vesting-btn": "Buy with",
+      "erc20-btn": "Approve",
+
+      "alerts": {
+        "approval-success": {
+          "title": "All Ready",
+          "text": "You passed the use of {value} successfully. You can now buy."
+        },
+        "purchase-success": {
+          "title": "Complete",
+          "text": "Purchase made successfully."
+        },
+        "purchase-error-text": "You don't have enough balance."
+      }
+    },
+
+    "buy": {
+      "title": "Buy",
+      "dialog": {
+        "phase": "Phase {value}",
+        "contract": "ARGA TOKEN cONTRAcT",
+        "network": "network"
+      }
+    },
+
+    "recieve": {
+      "title": "Recieve",
+      "dialog": {
+        "address": "WALLET ADRESS",
+        "network": "RED",
+        "important": {
+          "title": "Important:",
+          "text": "Only send cryptocurrencies to this address through the Polygon network.",
+          "copy-btn": "Copy",
+          "address-copied": "Address copied"
+        }
+      }
+    },
+
+    "send": {
+      "title": "Send",
+      "dialog": {
+        "address": "DESTINATION ADDRESS",
+        "asset": "ASSET",
+        "investment": "Investment",
+        "balance": "Balance: ",
+        "send-btn": "Send"
+      }
+    },
+
+    "swap": {
+      "title": "Swap",
+      "dialog": {
+        "swap": "Exchange CD for ARGA",
+        "how-many-tokens": "How many CD TOKEN do you want to exchange to ARGA TOKEN?"
+      },
+
+      "exchange-btn": "Echange",
+
+      "alerts": {
+        "approval-success": {
+          "title": "All Ready",
+          "text": "You have successfully approved the use of CD tokens, you can now exchange them."
+        },
+        "exchange-success": {
+          "title": "Complete",
+          "text": "Exchange completed successfully"
+        },
+        "exchange-error-text": "You don't have enough balance."
+      }
+    },
+
+    "funds": {
+      "title": "Funds"
+    },
+
+    "my-arga-tokens": {
+      "title": "My Arga Tokens",
+      "phase": "PHASE",
+      "acquired": "ACQUIRED",
+      "released": "RELEASED",
+      "locked": "LOCKED",
+
+      "release-btn": "Release"
+    }
+  }
+}

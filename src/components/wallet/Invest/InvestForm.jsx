@@ -11,6 +11,7 @@ import {
 } from "@/utils/constants";
 import { GetPhaseInfo, GetCurrentPhaseNumber } from "@/hooks/useBlockchain";
 import Alerta from "@/components/ui/Alerta/Alerta";
+import { useTranslations } from "next-intl";
 
 export default function InvestForm({ buttonName, buttonClick, light = false }) {
   const [inputValue, setInputValue] = useState(1);
@@ -37,13 +38,15 @@ export default function InvestForm({ buttonName, buttonClick, light = false }) {
     } else if (currencyValue === 'BUSD') {
       setAddressSelectedCurrency(addressBUSD);
     }
-}
+  }
+
+  const t = useTranslations("wallet.investment-section")
 
   const handleApprovalSuccess = () => {
     setApprovalSuccess(true);
     Alerta({
-      title: 'Todo listo',
-      text: `Aprobaste el uso de ${selectedToken} correctamente. Ya puedes comprar`,
+      title: t("alerts.approval-success.title"),
+      text: t("alerts.approval-success.text", {value: selectedToken}),
       img: Error,
     });
   };
@@ -60,8 +63,8 @@ export default function InvestForm({ buttonName, buttonClick, light = false }) {
   const handlePurchaseSuccess = () => {
     setApprovalSuccess(false);
     Alerta({
-      title: 'Completado',
-      text: `Compra realizada con éxito.`,
+      title: t("alerts.purchase-success.title"),
+      text: t("alerts.purchase-success.text"),
       img: Error,
     });
   };
@@ -71,7 +74,7 @@ export default function InvestForm({ buttonName, buttonClick, light = false }) {
       setApprovalSuccess(false);
       Alerta({
         title: 'Ups..',
-        text: 'No tienes suficiente saldo.',
+        text: t("alerts.purchase-error-text"),
         img: Error,
       });
     } else {
@@ -88,7 +91,7 @@ export default function InvestForm({ buttonName, buttonClick, light = false }) {
     <div className={`${light ? "text-black" : "text-white"}`}>
       <div className="flex flex-wrap items-center justify-center mt-16 mb-10 gap-x-10 gap-y-8 text-clamp-text">
         <div className="flex flex-col items-center">
-          <p className="font-semibold font-montserrat">Inversión</p>
+          <p className="font-semibold font-montserrat">{t("form.title")}</p>
           <div className="flex items-center gap-2">
             <select id="wallet" name="wallet" required
               className={`p-2 ${!light ? "text-black bg-white" : "text-white bg-black"} rounded-md`}

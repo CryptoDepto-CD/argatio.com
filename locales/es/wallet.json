@@ -1,0 +1,108 @@
+{
+  "wallet": {
+    "login": "Iniciar sesión",
+    "disconnect": "Desconectar",
+
+    "presale-vesting-section": {
+      "presale": "Preventa",
+      "phases": {
+        "phase01": "Fase 01",
+        "phase02": "Fase 02",
+        "phase03": "Fase 03"
+      },
+      "tokens-sold": "Tokens vendidos",
+      "limit": "Limite de wallets por fase"
+    },
+
+    "investment-section": {
+      "form": {
+        "title": "Inversión"
+      },
+
+      "vesting-btn": "Comprar con",
+      "erc20-btn": "Aprobar",
+
+      "alerts": {
+        "approval-success": {
+          "title": "Todo listo",
+          "text": "Aprobaste el uso de {value} correctamente. Ya puedes comprar."
+        },
+        "purchase-success": {
+          "title": "Completado",
+          "text": "Compra realizada con éxito."
+        },
+        "purchase-error-text": "No tienes suficiente saldo."
+      }
+    },
+
+    "buy": {
+      "title": "Comprar",
+      "dialog": {
+        "phase": "Fase {value}",
+        "contract": "Contrato Arga Token",
+        "network": "RED"
+      }
+    },
+
+    "recieve": {
+      "title": "Comprar",
+      "dialog": {
+        "address": "Dirección de la wallet",
+        "network": "RED",
+        "important": {
+          "title": "Importante:",
+          "text": "Sólo envía criptomonedas a esta dirección a través de la red Polygon.",
+          "copy-btn": "Copiar",
+          "address-copied": "Dirección copiada"
+        }
+      }
+    },
+
+    "send": {
+      "title": "Retirar",
+      "dialog": {
+        "address": "Dirección del destino",
+        "asset": "Activo",
+        "investment": "Inversión",
+        "balance": "SALDO: ",
+        "send-btn": "Retirar"
+      }
+    },
+
+    "swap": {
+      "title": "Intercambiar",
+      "dialog": {
+        "swap": "Intercambia CD por ARGA",
+        "how-many-tokens": "¿Cuántos TOKEN CD quieres intercambiar a ARGA TOKEN?"
+      },
+
+      "exchange-btn": "Intercambiar",
+
+      "alerts": {
+        "approval-success": {
+          "title": "Todo listo",
+          "text": "Aprobaste el uso de tokens CD correctamente. Ya puedes intercambiar"
+        },
+        "purchase-success": {
+          "title": "Completado",
+          "text": "Intercambio realizada con éxito."
+        },
+        "purchase-error-text": "No tienes suficiente saldo."
+      }
+    },
+
+    "funds": {
+      "title": "Fondos"
+    },
+
+    "my-arga-tokens": {
+      "title": "MY ARGA TOKENS",
+      "phase": "FASE",
+      "acquired": "ADQUIRIDO",
+      "released": "LIBERADOS",
+      "locked": "BLOQUEADO",
+
+      "release-btn": "Liberar"
+    }
+  }
+}

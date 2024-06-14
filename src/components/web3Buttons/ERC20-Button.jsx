@@ -6,6 +6,7 @@ import VestingABI from '../../utils/Vesting.json'
 import { ethers } from "ethers";
 import { addressUSDT, addressUSDC, addressBUSD } from "@/utils/constants";
 import { GetWeiAmount } from "@/hooks/useBlockchain";
+import { useTranslations } from "next-intl";
 
 export function ERC20Button({
     type,
@@ -19,6 +20,8 @@ export function ERC20Button({
     stableToken,
     disabled
 }) {
+
+    const t = useTranslations("wallet.investment-section")
 
     var amountInWei = GetWeiAmount(tokenAddress, amount)
 
@@ -45,7 +48,7 @@ export function ERC20Button({
             isDisabled={disabled}
             contractAbi={ERC20ABI}
         >
-            {type === "approve" && `Aprobar ${amount} ${tokenName}`}
+            {type === "approve" && `${t("erc20-btn")} ${amount} ${tokenName}`}
         </Web3Button>
     );
 }

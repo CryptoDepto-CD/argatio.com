@@ -10,7 +10,7 @@ import { useTranslations } from "next-intl";
 
 export default function ArgatioFiveServices() {
 
-  const t = useTranslations('fiveServices');
+  const t = useTranslations('home.fiveServices');
 
   return (
     <div className="grid grid-cols-2 grid-rows-2 gap-1 text-xs text-center scale-100 sm:scale-100 font-montserrat">

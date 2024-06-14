@@ -1,7 +1,10 @@
 import Phases from "@/components/ui/ArgaToken/Phases";
 import { GetPhaseInfo, GetCurrentPhaseNumber } from "@/hooks/useBlockchain";
+import { useTranslations } from "next-intl";
 
 export default function VestingPreventSection() {
+  const t = useTranslations("wallet.presale-vesting-section")
+
   const activeStyles = "text-black bg-white";
   
   const {
@@ -28,7 +31,7 @@ export default function VestingPreventSection() {
         </div>
         <div className="uppercase">
           <p className="leading-none text-[clamp(1.5rem,3.6vw,4rem)] font-nats">
-            Preventa
+            {t("presale")}
           </p>
           <p className="leading-none text-clamp-ultrabig font-nats">VESTING</p>
         </div>
@@ -38,21 +41,21 @@ export default function VestingPreventSection() {
           <div
             className={`flex flex-col items-center justify-center px-10 text-center rounded-3xl aspect-[4/3] shadow-[2px_2px_0px_3px_white] ${phaseNumber === 0 && activeStyles}`}
           >
-            <p className="uppercase text-clamp-title font-nats">Fase 01</p>
+            <p className="uppercase text-clamp-title font-nats">{t("phases.phase01")}</p>
             <p className="lg:text-xl">Arga Token = US$0.07</p>
             <p className="lg:text-xl">13/05/24 - 31/05/24</p>
           </div>
           <div
             className={`flex flex-col items-center justify-center px-10 text-center rounded-3xl aspect-[4/3] shadow-[2px_2px_0px_3px_white] ${phaseNumber === 1 && activeStyles}`}
           >
-            <p className="uppercase text-clamp-title font-nats">Fase 02</p>
+            <p className="uppercase text-clamp-title font-nats">{t("phases.phase02")}</p>
             <p className="lg:text-xl">Arga Token = US$0.08</p>
             <p className="lg:text-xl">01/06/24 - 28/06/24</p>
           </div>
           <div
             className={`flex flex-col items-center justify-center px-10 text-center rounded-3xl aspect-[4/3] shadow-[2px_2px_0px_3px_white] ${phaseNumber === 2 && activeStyles}`}
           >
-            <p className="uppercase text-clamp-title font-nats">Fase 03</p>
+            <p className="uppercase text-clamp-title font-nats">{t("phases.phase03")}</p>
             <p className="lg:text-xl">Arga Token = US$0.11</p>
             <p className="lg:text-xl">01/07/24 - 31/07/24</p>
           </div>
@@ -60,10 +63,10 @@ export default function VestingPreventSection() {
         <div className="flex text-clamp-†ext mt-1 gap-1 md:w-1/3 flex-col lg:flex-row">
           <div className="flex-auto text-center text-black bg-white p-7 rounded-3xl shrink">
             <span>{(initialBalance - currentBalance).toFixed(0)}</span>
-            <p>Tokens vendidos</p>
+            <p>{t("tokens-sold")}</p>
           </div>
           <div className="flex-auto text-center text-black bg-white p-7 rounded-3xl">
-            <span>Limite de wallets por fase</span>
+            <span>{t("limit")}</span>
             <p>{maxTokensPerInvestor}</p>
           </div>
         </div>

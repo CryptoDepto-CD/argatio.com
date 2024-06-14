@@ -15,9 +15,9 @@
     "feedback":{
       "subtitle": "Crecemos con tu opinión"
     },
-    "slices":{
+    "slides":{
       "header": "Nuestros servicios",
-      "slice1":{
+      "slide1":{
         "title": "Vivienda propia",
         "description": "De inquilino a propietario",
         "buttonText": "Quiero mi hogar",
@@ -33,9 +33,9 @@
           }
         ]
       },
-      "slice2": {
+      "slide2": {
         "title": "Negocio propio",
-        "decription": "Tu negocio, tu local",
+        "description": "Tu negocio, tu local",
         "buttonText": "Quiero mi espacio",
         "icons": [
           {
@@ -49,7 +49,7 @@
           }
         ]
       },
-      "slice3":{
+      "slide3":{
         "title": "INVERTIR",
         "description": "Multiplica tu dinero en todo el mundo",
         "buttonText1": "Oportunidades",
@@ -66,7 +66,7 @@
           }
         ]
       },
-      "slice4": {
+      "slide4": {
         "title": "Comprar",
       "description": "Una realidad para todos",
       "buttonText": "Quiero ser dueño",
@@ -82,7 +82,7 @@
         }
       ]
       },
-      "slice5": {
+      "slide5": {
         "title": "Vender",
         "description": "Disfruta los beneficios de la tokenizacion",
         "buttonText": "Quiero mi hogar",

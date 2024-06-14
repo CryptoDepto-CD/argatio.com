@@ -1,8 +1,11 @@
 "use client";
 
 import Button from "@/components/ui/Button/Button";
+import { useTranslations } from "next-intl";
 
 export default function WithdrawDialog({ open, handleClick }) {
+  const t = useTranslations("wallet.send.dialog");
+
   return (
     <dialog className="z-40" open={open}>
       <div
@@ -15,7 +18,7 @@ export default function WithdrawDialog({ open, handleClick }) {
         <form className="flex flex-col items-center gap-4 text-center md:mx-10">
           <div className="w-full md:my-10">
             <p className=" leading-none text-[clamp(1.2rem,4vw,2rem)] font-montserrat font-semibold uppercase py-5">
-              Dirección del destino
+              {t("address")}
             </p>
             <input
               type="text"
@@ -31,7 +34,7 @@ export default function WithdrawDialog({ open, handleClick }) {
             <div className="flex flex-col gap-5 ">
               <div className="flex items-center justify-end gap-3 md:text-clamp-text">
                 <label className="font-semibold text-right uppercase">
-                  Activo
+                  {t("asset")}
                 </label>
                 <select
                   id="active"
@@ -48,7 +51,9 @@ export default function WithdrawDialog({ open, handleClick }) {
                 </select>
               </div>
               <div className="flex items-center justify-end gap-3 md:text-clamp-text">
-                <label className="font-semibold text-right ">Inversión</label>
+                <label className="font-semibold text-right ">
+                  {t("investment")}
+                </label>
                 <input
                   type="number"
                   id="value"
@@ -60,11 +65,21 @@ export default function WithdrawDialog({ open, handleClick }) {
                 />
               </div>
             </div>
-            <p className="font-semibold uppercase md:text-clamp-text">SALDO: <span>300000</span></p>
+            <p className="font-semibold uppercase md:text-clamp-text">
+              {t("balance")} <span>300000</span>
+            </p>
           </div>
 
           <div className="my-14">
-            <Button type="button" invert={true} onclick={(e) => {e.preventDefault()}}>Retirar</Button>
+            <Button
+              type="button"
+              invert={true}
+              onclick={(e) => {
+                e.preventDefault();
+              }}
+            >
+              {t("send-btn")}
+            </Button>
           </div>
         </form>
       </div>

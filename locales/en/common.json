@@ -12,6 +12,7 @@
         "button": "Switch to Polygon"
       }
     },
+
     "footer": {
       "invest": {
         "title": "Invest in Argatio",
@@ -31,6 +32,12 @@
         "help-center": "Help Center",
         "contact": "Contact"
       }
+    },
+
+    "under-construction": {
+      "title": "Page under construction",
+      "text": "We are still creating this page, we will let you know when it is ready.",
+      "btn": "Back to Home"
     }
   }
 }

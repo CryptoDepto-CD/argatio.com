@@ -15,9 +15,9 @@
     "feedback":{
       "subtitle": "We grow with your opinion"
     },
-    "slices":{
+    "slides":{
       "header": "Our services",
-      "slice1":{
+      "slide1":{
         "title": "Own home",
         "description": "From tenant to owner",
         "buttonText": "I want my home",
@@ -33,9 +33,9 @@
           }
         ]
       },
-      "slice2": {
+      "slide2": {
         "title": "Own business",
-        "decription": "Your business, your premises",
+        "description": "Your business, your premises",
         "buttonText": "I want my space",
         "icons": [
           {
@@ -49,7 +49,7 @@
           }
         ]
       },
-      "slice3":{
+      "slide3":{
         "title": "Invest",
         "description": "Multiply your money all over the world",
         "buttonText1": "Opportunities",
@@ -66,10 +66,10 @@
           }
         ]
       },
-      "slice4": {
+      "slide4": {
         "title": "Buy",
       "description": "A reality for everyone",
-      "buttonText": "I want to be an owner",
+      "buttonText": "I WANT TO BE AN OWNER",
       "icons": [
         {
           "text": "Search and select"
@@ -82,7 +82,7 @@
         }
       ]
       },
-      "slice5": {
+      "slide5": {
         "title": "Sell",
         "description": "Enjoy the benefits of tokenization",
         "buttonText": "I want investors",
@@ -104,7 +104,7 @@
       "text2": "I didn't think it would be possible to have my own business at this age, but now that is my reality!",
       "text3": "At first I had doubts, but after investing I am sure it was the best decision of my life!",
       "title": "Testimonials",
-      "button": "I want to the an owner"
+      "button": "I want to be an owner"
     },
     "newsForm":
     {

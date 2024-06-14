@@ -1,0 +1,72 @@
+{
+  "argatoken": {
+    "hero-section": {
+      "revolution": "join the real estate revolution",
+      "token": "The token that powers the ARGATIO real estate tokenization platform"
+    },
+
+    "buy-argatoken": "BUY ARGA TOKEN",
+
+    "contract-section": {
+      "title": "ARGA TOKEN CONTRACT",
+      "btn-audit": "Audit",
+      "btn-legal-opinion": "Legal opinion"
+    },
+
+    "how-buy-section": {
+      "title": "How to buy?"
+    },
+
+    "assignments-section": {
+      "title": "assignments",
+      "text": "Token Distribution"
+    },
+
+    "arg-utilities-section": {
+      "title": "arg utilities",
+      "utilities": {
+        "fixed-yield": {
+          "title": "Fixed yield",
+          "text": "Investors receive a fixed annual yield (APY) of 8%, distributed monthly."
+        },
+        "stake": {
+          "title": "Stake",
+          "text": "Investing in fractions of properties, diversifying and minimizing risks."
+        },
+        "high-liquidity": {
+          "title": "High Liquidity",
+          "text": "Tokens can be sold on the secondary market, offering flexibility and quick access to funds."
+        },
+        "staking": {
+          "title": "Staking",
+          "text": "The ARGA tokens can be used in staking programs to generate additional yields."
+        }
+      }
+    },
+
+    "presale-vesting-section": {
+      "presale": "Presale",
+      "phases": {
+        "phase01": "Phase 01",
+        "phase02": "Phase 02",
+        "phase03": "Phase 03"
+      }
+    },
+
+    "meet-the-team-section": {
+      "title": "Meet the Team",
+      "description": "The Argatio team is dedicated to revolutionizing the real estate market by integrating advanced technology and a user-centered approach. Together, we work to offer accessible, secure, and transparent solutions that benefit both investors, tenants and owners.",
+      "button": "About Us"
+    },
+
+    "media-section": {
+      "title": "Media"
+    },
+
+    "newsletter-section": {
+      "title": "We invite you to register",
+      "text": "you can receive updates and promotions",
+      "button": "Send"
+    }
+  }
+}

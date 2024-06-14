@@ -11,13 +11,13 @@ import { useTranslations } from "next-intl";
 
 export default function Testimonials() {
 
-  const t = useTranslations('testimonials');
+  const t = useTranslations('home.testimonials');
 
   const images = [ArgatioLogo1, ArgatioLogo2, ArgatioLogo3];
   const testimonials = [
-    t('testimonials.text1'),
-    t('testimonials.text2'),
-    t('testimonials.text3'),
+    t('text1'),
+    t('text2'),
+    t('text3'),
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -77,7 +77,7 @@ export default function Testimonials() {
         </div>
       </div>
       <Link
-        href="/ViviendaPropia#homeSection"
+        href="/own-home#homeSection"
         className="px-10 py-2 mx-auto text-center text-black uppercase bg-white border-2 border-black border-solid rounded-full font-montserrat hover:opacity-90 text-clamp-text"
       >
         {t('button')}

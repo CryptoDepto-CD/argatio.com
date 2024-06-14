@@ -2,8 +2,12 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useTranslations } from "next-intl";
 
 export default function DiscoverMoreSection() {
+
+  const t = useTranslations("aboutUs.discoverMore")
+
   const slides = [
     {
       link: (
@@ -63,10 +67,10 @@ export default function DiscoverMoreSection() {
     <section className="w-full my-20 overflow-hidden">
       <div className="">
         <h2 className="my-8 leading-none text-center uppercase font-nats text-clamp-big">
-          descubre más sobre argatio
+          {t('discover')}
         </h2>
         <p className="mx-auto text-center text-clamp-text font-montserrat">
-          Mucha mas info en nuestras redes
+          {t('info')}
         </p>
       </div>
       <div className="flex flex-col items-center w-full py-10 mx-auto text-white slider-container">

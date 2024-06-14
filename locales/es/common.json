@@ -31,6 +31,12 @@
         "help-center": "Centro de Ayuda",
         "contact": "Contacto"
       }
+    },
+
+    "under-construction": {
+      "title": "Página en construcción",
+      "text": "Estamos creando esta página todavía, te avisaremos cuando esté lista.",
+      "btn": "Regresar al Inicio"
     }
   }
 }

@@ -31,7 +31,7 @@ import { Link } from "lucide-react";
 
 export default function OurServices() {
 
-  const t = useTranslations('slides');
+  const t = useTranslations('home.slides');
 
   const settings = {
     className: "center",
@@ -74,7 +74,7 @@ export default function OurServices() {
         },
       ],
       buttons: () => (
-        <a href="/ViviendaPropia" className="px-10 py-2 mx-auto uppercase transition-all duration-300 border border-black border-solid rounded-full max-w-96 font-montserrat hover:bg-black hover:text-white">
+        <a href="/own-home" className="px-10 py-2 mx-auto uppercase transition-all duration-300 border border-black border-solid rounded-full max-w-96 font-montserrat hover:bg-black hover:text-white">
            {t('slide1.buttonText')}
         </a>
       ),
@@ -82,7 +82,7 @@ export default function OurServices() {
     },
     {
       title: {
-        title:  t('slide2.title'),
+        title: t('slide2.title'),
         description: t('slide2.description'),
         icon: "",
       },

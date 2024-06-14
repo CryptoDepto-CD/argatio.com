@@ -8,6 +8,7 @@ import Matic from "@/../public/wallet/icon_matic.svg"
 
 import ButtonBlockchain from "@/components/ui/ButtonBlockchain/ButtonBlockchain";
 import { useTranslations } from "next-intl";
+import LanguageChanger from "@/components/ui/ChangerLanguage/ChangerLanguage";
 
 export default function NavBar() {
   const address = useAddress()
@@ -51,13 +52,13 @@ export default function NavBar() {
         <li
           className={`mr-2 md:mt-0 mt-3 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}
         >
-          <Link href="/ArgaToken" onClick={() => setIsOpen(false)}>ARGA Token</Link>
+          <Link href="/argatoken" onClick={() => setIsOpen(false)}>ARGA Token</Link>
         </li>
 
         <li
           className={`mr-2 md:mt-0 mt-3 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}
         >
-          <Link href="/ViviendaPropia" onClick={() => setIsOpen(false)}>{t("own-home")}</Link>
+          <Link href="/own-home" onClick={() => setIsOpen(false)}>{t("own-home")}</Link>
         </li>
         {/* <li
           className={`mr-2 md:mt-0 mt-3 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}
@@ -67,7 +68,11 @@ export default function NavBar() {
         <li
           className={`mr-2 md:mt-0 mt-3 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}
         >
-          <Link href="/UnderConstruction" onClick={() => setIsOpen(false)}>{t("aboutus")}</Link>
+          <Link href="/under-construction" onClick={() => setIsOpen(false)}>{t("aboutus")}</Link>
+        </li>
+
+        <li>
+          <LanguageChanger />
         </li>
         {/* <li
           className={`mr-2 md:mt-0 mt-3 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}

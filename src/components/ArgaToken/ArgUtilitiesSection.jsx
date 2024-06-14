@@ -6,48 +6,37 @@ import Image from "next/image";
 import Button from "../ui/Button/Button";
 import BuyArgaToken from "../ui/ArgaToken/BuyArgaToken/BuyArgaToken";
 
+import { useTranslations } from "next-intl";
+
 export default function ArgUtilitiesSection() {
-  const elements = [
-    {
-      image: Icon1,
-      title: "Rendimiento Fijo",
-      text: "Los inversores reciben un rendimiento anual fijo (APY) del 8%, distribuido mensualmente.",
-    },
-    {
-      image: Icon2,
-      title: "Participación",
-      text: "Inversión en fracciones de propiedades, diversificando y minimizando riesgos.",
-    },
-    {
-      image: Icon3,
-      title: "Alta Liquidez",
-      text: "Los tokens pueden ser vendidos en el mercado secundario, ofreciendo flexibilidad y acceso rápido a los fondos.",
-    },
-    {
-      image: Icon4,
-      title: "Staking",
-      text: "Los tokens ARGA pueden ser utilizados en programas de staking para generar rendimientos adicionales.",
-    },
-  ];
+  const t = useTranslations("argatoken.arg-utilities-section")
+
+  const images = [Icon1, Icon2, Icon3, Icon4];
+  const utilities = [
+    "fixed-yield",
+    "stake",
+    "high-liquidity",
+    "staking",
+  ]
 
   return (
     <section className="px-10 py-12">
       <h2 className="py-10 text-center uppercase font-nats text-clamp-title">
-        Utilidades ARG
+        {t("title")}
       </h2>
       <div className="flex flex-wrap items-start gap-10 gap-y-14">
-        {elements.map((element, index) => (
+        {utilities.map((element, index) => (
           <div
             className="flex flex-col items-center h-full gap-5 text-center w-[clamp(250px,25%,350px)]  my-auto mx-auto"
             key={index}
           >
             <div className="flex items-center mb-2 max-w-52 min-h-44">
-              <Image src={element.image} alt={element.title} className="" />
+              <Image src={images[index]} alt={t(`utilities.${element}.title`)} className="" />
             </div>
             <p className="font-medium uppercase text-clamp-text">
-              {element.title}
+              {t(`utilities.${element}.title`)}
             </p>
-            <p className="text-clamp-text">{element.text}</p>
+            <p className="text-clamp-text">{t(`utilities.${element}.text`)}</p>
           </div>
         ))}
       </div>
