@@ -25,7 +25,7 @@ export default function NewsletterForm() {
           id="email"
           name="id"
           required
-          placeholder="namel@argatio.com"
+          placeholder="name@argatio.com"
           className="w-full px-5 text-center bg-transparent bg-black border-b-2 outline-none border-b-white placeholder:italic text-clamp-text"
         />
         <div className="object-center w-10 h-10 overflow-hidden ">

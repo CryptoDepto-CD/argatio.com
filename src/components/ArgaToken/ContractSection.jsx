@@ -2,10 +2,11 @@ import Image from "next/image";
 
 import BgContract from "@/../public/ViviendaPropia/forms_bg.svg"
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function ContractSection() {
   const t = useTranslations("argatoken.contract-section");
+  const locale = useLocale()
   
   return (
     <section className='relative flex flex-col items-center justify-center w-full px-10 py-10 sm:py-32'>
@@ -16,8 +17,8 @@ export default function ContractSection() {
         </div>
         <div className="flex justify-center flex-wrap *:flex-1 max-w-screen-md w-full gap-[1.5rem_2.5rem] text-center *:max-w-[300px]">
           <Link href="/under-construction" className="w-full px-12 py-2 transition-all border border-white border-solid rounded-full min-w-fit hover:translate-y-1">{t("btn-audit")}</Link>
-          <Link href="https://whitepaper.argatio.com/" className="px-12 py-2 transition-all border border-white border-solid rounded-full min-w-fit hover:translate-y-1">White Paper</Link>
-          <Link href="https://whitepaper.argatio.com/12.-aspectos-legales-y-de-cumplimiento" className="px-12 py-2 transition-all border border-white border-solid rounded-full min-w-fit hover:translate-y-1">{t("btn-legal-opinion")}</Link>
+          <Link href={locale === "en" ? "https://crypto-depto.gitbook.io/white-paper-argatio-inenglish" : "https://whitepaper.argatio.com/"} className="px-12 py-2 transition-all border border-white border-solid rounded-full min-w-fit hover:translate-y-1">White Paper</Link>
+          <Link href={locale === "en" ? "https://crypto-depto.gitbook.io/white-paper-argatio-inenglish/12.-legal-and-compliance-aspects" : "https://whitepaper.argatio.com/12.-aspectos-legales-y-de-cumplimiento"} className="px-12 py-2 transition-all border border-white border-solid rounded-full min-w-fit hover:translate-y-1">{t("btn-legal-opinion")}</Link>
         </div>
       </div>
       <Image src={BgContract} alt="background" className="absolute px-5  -z-10 w-full  max-w-[850px]" />

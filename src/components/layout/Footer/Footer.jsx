@@ -48,24 +48,27 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="https://whitepaper.argatio.com/"
+                href={locale === "en" ? "https://crypto-depto.gitbook.io/white-paper-argatio-inenglish" : "https://whitepaper.argatio.com" }
                 className="transition-all hover:underline"
+                target="_blank"
               >
                 White paper
               </Link>
             </li>
             <li>
               <Link
-                href="https://whitepaper.argatio.com/10.-hoja-de-ruta-roadmap"
+                href={locale === "en" ? "https://crypto-depto.gitbook.io/white-paper-argatio-inenglish/10.-roadmap" : "https://whitepaper.argatio.com/10.-hoja-de-ruta-roadmap"}
                 className="transition-all hover:underline"
+                target="_blank"
               >
                 Road map
               </Link>
             </li>
             <li>
               <Link
-                href="https://whitepaper.argatio.com/12.-aspectos-legales-y-de-cumplimiento"
+                href={locale === "en" ? "https://crypto-depto.gitbook.io/white-paper-argatio-inenglish/12.-legal-and-compliance-aspects" : "https://whitepaper.argatio.com/12.-aspectos-legales-y-de-cumplimiento"}
                 className="transition-all hover:underline"
+                target="_blank"
               >
                 {t("invest.legal-information")}
               </Link>
@@ -144,14 +147,16 @@ export default function Footer() {
         <div className="flex gap-1 text-[10px]">
           <p>© 2024 Argatio. All right reserved.</p>
           <Link
-            href="https://whitepaper.argatio.com/12.-aspectos-legales-y-de-cumplimiento/politicas-de-privacidad-y-seguridad"
+            href={locale === "en" ? "https://crypto-depto.gitbook.io/white-paper-argatio-inenglish/12.-legal-and-compliance-aspects" : "https://whitepaper.argatio.com/12.-aspectos-legales-y-de-cumplimiento/politicas-de-privacidad-y-seguridad"}
             className="transition-all hover:underline"
+            target="_blank"
           >
             Privacy Policy
           </Link>
           <Link
-            href="https://whitepaper.argatio.com/12.-aspectos-legales-y-de-cumplimiento"
+            href={locale === "en" ? "https://crypto-depto.gitbook.io/white-paper-argatio-inenglish/12.-legal-and-compliance-aspects" : "https://whitepaper.argatio.com/12.-aspectos-legales-y-de-cumplimiento/politicas-de-privacidad-y-seguridad"}
             className="transition-all hover:underline"
+            target="_blank"
           >
             Terms of Service
           </Link>
