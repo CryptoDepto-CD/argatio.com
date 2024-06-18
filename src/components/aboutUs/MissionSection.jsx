@@ -1,9 +1,10 @@
 import Button from "../ui/Button/Button";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function MissionSection() {
 
   const t = useTranslations("aboutUs.mission")
+  const locale = useLocale()
 
   return (
     <section className="mx-10 my-16">
@@ -19,12 +20,12 @@ export default function MissionSection() {
             {t('text')}
           </h2>
           <div className="flex flex-wrap gap-10 *:flex-1 *:w-fit">
-            <Button type="link" href="https://whitepaper.argatio.com/">
+            <Button type="link" href={locale === "en" ? "https://crypto-depto.gitbook.io/white-paper-argatio-inenglish" : "https://whitepaper.argatio.com/"}>
               pitch deck
             </Button>
             <Button
               type="link"
-              href="https://whitepaper.argatio.com/10.-hoja-de-ruta-roadmap"
+              href={locale === "en" ? "https://crypto-depto.gitbook.io/white-paper-argatio-inenglish/10.-roadmap" : "https://whitepaper.argatio.com/10.-hoja-de-ruta-roadmap"}
             >
               road map
             </Button>

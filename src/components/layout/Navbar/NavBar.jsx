@@ -7,7 +7,7 @@ import { useAddress, useNetworkMismatch, useSwitchChain } from "@thirdweb-dev/re
 import Matic from "@/../public/wallet/icon_matic.svg"
 
 import ButtonBlockchain from "@/components/ui/ButtonBlockchain/ButtonBlockchain";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import LanguageChanger from "@/components/ui/ChangerLanguage/ChangerLanguage";
 
 export default function NavBar() {
@@ -17,6 +17,8 @@ export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const t = useTranslations("common.navbar")
+
+  const locale = useLocale()
 
   return (
     <nav className="relative flex items-center justify-between px-12 py-4 uppercase">
@@ -47,7 +49,7 @@ export default function NavBar() {
         <li
           className={`mr-2 md:mt-0 mt-3 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}
         >
-          <Link href="https://whitepaper.argatio.com/" onClick={() => setIsOpen(false)}>White Paper</Link>
+          <Link href={locale === "en" ? "https://crypto-depto.gitbook.io/white-paper-argatio-inenglish" :"https://whitepaper.argatio.com/"} onClick={() => setIsOpen(false)} target="_blank">White Paper</Link>
         </li>
         <li
           className={`mr-2 md:mt-0 mt-3 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}
