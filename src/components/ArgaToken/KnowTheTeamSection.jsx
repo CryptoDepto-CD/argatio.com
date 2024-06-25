@@ -9,7 +9,7 @@ export default function KnowTheTeamSection() {
       <h2 className="py-10 text-center uppercase font-nats text-clamp-title">{t("title")}</h2>
       <p className="max-w-screen-lg mx-auto text-center text-balance text-clamp-text ">{t("description")}</p>
       <div className="my-16 text-center">
-        <Button type="link" href="/under-construction">
+        <Button type="link" href="/about-us">
           {t("button")}
         </Button>
       </div>

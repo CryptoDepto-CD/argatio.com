@@ -40,7 +40,7 @@ export default function Footer() {
           <ol className="flex flex-col gap-2">
             <li>
               <Link
-                href="/under-construction"
+                href="/about-us"
                 className="transition-all hover:underline"
               >
                 {t("invest.aboutus")}

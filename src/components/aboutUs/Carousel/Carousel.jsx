@@ -40,14 +40,14 @@ const Carousel = ({ cards }) => {
       </button>
       <div
         ref={carouselRef}
-        className="flex flex-nowrap md:flex-wrap gap-9 my-14 w-full max-sm:overflow-x-scroll [scroll-snap-type:x_mandatory]"
+        className="flex flex-nowrap md:flex-wrap gap-9 my-14 w-full max-md:overflow-x-scroll [scroll-snap-type:x_mandatory]"
       >
-        {cards.map((card, index) => (
+        {cards.map((profile, index) => (
           <div
-            key={index}
+            key={profile.id}
             className="md:max-w-[380px] w-full md:min-w-[300px] md:flex-1  flex-[0_0_100%] [scroll-snap-align:center]"
           >
-            <Card {...card} />
+            <Card {...profile} />
           </div>
         ))}
       </div>
