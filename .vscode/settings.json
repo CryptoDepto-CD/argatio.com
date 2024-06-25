@@ -2,6 +2,7 @@
     "conventionalCommits.scopes": [
         "nex_intl in HeroSection",
         "next-intl howItWorksSection",
+        "airdrop",
         "airdrop"
     ]
 }
