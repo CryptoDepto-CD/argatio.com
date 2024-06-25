@@ -10,7 +10,7 @@ function Card({ linkedin, image, name, role, birthday }) {
         <Linkedin size={24} />
       </Link>
       <div className="aspect-square border-[5px] border-solid border-white rounded-full mb-5">
-        <Image src={image} alt={name} className="w-full" />
+        <Image src={image} alt={name} className="w-full aspect-square" width="100" height="100" />
       </div>
       <p className="leading-none uppercase font-nats text-clamp-subtitle">{name}</p>
       <p className="font-semibold font-montserrat text-clamp-text">{role}</p>

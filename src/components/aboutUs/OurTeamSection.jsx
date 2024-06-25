@@ -7,65 +7,6 @@ import { getProfile } from "@/services/Servicies";
 import { useState, useEffect } from "react";
 
 
-// const cards = [
-//   {
-//     linkedin: "#",
-//     image: Test,
-//     name: "Matias Peralta",
-//     role: "CEO",
-//     birthday: "",
-//   },
-//   {
-//     linkedin: "#",
-//     image: Test,
-//     name: "Matias Peralta",
-//     role: "CEO",
-//     birthday: "",
-//   },
-//   {
-//     linkedin: "#",
-//     image: Test,
-//     name: "Matias Peralta",
-//     role: "CEO",
-//     birthday: "",
-//   },
-//   {
-//     linkedin: "#",
-//     image: Test,
-//     name: "Matias Peralta",
-//     role: "CEO",
-//     birthday: "",
-//   },
-//   {
-//     linkedin: "#",
-//     image: Test,
-//     name: "Matias Peralta",
-//     role: "CEO",
-//     birthday: "",
-//   },
-//   {
-//     linkedin: "#",
-//     image: Test,
-//     name: "Matias Peralta",
-//     role: "CEO",
-//     birthday: "",
-//   },
-//   {
-//     linkedin: "#",
-//     image: Test,
-//     name: "Matias Peralta",
-//     role: "CEO",
-//     birthday: "",
-//   },
-//   {
-//     linkedin: "#",
-//     image: Test,
-//     name: "Matias Peralta",
-//     role: "CEO",
-//     birthday: "",
-//   },
-// ];
-
 async function GetProfile() {
 
   const data = await getProfile()
@@ -101,14 +42,7 @@ export default function OurTeamSection() {
           {t('description')}
         </p>
         <div>
-          {/* <Carousel cards={cards} /> */}
-          {profiles.map((profile) => (
-            <div key={profile.id}>
-              <h3>{profile.name}</h3>
-              <p>{profile.role}</p>
-              <p>{profile.birthday}</p>
-            </div>
-          ))}
+          <Carousel cards={profiles.sort((a, b) => a.id - b.id)} />
         </div>
       </div>
     </section>

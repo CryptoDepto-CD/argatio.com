@@ -70,7 +70,7 @@ export default function NavBar() {
         <li
           className={`mr-2 md:mt-0 mt-3 text-white text-xs lg:text-sm font-montserrat hover:drop-shadow-[0px_1px_4px_white] transition-colors`}
         >
-          <Link href="/under-construction" onClick={() => setIsOpen(false)}>{t("aboutus")}</Link>
+          <Link href="/about-us" onClick={() => setIsOpen(false)}>{t("aboutus")}</Link>
         </li>
 
         <li>
