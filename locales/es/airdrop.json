@@ -1,0 +1,25 @@
+{
+  "airdrop": {
+    "form": {
+      "question-1": {
+        "question": "¿Qué es Argatio?",
+        "answer-1": "Una plataforma que democratiza el acceso a la vivienda propia",
+        "answer-2": "Un libro de leyendas Latinoamericanas",
+        "answer-3": "Un video juego de estrategias de supervivencia"
+      },
+      "question-2": {
+        "question": "¿Qué tecnología usa Argatio para su efectividad y seguridad?",
+        "answer-1": "Lorem Ipsum",
+        "answer-2": "Blockchain",
+        "answer-3": "Lorem Ipsum"
+      },
+      "question-3": {
+        "question": "¿Para que sirven los Arga Token?",
+        "answer-1": "Facilita inversiones y ofrece beneficios en la plataforma Argatio.",
+        "answer-2": "Lorem Ipsum",
+        "answer-3": "Lorem Ipsum"
+      },
+      "btn-submit": "canjear"
+    }
+  }
+}
