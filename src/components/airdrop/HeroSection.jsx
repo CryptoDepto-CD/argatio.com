@@ -6,6 +6,7 @@ import { gsap } from 'gsap'
 import left_wing from '@/../public/airdrop/hero_left_wing.svg'
 import right_wing from '@/../public/airdrop/hero_right_wing.svg'
 import center_wing from '@/../public/airdrop/hero_icon_center.svg'
+import thumbnail from '@/../public/airdrop/thumbnail.png'
 
 export default function HeroSection() {
     const leftWingRef = useRef(null);
@@ -26,6 +27,15 @@ export default function HeroSection() {
             .to(containerRef.current, { y: 0 }, 2);
     
       }, []);
+
+      const handleThumbnailClick = () => {
+        window.location.href = 'https://www.youtube.com/watch?v=vK-bZRb7Wc0';
+    }
+
+    const handleTwitterButtonClick = () => {
+        window.location.href = 'https://x.com/login';
+    }
+
   return (
     <section>
         <div className=' flex flex-col items-center h-[500px]'>
@@ -44,6 +54,19 @@ export default function HeroSection() {
                 </div>
             </div>
         </div>
+        <div className='absolute left-20 bottom-20'>
+        <div className='w-full flex flex-col items-center lg:w-1/2'>
+                <p className='text-lg mb-1'>Para obtener más información te recomendamos ver la siguiente entrevista</p>
+                <div onClick={handleThumbnailClick} className='cursor-pointer'>
+                    <Image src={thumbnail} alt="Thumbnail" />
+                </div>
+                <div className='bg-white rounded-lg mt-4 p-4 right-0'>
+                        <button onClick={handleTwitterButtonClick} className='text-black'>
+                            Iniciar Sesión con X
+                        </button>
+                    </div>
+            </div>
+            </div>
     </section>
   )
 }
