@@ -7,8 +7,12 @@ import left_wing from '@/../public/airdrop/hero_left_wing.svg'
 import right_wing from '@/../public/airdrop/hero_right_wing.svg'
 import center_wing from '@/../public/airdrop/hero_icon_center.svg'
 import thumbnail from '@/../public/airdrop/thumbnail.png'
+import { useTranslations } from "next-intl";
 
 export default function HeroSection() {
+
+    const t = useTranslations("airdrop.video");
+
     const leftWingRef = useRef(null);
     const rightWingRef = useRef(null);
     const containerRef = useRef(null);
@@ -38,7 +42,7 @@ export default function HeroSection() {
 
   return (
     <section>
-        <div className=' flex flex-col items-center h-[500px]'>
+        <div className=' flex flex-col items-center h-[500px] translate-x-60 '>
             <div className=' w-full'>
                 <h2 className=' text-3xl sm:text-4xl font-semibold px-8 text-right sm:text-center uppercase pt-20'>Airdrop</h2>
             </div>
@@ -54,17 +58,21 @@ export default function HeroSection() {
                 </div>
             </div>
         </div>
-        <div className='absolute left-20 bottom-20'>
+
+        <div className='absolute left-20 bottom-20 translate-y-20 translate-x-10'>
         <div className='w-full flex flex-col items-center lg:w-1/2'>
-                <p className='text-lg mb-1'>Para obtener más información te recomendamos ver la siguiente entrevista</p>
+                <p className='text-lg mb-1'>{t('text')}</p>
                 <div onClick={handleThumbnailClick} className='cursor-pointer'>
                     <Image src={thumbnail} alt="Thumbnail" />
                 </div>
+
+                <div className='absolute bottom-20 right-40 translate-y-0 translate-x-40'>
                 <div className='bg-white rounded-lg mt-4 p-4 right-0'>
-                        <button onClick={handleTwitterButtonClick} className='text-black'>
-                            Iniciar Sesión con X
+                        <button onClick={handleTwitterButtonClick} className='text-black font-bold'>
+                        {t('twitter')}
                         </button>
                     </div>
+            </div>
             </div>
             </div>
     </section>

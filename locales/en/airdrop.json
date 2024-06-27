@@ -20,6 +20,10 @@
         "answer-3": "Lorem Ipsum"
       },
       "btn-submit": "exchange"
+    },
+    "video":{
+      "text": "For more information we recommend you watch the following interview",
+      "twitter": "Log in with X"
     }
   }
 }
