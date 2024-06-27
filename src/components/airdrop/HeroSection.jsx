@@ -7,8 +7,12 @@ import left_wing from '@/../public/airdrop/hero_left_wing.svg'
 import right_wing from '@/../public/airdrop/hero_right_wing.svg'
 import center_wing from '@/../public/airdrop/hero_icon_center.svg'
 import thumbnail from '@/../public/airdrop/thumbnail.png'
+import { useTranslations } from "next-intl";
 
 export default function HeroSection() {
+
+    const t = useTranslations("airdrop.video");
+
     const leftWingRef = useRef(null);
     const rightWingRef = useRef(null);
     const containerRef = useRef(null);
@@ -38,9 +42,9 @@ export default function HeroSection() {
 
   return (
     <section>
-        <div className=' flex flex-col items-center h-[500px]'>
+        <div className=' flex flex-col items-center h-[500px] translate-x-60 '>
             <div className='w-full '>
-                <h2 className='px-8 pt-20 text-3xl font-semibold text-right uppercase  sm:text-4xl sm:text-center'>Airdrop</h2>
+                <h2 className='px-8 pt-20 text-3xl font-semibold text-right uppercase sm:text-4xl sm:text-center'>Airdrop</h2>
             </div>
             <div ref={containerRef} className='flex mr-10 -mt-10 w-80 lg:w-96 sm:mr-72 lg:mr-80'>
                 <div ref={leftWingRef} className='-mr-4 '>
@@ -54,17 +58,21 @@ export default function HeroSection() {
                 </div>
             </div>
         </div>
-        <div className='absolute left-20 bottom-20'>
+
+        <div className='absolute translate-x-10 translate-y-20 left-20 bottom-20'>
         <div className='flex flex-col items-center w-full lg:w-1/2'>
-                <p className='mb-1 text-lg'>Para obtener más información te recomendamos ver la siguiente entrevista</p>
+                <p className='mb-1 text-lg'>{t('text')}</p>
                 <div onClick={handleThumbnailClick} className='cursor-pointer'>
                     <Image src={thumbnail} alt="Thumbnail" />
                 </div>
+
+                <div className='absolute translate-x-40 translate-y-0 bottom-20 right-40'>
                 <div className='right-0 p-4 mt-4 bg-white rounded-lg'>
-                        <button onClick={handleTwitterButtonClick} className='text-black'>
-                            Iniciar Sesión con X
+                        <button onClick={handleTwitterButtonClick} className='font-bold text-black'>
+                        {t('twitter')}
                         </button>
                     </div>
+            </div>
             </div>
             </div>
     </section>

@@ -20,6 +20,10 @@
         "answer-3": "Lorem Ipsum"
       },
       "btn-submit": "canjear"
+    },
+    "video":{
+      "text": "Para obtener más información te recomendamos ver la siguiente entrevista",
+      "twitter": "Iniciar Sesión con X"
     }
   }
 }
