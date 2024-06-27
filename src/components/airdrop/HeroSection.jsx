@@ -39,28 +39,28 @@ export default function HeroSection() {
   return (
     <section>
         <div className=' flex flex-col items-center h-[500px]'>
-            <div className=' w-full'>
-                <h2 className=' text-3xl sm:text-4xl font-semibold px-8 text-right sm:text-center uppercase pt-20'>Airdrop</h2>
+            <div className='w-full '>
+                <h2 className='px-8 pt-20 text-3xl font-semibold text-right uppercase  sm:text-4xl sm:text-center'>Airdrop</h2>
             </div>
-            <div ref={containerRef} className='flex w-80 lg:w-96 mr-10 sm:mr-72 lg:mr-80 -mt-10'>
-                <div ref={leftWingRef} className=' -mr-4'>
+            <div ref={containerRef} className='flex mr-10 -mt-10 w-80 lg:w-96 sm:mr-72 lg:mr-80'>
+                <div ref={leftWingRef} className='-mr-4 '>
                     <Image src={left_wing} alt="Left Wing" />
                 </div>
                 <div>
                     <Image src={center_wing} className='mt-8' alt="Center Wing" />
                 </div>
-                <div ref={rightWingRef} className=' mt-12'>
+                <div ref={rightWingRef} className='mt-12 '>
                     <Image src={right_wing} alt="Right Wing" />
                 </div>
             </div>
         </div>
         <div className='absolute left-20 bottom-20'>
-        <div className='w-full flex flex-col items-center lg:w-1/2'>
-                <p className='text-lg mb-1'>Para obtener más información te recomendamos ver la siguiente entrevista</p>
+        <div className='flex flex-col items-center w-full lg:w-1/2'>
+                <p className='mb-1 text-lg'>Para obtener más información te recomendamos ver la siguiente entrevista</p>
                 <div onClick={handleThumbnailClick} className='cursor-pointer'>
                     <Image src={thumbnail} alt="Thumbnail" />
                 </div>
-                <div className='bg-white rounded-lg mt-4 p-4 right-0'>
+                <div className='right-0 p-4 mt-4 bg-white rounded-lg'>
                         <button onClick={handleTwitterButtonClick} className='text-black'>
                             Iniciar Sesión con X
                         </button>

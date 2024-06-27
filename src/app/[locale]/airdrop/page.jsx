@@ -6,7 +6,7 @@ export default function Airdrop() {
   return (
     <main>
       <HeroSection />
-      <FormSection />
+      <FormSection disabled="true" />
     </main>
   )
 }
