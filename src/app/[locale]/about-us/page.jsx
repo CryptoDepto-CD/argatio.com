@@ -12,7 +12,7 @@ export default function AboutUs() {
       <MissionSection />
       <WhatWeDoSection />
       <OurTeamSection />
-      {/* <DiscoverMoreSection /> */}
+      <DiscoverMoreSection />
       <SocialMediaSection />
     </main>
   )
