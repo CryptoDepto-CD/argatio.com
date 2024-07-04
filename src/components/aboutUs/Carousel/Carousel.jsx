@@ -31,7 +31,7 @@ const Carousel = ({ cards }) => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
       <button
         className="absolute left-0 z-10 text-white transform -translate-x-full -translate-y-1/2 top-1/2 md:hidden"
         onClick={handlePrev}
