@@ -23,7 +23,7 @@ function Card({ linkedin, image, name, role, birthday }) {
           <Linkedin size={24} />
         </Link>
         <div className="aspect-square border-[5px] border-solid border-white rounded-full mb-5">
-          {true && <Image src={Gorrito} alt="Gorro" className="absolute top-0 right-0 w-[clamp(100px,12vw,130px)] rotate-45 translate-x-1/3 -translate-y-1/3" />}
+          {isBirthday(birthday) && <Image src={Gorrito} alt="Gorro" className="absolute top-0 right-0 w-[clamp(100px,12vw,130px)] rotate-45 translate-x-1/3 -translate-y-1/3" />}
           <Image src={image} alt={name} className="w-full aspect-square" width="100" height="100" />
         </div>
       </div>
