@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import React, { useState } from 'react';
 
 const Circle = ({ text, isHovered, onMouseEnter, onMouseLeave }) => {
@@ -32,11 +33,13 @@ const HowItWorks = () => {
     setHoveredIndex(null);
   };
 
+  const t = useTranslations("vesting.howItWorks");
+
   return (
     <div className="flex flex-col items-center space-y-10">
-      <Title text="¿CÓMO FUNCIONA?" />
+      <Title text=  {t('title')} />
       <div className="flex space-x-2">
-        {["Evaluá las propiedades", "Regístrate", "Invertís desde 50 dólares", "Recibí tu rentabilidad"].map((text, index) => (
+        {[  t('text1'), t('text2'), t('text3'), t('text4')].map((text, index) => (
           <Circle
             key={index}
             text={text}
