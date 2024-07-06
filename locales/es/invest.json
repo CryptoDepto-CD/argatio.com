@@ -1,0 +1,22 @@
+{
+  "invest": {
+
+
+    "simulation": {
+      "section": {
+        "title": "Simulación de inversión",
+        "buy-tokens": "¿Cuántos tokens queres comprar?",
+        "tokens-cost": "Cada Token tiene un costo de 50 USD",
+        "btn-simulate": "simular",
+
+        "property-value": "Valor de la Propiedad: $50,000",
+        "total-tokens": "Total de Tokens: 1,000 tokens",
+        "token-value": "Valor de Cada Token: $50",
+        "yearly-return": "Rendimiento Anual Fijo para Inversores: 8%",
+        "recieve-monthly": "Recibirás por mes $58 USD",
+        "btn-invest": "invertir"
+      },
+      "dialog": {}
+    }
+  }
+}
