@@ -6,6 +6,15 @@
             "text2": "Sign up",
             "text3": "You invest from 50 dollars",
             "text4": "Receive your profitability"
+        },
+        "whyInvest":{
+            "title": "Why invest with Argatio?",
+            "prop": "Properties",
+            "text1": "The properties with the highest profitability are strategically chosen",
+            "block": "Blockchain",
+            "text2": "Guarantee of security, transparency and traceability of data",
+            "disp": "Availability",
+            "text3": "You can withdraw your earnings monthly"
         }
     }
 }

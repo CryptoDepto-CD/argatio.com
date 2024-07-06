@@ -6,6 +6,15 @@
             "text2": "Regístrate",
             "text3": "Invertís desde 50 dolares",
             "text4": "Recibi tu rentabilidad"
+        },
+        "whyInvest":{
+            "title": "¿Por qué invertir con Argatio?",
+            "prop": "Propiedades",
+            "text1": "Se escogen estratégicamente los inmuebles con mayor rentabilidad",
+            "block": "Blockchain",
+            "text2": "Garantía de seguridad, la transparencia y la trazabilidad de los datos",
+            "disp": "Disponibilidad",
+            "text3": "Puedes retirar tus ganancias mensualmente"
         }
     }
 }
