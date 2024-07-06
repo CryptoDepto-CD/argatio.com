@@ -1,0 +1,37 @@
+{
+    "vesting":{
+        "howItWorks":{
+            "title": "How does it work?",
+            "text1": "Evaluate the properties",
+            "text2": "Sign up",
+            "text3": "You invest from 50 dollars",
+            "text4": "Receive your profitability"
+        },
+        "whyInvest":{
+            "title": "Why invest with Argatio?",
+            "prop": "Properties",
+            "text1": "The properties with the highest profitability are strategically chosen",
+            "block": "Blockchain",
+            "text2": "Guarantee of security, transparency and traceability of data",
+            "disp": "Availability",
+            "text3": "You can withdraw your earnings monthly"
+        },
+
+        "simulation": {
+            "section": {
+                "title": "Investment simulation",
+                "buy-tokens": "How many tokens do you want to buy?",
+                "tokens-cost": "Each token costs 50 USD",
+                "btn-simulate": "simulate",
+
+                "property-value": "Property value: $50,000",
+                "total-tokens": "Total Tokens: 1,000 tokens",
+                "token-value": "Value of Each Token: $50",
+                "yearly-return": "Fixed Annual Return to Investors: 8%",
+                "recieve-monthly": "You will receive per month $58 USD",
+                "btn-invest": "invest"
+            },
+            "dialog": {}
+        }
+    }
+}

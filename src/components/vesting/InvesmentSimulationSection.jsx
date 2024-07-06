@@ -3,7 +3,7 @@ import Button from '../ui/Button/Button'
 
 export default function InvesmentSimulationSection() {
 
-  const t = useTranslations("invest.simulation.section")
+  const t = useTranslations("vesting.simulation.section")
 
   return (
     <section className='my-24 mx-6 md:mx-10'>
