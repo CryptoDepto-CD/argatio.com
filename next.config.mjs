@@ -12,6 +12,18 @@ const nextConfig = {
         port: '',
         pathname: '/dllugzki1/**',
       },
+      {
+        protocol: 'https',
+        hostname: '**.discordapp.com',
+        port: '',
+        pathname: '/attachments/**',
+      },
+      {
+        protocol: 'https',
+        hostname: '**.discordapp.net',
+        port: '',
+        pathname: '/attachments/**',
+      },
     ],
   },
 };
