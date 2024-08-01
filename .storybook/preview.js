@@ -1,4 +1,4 @@
-import "../src/app/globals.css";
+import "../src/app/[locale]/globals.css";
 import { themes } from "@storybook/theming";
 
 /** @type { import('@storybook/react').Preview } */

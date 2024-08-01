@@ -1,0 +1,29 @@
+{
+  "airdrop": {
+    "form": {
+      "question-1": {
+        "question": "What is Argatio?",
+        "answer-1": "Lorem Ipsum",
+        "answer-2": "Lorem Ipsum",
+        "answer-3": "Lorem Ipsum"
+      },
+      "question-2": {
+        "question": "What technology does Argatio use for its effectiveness and security?",
+        "answer-1": "Lorem Ipsum",
+        "answer-2": "Blockchain",
+        "answer-3": "Lorem Ipsum"
+      },
+      "question-3": {
+        "question": "What are Arga Tokens for?",
+        "answer-1": "Lorem Ipsum",
+        "answer-2": "Lorem Ipsum",
+        "answer-3": "Lorem Ipsum"
+      },
+      "btn-submit": "exchange"
+    },
+    "video":{
+      "text": "For more information we recommend you watch the following interview",
+      "twitter": "Log in with X"
+    }
+  }
+}

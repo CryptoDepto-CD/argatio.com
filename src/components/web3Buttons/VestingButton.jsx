@@ -13,7 +13,9 @@ export function VestingButton({
     stableAmount,
     onSuccessFunction,
     onErrorFunction,
-    disabled
+    disabled,
+    phaseNumber,
+    className
 }) {
 
     const t = useTranslations("wallet.investment-section")
@@ -27,7 +29,9 @@ export function VestingButton({
 
         switch (type) {
             case "invest":
-                return () => mutateAsync({ args: [stableAddress, amountInWei] });
+                return () => mutateAsync({ args: [stableAddress, amountInWei] })
+            case "release":
+                return () => mutateAsync({ args: [phaseNumber] })
 
             default:
                 throw new Error(`Unsupported transaction type: ${type}`);
@@ -42,8 +46,10 @@ export function VestingButton({
             onError={(error) => onErrorFunction(error)}
             isDisabled={disabled}
             contractAbi={VestingABI}
+            className={className}
         >
             {type === "invest" && `${t("vesting-btn")} ${stableAmount} ${stableName}`}
+            {type === "release" && "Liberar"}
         </Web3Button>
     );
 }
