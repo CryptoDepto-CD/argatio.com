@@ -13,8 +13,8 @@ import {
 export function Providers({ children }) {
     const [mounted, setMounted] = useState(false)
     useEffect(() => {
-        setMounted(true), []
-    })
+        setMounted(true)
+    }, [])
 
     const smartWalletConfig = {
         factoryAddress: process.env.NEXT_PUBLIC_FACTORY_ADDRESS,
