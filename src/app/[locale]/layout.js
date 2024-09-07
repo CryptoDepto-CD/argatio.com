@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google";
+wimport { Inter } from "next/font/google";
 import Script from "next/script";
 import NavBar from "@/components/layout/Navbar/NavBar";
 
@@ -51,6 +51,9 @@ export default function RootLayout({ children, params: { locale } }) {
           `,
         }}
       ></Script>
+      <head>
+        <meta name="facebook-domain-verification" content="y86xfzxbzb5dcyv82xskx9k80oxjom" />
+      </head>
       <body className={inter.className + " text-white"}>
         <Providers>
           <NextIntlClientProvider locale={locale} messages={messages}>
