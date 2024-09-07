@@ -1,4 +1,4 @@
-wimport { Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import Script from "next/script";
 import NavBar from "@/components/layout/Navbar/NavBar";
 
